@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57">
+  <g id="Group_5" data-name="Group 5" transform="translate(-476 -621)">
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(476 621)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="57" height="57" stroke="none"/>
+      <rect x="0.5" y="0.5" width="56" height="56" fill="none"/>
+    </g>
+    <g id="Page-1" transform="translate(492 623)">
+      <g id="_036---DNA-" data-name="036---DNA-" transform="translate(0 0)">
+        <path id="Rectangle-path" d="M4.6,8H21.543V9.8H4.6Z" transform="translate(-0.459 -0.798)" fill="#f0c419"/>
+        <path id="Rectangle-path-2" data-name="Rectangle-path" d="M3,4H22.823V5.8H3Z" transform="translate(-0.299 -0.399)" fill="#955ba5"/>
+        <path id="Rectangle-path-3" data-name="Rectangle-path" d="M5.979,23h14.47v1.8H5.979Z" transform="translate(-0.596 -2.294)" fill="#955ba5"/>
+        <path id="Rectangle-path-4" data-name="Rectangle-path" d="M4,28H22.023v1.8H4Z" transform="translate(-0.399 -2.793)" fill="#f0c419"/>
+        <path id="Rectangle-path-5" data-name="Rectangle-path" d="M5,33H21.213v1.8H5Z" transform="translate(-0.499 -3.292)" fill="#955ba5"/>
+        <path id="Rectangle-path-6" data-name="Rectangle-path" d="M6.309,48H20.175v1.8H6.309Z" transform="translate(-0.629 -4.788)" fill="#f0c419"/>
+        <path id="Rectangle-path-7" data-name="Rectangle-path" d="M5,52H21.222v1.8H5Z" transform="translate(-0.499 -5.187)" fill="#955ba5"/>
+        <path id="Shape" d="M12.621,43.795H12.6c-3.286.963-5.1,2.575-6.086,4.411a9.919,9.919,0,0,0-1.035,3.6,17.434,17.434,0,0,0-.081,1.8,2.7,2.7,0,0,1-5.4,0c0-6.4,2.611-10.263,5.906-12.567Z" transform="translate(0 -4.094)" fill="#2fa8cc"/>
+        <g id="Group_4" data-name="Group 4" transform="translate(0.005 0)">
+          <path id="Shape-2" data-name="Shape" d="M14,12.513h.018C17.3,11.55,19.113,9.939,20.1,8.1a9.919,9.919,0,0,0,1.035-3.6,17.433,17.433,0,0,0,.081-1.8,2.7,2.7,0,1,1,5.4,0c0,6.4-2.611,10.263-5.906,12.567Z" transform="translate(-1.401)" fill="#67b9cc"/>
+          <path id="Shape-3" data-name="Shape" d="M12.613,19.8a10.769,10.769,0,0,0-5.771,3.5,6.323,6.323,0,0,0-1.431,4.24c0,.081.009.171.009.261a2.927,2.927,0,0,1-.018.3,6.326,6.326,0,0,0,1.431,4.2,10.855,10.855,0,0,0,5.78,3.5c.216.063.432.126.666.18a18.036,18.036,0,0,1,6.041,2.656c3.295,2.3,5.906,6.167,5.906,12.567a2.7,2.7,0,0,1-5.4,0,17.433,17.433,0,0,0-.081-1.8,9.919,9.919,0,0,0-1.035-3.6c-.99-1.837-2.8-3.448-6.086-4.411H12.6c-.207-.063-.423-.117-.639-.171a19.367,19.367,0,0,1-6.059-2.584A12.333,12.333,0,0,1,.01,27.8a12.333,12.333,0,0,1,5.9-10.839Z" transform="translate(-0.005 -1.692)" fill="#67b9cc"/>
+          <path id="Shape-4" data-name="Shape" d="M13.267,19.8c-.216-.063-.432-.126-.666-.18A18.036,18.036,0,0,1,6.56,16.96Z" transform="translate(-0.659 -1.692)" fill="#67b9cc"/>
+        </g>
+        <path id="Shape-5" data-name="Shape" d="M25.216,26.107a12.333,12.333,0,0,1-5.9,10.839,18.036,18.036,0,0,0-6.041-2.656c-.234-.054-.45-.117-.666-.18a10.769,10.769,0,0,0,5.771-3.5,6.323,6.323,0,0,0,1.431-4.24c0-.081-.009-.171-.009-.261a2.927,2.927,0,0,1,.018-.3,6.326,6.326,0,0,0-1.431-4.2,10.855,10.855,0,0,0-5.78-3.5c-.216-.063-.432-.126-.666-.18a18.036,18.036,0,0,1-6.041-2.656C2.611,12.964,0,9.1,0,2.7a2.7,2.7,0,0,1,5.4,0,17.434,17.434,0,0,0,.081,1.8A9.919,9.919,0,0,0,6.518,8.1c.99,1.837,2.8,3.448,6.086,4.411h.018c.207.063.423.117.639.171a19.367,19.367,0,0,1,6.059,2.584A12.333,12.333,0,0,1,25.216,26.107Z" transform="translate(0 0)" fill="#2fa8cc"/>
+      </g>
+    </g>
+  </g>
+</svg>

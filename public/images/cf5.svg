@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="Group_626" data-name="Group 626" transform="translate(-494 -1184)">
+    <g id="Rectangle_131" data-name="Rectangle 131" transform="translate(494 1184)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="48" height="48" stroke="none"/>
+      <rect x="0.5" y="0.5" width="47" height="47" fill="none"/>
+    </g>
+    <g id="id-card_2_" data-name="id-card (2)" transform="translate(493.5 1186.233)">
+      <line id="Line_20" data-name="Line 20" y1="3" x2="2" transform="translate(26.5 0.767)" fill="none" stroke="#424a60" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_614" data-name="Path 614" d="M36.294,5H11.933A1.437,1.437,0,0,0,10.5,6.433V42.259a1.437,1.437,0,0,0,1.433,1.433H36.294a1.437,1.437,0,0,0,1.433-1.433V6.433A1.437,1.437,0,0,0,36.294,5ZM24.114,11.449a2.15,2.15,0,1,1,2.15-2.15A2.149,2.149,0,0,1,24.114,11.449Z" transform="translate(0 -1.134)" fill="#e7eced"/>
+      <line id="Line_21" data-name="Line 21" x2="4" y2="8" transform="translate(20.5 0.767)" fill="none" stroke="#424a60" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <rect id="Rectangle_136" data-name="Rectangle 136" width="13" height="12" transform="translate(17.5 13.767)" fill="#efce4a"/>
+      <path id="Path_615" data-name="Path 615" d="M33.547,42.433H19.217a.717.717,0,0,1,0-1.433h14.33a.717.717,0,0,1,0,1.433Z" transform="translate(-2.268 -11.34)" fill="#424a60"/>
+      <path id="Path_616" data-name="Path 616" d="M33.547,47.433H19.217a.717.717,0,1,1,0-1.433h14.33a.717.717,0,1,1,0,1.433Z" transform="translate(-2.268 -12.757)" fill="#424a60"/>
+      <path id="Path_617" data-name="Path 617" d="M33.547,52.433H19.217a.717.717,0,1,1,0-1.433h14.33a.717.717,0,1,1,0,1.433Z" transform="translate(-2.268 -14.174)" fill="#424a60"/>
+      <g id="Group_415" data-name="Group 415" transform="translate(20.531 15.622)">
+        <ellipse id="Ellipse_50" data-name="Ellipse 50" cx="3.5" cy="3" rx="3.5" ry="3" transform="translate(-0.031 0.145)" fill="#dc691d"/>
+        <path id="Path_618" data-name="Path 618" d="M28.083,30A3.583,3.583,0,0,0,24.5,33.583V34.3h7.165v-.717A3.583,3.583,0,0,0,28.083,30Z" transform="translate(-24.5 -23.843)" fill="#dc691d"/>
+      </g>
+    </g>
+  </g>
+</svg>
