@@ -6,7 +6,7 @@ const Academy = () => {
 	<div>
 	<header id="header"><div className="container">  <div className="row"><div className="col-md-2 col-sm-2 col-2" style={{padding: 0}}>
 	<a href="http://www.qik.ai/" >		
-	<img src={require("./images/logo.svg")} alt="Qik.ai" className="img-logovs" /></a> </div>
+	<img src={require("./images/logo.svg").default} alt="Qik.ai" className="img-logovs" /></a> </div>
 		  <div className="col-md-7 col-4">   
 			
 		 
@@ -38,7 +38,7 @@ const Academy = () => {
 	 </div> 
 		  <div className="col-md-3 col-sm-6 col-6 text-right">   
 			<div className="us-contact">
-			  <i className="fa fa-phone" /> +91 9503122314 <br /><i className="fa fa-envelope" />  hello@qik.ai</div> </div>
+			  <i className="fa fa-phone" /> 🇺🇸 +1 8453637505 🇮🇳 +91-9209157677  <br /><i className="fa fa-envelope" />  hello@qik.ai</div> </div>
 		</div> </div></header>  	  
 	<section id="qik-intro" className="qik-intro"> 
 	  <div className="container">
@@ -60,7 +60,7 @@ const Academy = () => {
 	  <div className="container">
 		<div className="row"> 
 		  <div className="col-md-4 text-center"> 
-			<a href="http://www.qik.ai/Business" >		  <img src={require("./images/pc.svg")} className="vs-btns" /> 
+			<a href="Business" >		  <img src={require("./images/pc.svg").default} className="vs-btns" /> 
 			 </a><br /><br /><h5>Qik Academy<br /> Software</h5> 
 			 <a href="http://www.qik.ai/" >Education <i className="fa fa-angle-down" /></a><br /><br /></div>
 		  <div className="col-md-8">
@@ -75,49 +75,49 @@ const Academy = () => {
 		  <div className="uvs-line" />
 		  <div className="row text-center uvs-boxes"><div className="uvs-line-h" />
 			<div className="col-md-3 border-right-uvs border-bottom-uvs">
-			  <a href="http://www.qik.ai/Business" >		 <img src={require("./images/a1.svg")} />
+			  <a href="http://www.qik.ai/Business" >		 <img src={require("./images/a1.svg").default} />
 				<h4>CRM</h4>
 				<p>Manage and track all the student inquiries in a single place.</p>
 				Learn More</a> <div className="uvs-line-hover" />
 			</div>
 			<div className="col-md-3 border-right-uvs border-bottom-uvs">
 			  <a href="http://www.qik.ai/Business" >		
-				<img src={require("./images/a2.svg")} />
+				<img src={require("./images/a2.svg").default} />
 				<h4>Attendance <br />Management</h4>
 				<p>Daily track the batch-wise attendance of students.</p> Learn More</a> <div className="uvs-line-hover" />
 			</div>
 			<div className="col-md-3 border-right-uvs border-bottom-uvs"> 
-			  <a href="http://www.qik.ai/Business" >		 <img src={require("./images/a3.svg")} />
+			  <a href="http://www.qik.ai/Business" >		 <img src={require("./images/a3.svg").default} />
 				<h4>Communication</h4>
 				<p>Send custom emails/SMS alerts or make templates.</p> Learn More</a>  <div className="uvs-line-hover" />
 			</div>
 			<div className="col-md-3 border-bottom-uvs"> 
-			  <a href="http://www.qik.ai/Business" >		 <img src={require("./images/a4.svg")} />
+			  <a href="http://www.qik.ai/Business" >		 <img src={require("./images/a4.svg").default} />
 				<h4>Expense  <br />Tracker</h4>
 				<p>Keep a record of all payment transactions with account details.</p> Learn More</a> <div className="uvs-line-hover" /> 
 			</div>
 			<div className="col-md-3 border-right-uvs border-bottom-uvs ">
-			  <a href="http://www.qik.ai/Business" >		 <img src={require("./images/a5.svg")} />
+			  <a href="http://www.qik.ai/Business" >		 <img src={require("./images/a5.svg").default} />
 				<h4>Web <br /> Solution</h4>
 				<p>Create a website as per your requirement.</p> Learn More</a>
 			</div>
 			<div className="col-md-3 border-right-uvs border-bottom-uvs"> 
-			  <a href="http://www.qik.ai/Business" >		 <img src={require("./images/a6.svg")} />
+			  <a href="http://www.qik.ai/Business" >		 <img src={require("./images/a6.svg").default} />
 				<h4>Task  <br />Management</h4>
 				<p>Create, assign, and track tasks.</p> Learn More</a>
 			</div>  
 			<div className="col-md-3 border-right-uvs border-bottom-uvs"> 
-			  <a href="http://www.qik.ai/Business" >		<img src={require("./images/a7.svg")} />
+			  <a href="http://www.qik.ai/Business" >		<img src={require("./images/a7.svg").default} />
 				<h4>Payroll</h4>
 				<p>Manage &amp; track the salary generation of the employees.</p> Learn More</a>
 			</div>
 			<div className="col-md-3  border-bottom-uvs"> 
-			  <a href="http://www.qik.ai/Business" >		 <img src={require("./images/a8.svg")} />
+			  <a href="http://www.qik.ai/Business" >		 <img src={require("./images/a8.svg").default} />
 				<h4>Social  <br />Media</h4>
 				<p>Create &amp; Upload the post on different social channel.</p> Learn More</a>
 			</div>
 			<div className="col-md-3 border-right-uvs">
-			  <a href="http://www.qik.ai/go/elearning/"> <img src={require("./images/logo.png")} style={{width: '116px'}} />
+			  <a href="http://www.qik.ai/go/elearning/"> <img src={require("./images/logo.png").default} style={{width: '116px'}} />
 				<h4>Qik   <br />E-Learning</h4>
 				<p>Get your own E-Learning app on playstore and make money by selling premium recorded video, Audio & PDF courses like a pro. </p> Learn More</a>
 			</div>
@@ -155,9 +155,9 @@ const Academy = () => {
           <div className="slider__contents"> 
            <div className="col-md-12">
 				<div className="row">
-				  <div className="col-md-4"><img src={require("./images/profile.jpg")} style={{width: '100%'}} /></div>
+				  <div className="col-md-4"><img src={require("./images/profile.jpg").default} style={{width: '100%'}} /></div>
 				  <div className="col-md-8">
-					<div className="img-uvss"><img src={require("./images/brain-academy.jpg")} /></div>
+					<div className="img-uvss"><img src={require("./images/brain-academy.jpg").default} /></div>
 					<div className="class-desript"><h3>Samruddhi Patil</h3><p>We have taken Drona Academy Software 
 						for our classrooms and have found it to be a very useful teaching and learning solution. 
 						The content is well-maaped and the software is easy to use. On top of that, Support is always 
@@ -167,9 +167,9 @@ const Academy = () => {
           </div>
           <div className="slider__contents"> <div className="col-md-12">
 				<div className="row">
-				  <div className="col-md-4"><img src={require("./images/profile.jpg")} style={{width: '100%'}} /></div>
+				  <div className="col-md-4"><img src={require("./images/profile.jpg").default} style={{width: '100%'}} /></div>
 				  <div className="col-md-8">
-					<div className="img-uvss"><img src={require("./images/brain-academy.jpg")} /></div>
+					<div className="img-uvss"><img src={require("./images/brain-academy.jpg").default} /></div>
 					<div className="class-desript"><h3>Samruddhi Patil 1</h3><p>We have taken Drona Academy Software 
 						for our classrooms and have found it to be a very useful teaching and learning solution. 
 						The content is well-maaped and the software is easy to use. On top of that, Support is always 
@@ -179,9 +179,9 @@ const Academy = () => {
           </div>
           <div className="slider__contents"> <div className="col-md-12">
 				<div className="row">
-				  <div className="col-md-4"><img src={require("./images/profile.jpg")} style={{width: '100%'}} /></div>
+				  <div className="col-md-4"><img src={require("./images/profile.jpg").default} style={{width: '100%'}} /></div>
 				  <div className="col-md-8">
-					<div className="img-uvss"><img src={require("./images/brain-academy.jpg")} /></div>
+					<div className="img-uvss"><img src={require("./images/brain-academy.jpg").default} /></div>
 					<div className="class-desript"><h3>Samruddhi Patil 2</h3><p>We have taken Drona Academy Software 
 						for our classrooms and have found it to be a very useful teaching and learning solution. 
 						The content is well-maaped and the software is easy to use. On top of that, Support is always 
@@ -192,9 +192,9 @@ const Academy = () => {
           <div className="slider__contents"> 
 		  <div className="col-md-12">
 				<div className="row">
-				  <div className="col-md-4"><img src={require("./images/profile.jpg")} style={{width: '100%'}} /></div>
+				  <div className="col-md-4"><img src={require("./images/profile.jpg").default} style={{width: '100%'}} /></div>
 				  <div className="col-md-8">
-					<div className="img-uvss"><img src={require("./images/brain-academy.jpg")} /></div>
+					<div className="img-uvss"><img src={require("./images/brain-academy.jpg").default} /></div>
 					<div className="class-desript"><h3>Samruddhi Patil 3</h3><p>We have taken Drona Academy Software 
 						for our classrooms and have found it to be a very useful teaching and learning solution. 
 						The content is well-maaped and the software is easy to use. On top of that, Support is always 
@@ -280,7 +280,7 @@ const Academy = () => {
 		<div className="row">
 		  <div className="col-md-12 container-text-center"> <span className="uvs-span">Contact us</span>
 			<h2>Let's create progress <br />together <hr className="section-line-border1" /> </h2></div>
-		  <div className="col-md-6"> <img src={require("./images/contact.svg")} width="100%" />
+		  <div className="col-md-6"> <img src={require("./images/contact.svg").default} width="100%" />
 		  </div>
 		  <div className="col-md-6"><div className="form-uvsl"> <br /><br />Name <input type="text" name="name" className="form-control" />
 			  Email Address <input type="text" name="name" className="form-control" />
@@ -295,7 +295,7 @@ const Academy = () => {
 		<div className="container">
 		  <div className="row">
 			<div className="col-md-4">
-			  <h4>     <a href="http://gbmurarkacollege.com/qik/1/"><img src={require("./images/logo.svg")} /></a> </h4>
+			  <h4>     <a href="http://gbmurarkacollege.com/qik/1/"><img src={require("./images/logo.svg").default} /></a> </h4>
 			  <p>
 				Supercharge your business with 50+ integrated business applications. With Qik Cloud Stack, you can speedup, automate and bring transparency to your business activities. Experience the power of cloud to increase your business productivity by 20%.
 			  </p>
@@ -310,8 +310,8 @@ const Academy = () => {
 			<div className="col-md-4 text-right-uvs">
 			  <h4>Always reachable on</h4> 
 			  <div className="social-links" style={{marginTop: '20px'}}>
-				<a href="JavaScript:Void(0);"><img src={require("./images/linkedin.svg")} /></a>
-				<a href="JavaScript:Void(0);"><img src={require("./images/gmail.svg")} style={{marginLeft: '20px'}} /></a>             
+				<a href="JavaScript:Void(0);"><img src={require("./images/linkedin.svg").default} /></a>
+				<a href="JavaScript:Void(0);"><img src={require("./images/gmail.svg").default} style={{marginLeft: '20px'}} /></a>             
 			  </div>
 			</div>
 		  </div>
@@ -319,7 +319,7 @@ const Academy = () => {
 	  </div> 
 	  <div className="container">
 		<div className="copyright">
-		  <p style={{textAlign: 'center'}}>   All rights reserved © 2020 <strong><span>
+		  <p style={{textAlign: 'center'}}>   All rights reserved © 2023 <strong><span>
 			  <a href="http://qik.ai/" target="_blank">Qik.Ai</a></span></strong>   
 		  </p></div>
 	  </div>

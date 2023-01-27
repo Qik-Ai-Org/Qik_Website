@@ -7,8 +7,8 @@ const Home = () => {
 	<div>
 	<header id="header"><div className="container">  <div className="row"><div className="col-md-4 col-sm-4 col-4">
 	 
-	<a href="http://www.qik.ai/" >				<img src={require("./images/logo.svg")} alt="Qik.ai" className="img-logovs" /></a> </div><div className="col-md-8 col-sm-8 col-8 text-right"><div className="us-contact">
-			  <i className="fa fa-phone" /> +91 9503122314  <br /><i className="fa fa-envelope" /> 			  hello@qik.ai</div> </div></div> </div></header>  	  
+	<a href="http://www.qik.ai/" >				<img src={require("./images/logo.svg").default} alt="Qik.ai" className="img-logovs" /></a> </div><div className="col-md-8 col-sm-8 col-8 text-right"><div className="us-contact">
+			  <i className="fa fa-phone" /> 🇺🇸 +1 8453637505 🇮🇳 +91-9209157677   <br /><i className="fa fa-envelope" /> 			  hello@qik.ai</div> </div></div> </div></header>  	  
 	<section id="qik-intro" className="qik-intro "> 
 	  <div className="container">
 		<div className="row">
@@ -23,22 +23,22 @@ const Home = () => {
                   <div className="col-md-12" id="products">
                     <div className="row">
                       <div className="col-md-3 col-sm-6 col-6">
-                        <a id="hidevs-edu"> <div className="feature-item"><img src={require("./images/1.svg")}  />
+                        <a id="hidevs-edu"> <div className="feature-item"><img src={require("./images/1.svg").default}  alt=""  />
                             <br />
                             Education </div></a>
                       </div>
                       <div className="col-md-3 col-sm-6 col-6">
-                        <a id="hidevs">	<div className="feature-item"> <img src={require("./images/2.svg")}  /> 
+                        <a id="hidevs">	<div className="feature-item"> <img src={require("./images/2.svg").default}  alt="" /> 
                             <br />
                             Health care </div></a>
                       </div> 
                       <div className="col-md-3 col-sm-6 col-6">
-                        <a id="hidevs-retail"><div className="feature-item"> <img src={require("./images/3.svg")}  /> 
+                        <a id="hidevs-retail"><div className="feature-item"> <img src={require("./images/3.svg").default}  alt="" /> 
                             <br />
                             Retail </div></a>
                       </div> 
                       <div className="col-md-3 col-sm-6 col-6">
-                        <a id="hidevs-hr"><div className="feature-item"> <img src={require("./images/4.svg")}  /> 
+                        <a id="hidevs-hr"><div className="feature-item"> <img src={require("./images/4.svg").default}   alt=""/> 
                             <br />
                             HR </div></a>
                       </div>
@@ -49,40 +49,40 @@ const Home = () => {
                       <span style={{fontSize: '14px', color: '#000', fontWeight: 'normal', marginRight: '40px'}}>Back</span> </a> Education sector</h5>
                   <div className="col-md-12" id="products">
                     <div className="row" style={{marginBottom: '60px'}}>
-                      <div className="col-md-4 col-sm-6 col-6"> <a href="http://www.qik.ai/Academy" >		 <div className="feature-item">
-                            <img src={require("./images/e3.svg")}  /> 
+                      <div className="col-md-4 col-sm-6 col-6"> <a href="Academy" >		 <div className="feature-item">
+                            <img src={require("./images/e3.svg").default}  /> 
                             <br />
                             Coaching
                           </div>   
 						  </a></div>
                       <div className="col-md-4 col-sm-6 col-6">
-                        <a href="http://www.qik.ai/Academy" >		 <div className="feature-item">	 <img src={require("./images/e2.svg")}  /> 
+                        <a href="Academy" >		 <div className="feature-item">	 <img src={require("./images/e2.svg").default}  /> 
                             <br />
                             University / 
                             College</div>
 							</a>
                       </div>
                       <div className="col-md-4 col-sm-6 col-6">
-					 <a href="http://www.qik.ai/Academy" >		<div className="feature-item"> <img src={require("./images/e1.svg")}  />
+					 <a href="Academy" >		<div className="feature-item"> <img src={require("./images/e1.svg").default}  />
                             <br />
                             Schools 
                           </div>	</a> </div>
                       <div className="col-md-4 col-sm-6 col-6"> 
-                        <a href="http://www.qik.ai/Academy" >		<div className="feature-item"> <img src={require("./images/e4.svg")}  /> 
+                        <a href="Academy" >		<div className="feature-item"> <img src={require("./images/e4.svg").default}  /> 
                             <br />
                             Play Schools  
                           </div>
 						  </a>
                       </div> 
                       <div className="col-md-4 col-sm-6 col-6"> 
-                        <a href="http://www.qik.ai/Academy" >		<div className="feature-item"> <img src={require("./images/e5.svg")}  /> 
+                        <a href="Academy" >		<div className="feature-item"> <img src={require("./images/e5.svg").default}  /> 
                             <br />
                             Libraries 
                           </div>
                       	</a>
                       </div>
                       <div className="col-md-4 col-sm-6 col-6"> 
-                        <a href="http://www.qik.ai/Academy" >		<div className="feature-item"> <img src={require("./images/e6.svg")}  /> 
+                        <a href="Academy" >		<div className="feature-item"> <img src={require("./images/e6.svg").default}  /> 
                             <br />
                             Home Tutors 
                           </div>
@@ -127,7 +127,7 @@ const Home = () => {
               </div>	 </div>
           </div>  </div>
 		  <div className="col-md-5 animated animatedFadeInUp fadeInUp suvs-imgs"> 
-			 <img src={require("./images/intro.svg")} width="100%" /><br />
+			 <img src={require("./images/intro.svg").default} width="100%" /><br />
 		  </div>
 		</div>
 	  </div>
@@ -141,7 +141,7 @@ const Home = () => {
 		<div className="container">
 		  <div className="row">
 			<div className="col-md-4">
-			  <h4>     <a href="index.html"> <img src={require("./images/logo.svg")} /></a> </h4>
+			  <h4>     <a href="index.html"> <img src={require("./images/logo.svg").default} /></a> </h4>
 			  <p>
 				Supercharge your business with 50+ integrated business applications. With Qik Cloud Stack, you can speedup, automate and bring transparency to your business activities. Experience the power of cloud to increase your business productivity by 20%.
 			  </p>
@@ -150,14 +150,14 @@ const Home = () => {
 			  <h4>Contact</h4>
 			  <ul style={{listStyleType: 'none', padding: 0, margin: 0, marginTop: '20px'}}>
 				<li style={{marginBottom: '13px'}}>Email: hello@qik.ai</li>
-				<li>Phone:  +91 9503122314<br /><br /></li>
+				<li>Phone:  🇺🇸 +1 8453637505 🇮🇳 +91-9209157677<br /><br /></li>
 			  </ul>
 			</div> 
 			<div className="col-md-4 text-right-uvs">
 			  <h4>Always reachable on</h4> 
 			  <div className="social-links" style={{marginTop: '20px'}}>
-				<a href="JavaScript:Void(0);"> <img src={require("./images/linkedin.svg")} /></a>
-				<a href="JavaScript:Void(0);"> <img src={require("./images/gmail.svg")} style={{marginLeft: '20px'}} /></a>             
+				<a href="JavaScript:Void(0);"> <img src={require("./images/linkedin.svg").default} /></a>
+				<a href="JavaScript:Void(0);"> <img src={require("./images/gmail.svg").default} style={{marginLeft: '20px'}} /></a>             
 			  </div>
 			</div>
 		  </div>
@@ -165,7 +165,7 @@ const Home = () => {
 	  </div> 
 	  <div className="containervs">
 		<div className="copyright">
-		  <p style={{textAlign: 'center'}}>   All rights reserved © 2020 <strong><span>
+		  <p style={{textAlign: 'center'}}>   All rights reserved © 2023 <strong><span>
 			  <a href="http://qik.ai/" target="_blank">Qik.Ai</a></span></strong>   
 		  </p></div>
 	  </div>

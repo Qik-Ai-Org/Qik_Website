@@ -38,7 +38,7 @@ const Business = () => {
 			<a href="#qik-pricing" className="btn btn-primary btn-lg" style={{marginBottom: '40px', borderRadius: '4px'}}>Get Business App</a> 
 		  </div>		
 		  <div className="col-md-6"> 
-			 <img src={require("./images/academy-intro.png")} style={{width: '100%'}} /> <br /><br /><h5 style={{textAlign: 'center'}}>Qik Coaching Institute
+			 <img src={require("./images/academy-intro.png").default} style={{width: '100%'}} /> <br /><br /><h5 style={{textAlign: 'center'}}>Qik Coaching Institute
 			  Software</h5>
 		  </div>
 		</div>
@@ -53,103 +53,103 @@ const Business = () => {
 		  </div>
 		  <div className="row">
 			<div className="col-md-4">
-			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/cf1.svg")} /></td><td><h4>Student Record</h4>
+			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/cf1.svg").default} /></td><td><h4>Student Record</h4>
 					  <p>Record of student details with photographs personal &amp; parent contact details, batches, previous year marks, etc.</p></td></tr></tbody></table>
 			</div>
 			<div className="col-md-4">
-			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/cf2.svg")} /></td><td><h4>Test Management</h4>
+			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/cf2.svg").default} /></td><td><h4>Test Management</h4>
 					  <p>Facility to add Test details &amp; marks, enter students marks, auto alerts to students &amp; parents for marks obtained. Record of all tests &amp; scored marks studentwise
 					  </p></td></tr></tbody></table>
 			</div>
 			<div className="col-md-4">
-			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/cf3.svg")} /></td><td><h4>Fees Management</h4>
+			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/cf3.svg").default} /></td><td><h4>Fees Management</h4>
 					  <p>Keep track of all payments datewise. Alert for paid amount &amp; remaining amountm facilityto print receipts.
 					  </p></td></tr></tbody></table>
 			</div>
 			<div className="col-md-4">
-			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/cf4.svg")} /></td><td><h4>Assign Homework</h4>
+			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/cf4.svg").default} /></td><td><h4>Assign Homework</h4>
 					  <p> </p></td></tr></tbody></table>
 			</div>
 			<div className="col-md-4">
-			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/cf5.svg")} /></td><td><h4>I-Card Printing</h4>
+			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/cf5.svg").default} /></td><td><h4>I-Card Printing</h4>
 					  <p>Be ahead &amp; unique from competitors by providing I-cards to students. Facility to design own institute I-card by uploading header &amp; footer logo. Generate Individual or Bulk I-cards batchwise &amp; print.
 					  </p></td></tr></tbody></table>
 			</div>
 			<div className="col-md-4">
-			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/cf6.svg")} /></td><td><h4>Videos</h4>
+			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/cf6.svg").default} /></td><td><h4>Videos</h4>
 					  <p> </p></td></tr></tbody></table>
 			</div>
 			<div className="col-md-4">
-			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/cf7.svg")} /></td><td><h4>Custom Setting</h4>
+			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/cf7.svg").default} /></td><td><h4>Custom Setting</h4>
 					  <p> Management of all modules configuration settings such as SMS API Setting, facility to add/update institute details with logo, receipt header or footer images etc.
 					  </p></td></tr></tbody></table>
 			</div>
 			<div className="col-md-4">
-			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/cf8.svg")} /></td><td><h4>Mobile Application</h4>
+			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/cf8.svg").default} /></td><td><h4>Mobile Application</h4>
 					  <p>Single App which gives information about Attendance, Tests, Exam results, Holidays and Fees details to students and parents.
 					  </p></td></tr></tbody></table>
 			</div>
 			<div className="col-md-4">
-			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/cf9.svg")} /></td><td><h4>Reports</h4>
+			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/cf9.svg").default} /></td><td><h4>Reports</h4>
 					  <p>All full-fledged reports with filter &amp; sort to generate custom reports as per need. Complete set of reports such as enquires, registrations, attendance, tests, expences, Results student or batchwise &amp; many more
 					  </p></td></tr></tbody></table>
 			</div>
 			<div className="col-md-4">
-			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/Enquiry.svg")} /></td><td><h4>Enquiry Management 
+			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/Enquiry.svg").default} /></td><td><h4>Enquiry Management 
 					  </h4>
 					  <p>Keep track on all enquiries with status &amp; follow up date reminder for coverting open enquiries into admissions. Enquiry report where can review all Prospect, Converted &amp; Closed enquiries.
 					  </p></td></tr></tbody></table>
 			</div>
 			<div className="col-md-4">
-			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/Biometric.svg")} /></td><td><h4>Biometric Attendance
+			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/Biometric.svg").default} /></td><td><h4>Biometric Attendance
 					  </h4>
 					  <p>Track daily batch-wise attendance of students, send daily attendance alerts to absentees, push attendance from biometric machine to cloud in real time
 					  </p></td></tr></tbody></table>
 			</div>
 			<div className="col-md-4">
-			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/Subjectwise.svg")} /></td><td><h4>Subjectwise Progress 
+			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/Subjectwise.svg").default} /></td><td><h4>Subjectwise Progress 
 					  </h4>
 					  <p>Subjectwise complete progress report of student for parents. All performance record such as total present days &amp; absent days, Fees Summary, Total tests &amp; obtained marks, Remarks &amp; many more
 					  </p></td></tr></tbody></table>
 			</div>
 			<div className="col-md-4">
-			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/sms.svg")} /></td><td><h4>Auto SMS
+			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/sms.svg").default} /></td><td><h4>Auto SMS
 					  </h4>
 					  <p>Automatically send SMS alerts to parents for subjectwise absentee, fees payment, test results, holidays etc. Facility to send custom messages like for batch timing, festival wishes or b’day wish etc.
 					  </p></td></tr></tbody></table>
 			</div>
 			<div className="col-md-4">
-			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/Exam.svg")} /></td><td><h4>Test
+			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/Exam.svg").default} /></td><td><h4>Test
 					  </h4>
 					  <p>Facility to add test &amp; details such as title, description &amp; out of marks. Test marks &amp; absent for test alerts to parents. Storing all test records studentwise.
 					  </p></td></tr></tbody></table>
 			</div>
 			<div className="col-md-4">
-			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/smstemplete.svg")} /></td><td><h4>SMS Templates
+			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/smstemplete.svg").default} /></td><td><h4>SMS Templates
 					  </h4>
 					  <p>Save all event based SMS templates such as New registration, Absentee, Test Marks, Holidays etc. Can create custom template &amp; save for future use.
 					  </p></td></tr></tbody></table>
 			</div>
 			<div className="col-md-4">
-			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/email.svg")} /></td><td><h4>Email Alerts
+			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/email.svg").default} /></td><td><h4>Email Alerts
 					  </h4>
 					  <p>Send custom email alerts to parents batchwise/subjectwise
 					  </p></td></tr></tbody></table>
 			</div>
 			<div className="col-md-4">
-			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/omr.svg")} /></td><td><h4>OMR Integration
+			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/omr.svg").default} /></td><td><h4>OMR Integration
 					  </h4>
 					  <p>Automatic checking of OMR Sheets for MCQs. Automatically update marks scored and analyse question-wise performance. OMR results alert to parents via SMS.
 					  </p></td></tr></tbody></table>
 			</div>
 			<div className="col-md-4">
-			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/expense.svg")} /></td><td><h4>Manage Expense
+			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/expense.svg").default} /></td><td><h4>Manage Expense
 					  </h4>
 					  <p>Keep track of all expense entries &amp; salaries. Create categories &amp; heads as per expenses. Keep record of all payment transactions with bank account details.
 					  </p></td></tr></tbody></table>
 			</div>
 			<div className="col-md-4">
-			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/subscription.svg")} /></td><td><h4> Online Subscription
+			  <table className="table uvstable"><tbody><tr><td> <img src={require("./images/subscription.svg").default} /></td><td><h4> Online Subscription
 					  </h4>
 					  <p>Easy &amp; speedy modes to top up your subscription packages. Netbanking, Credit/Debit Card &amp; Paytm.
 					  </p></td></tr></tbody></table>
@@ -221,7 +221,7 @@ const Business = () => {
 		<div className="row">
 		  <div className="col-md-12 containervs-text-center"> <span className="uvs-span">Contact us</span>
 			<h2>Let's create progress <br />together   <hr className="section-line-border1" />	</h2> </div>
-		  <div className="col-md-6">  <img src={require("./images/contact.svg")} width="100%" />
+		  <div className="col-md-6">  <img src={require("./images/contact.svg").default} width="100%" />
 		  </div>
 		  <div className="col-md-6"><div className="form-uvsl"> <br /><br />Name <input type="text" name="name" className="form-control" />
 			  Email Address <input type="text" name="name" className="form-control" />
@@ -236,7 +236,7 @@ const Business = () => {
 		<div className="containervs">
 		  <div className="row">
 			<div className="col-md-4">
-			  <h4>     <a href="index.html"> <img src={require("./images/logo.svg")} /></a> </h4>
+			  <h4>     <a href="index.html"> <img src={require("./images/logo.svg").default} /></a> </h4>
 			  <p>
 				Supercharge your business with 50+ integrated business applications. With Qik Cloud Stack, you can speedup, automate and bring transparency to your business activities. Experience the power of cloud to increase your business productivity by 20%.
 			  </p>
@@ -245,14 +245,14 @@ const Business = () => {
 			  <h4>Contact</h4>
 			  <ul style={{listStyleType: 'none', padding: 0, margin: 0, marginTop: '20px'}}>
 				<li style={{marginBottom: '13px'}}>Email: hello@qik.ai</li>
-				<li>Phone: +91 9503122314<br /><br /></li>
+				<li>Phone: 🇺🇸 +1 8453637505 🇮🇳 +91-9209157677<br /><br /></li>
 			  </ul>
 			</div> 
 			<div className="col-md-4 text-right-uvs">
 			  <h4>Always reachable on</h4> 
 			  <div className="social-links" style={{marginTop: '20px'}}>
-				<a href="JavaScript:Void(0);"> <img src={require("./images/linkedin.svg")} /></a>
-				<a href="JavaScript:Void(0);"> <img src={require("./images/gmail.svg")} style={{marginLeft: '20px'}} /></a>             
+				<a href="JavaScript:Void(0);"> <img src={require("./images/linkedin.svg").default} /></a>
+				<a href="JavaScript:Void(0);"> <img src={require("./images/gmail.svg").default} style={{marginLeft: '20px'}} /></a>             
 			  </div>
 			</div>
 		  </div>
@@ -260,7 +260,7 @@ const Business = () => {
 	  </div> 
 	  <div className="containervs">
 		<div className="copyright">
-		  <p style={{textAlign: 'center'}}>   All rights reserved © 2020 
+		  <p style={{textAlign: 'center'}}>   All rights reserved © 2023 
 		  <strong><span><a href="http://qik.ai/" target="_blank">Qik.Ai</a></span></strong>   
 		  </p></div>
 	  </div>
