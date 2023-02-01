@@ -5,7 +5,7 @@ const Academy = () => {
     
 	<div>
 	<header id="header"><div className="container">  <div className="row"><div className="col-md-2 col-sm-2 col-2" style={{padding: 0}}>
-	<a href="http://www.qik.ai/" >		
+	<a href="https://www.qik.ai/" >		
 	<img src={require("./images/logo.svg").default} alt="Qik.ai" className="img-logovs" /></a> </div>
 		  <div className="col-md-7 col-4">   
 			
@@ -92,32 +92,32 @@ const Academy = () => {
 				<p>Send custom emails/SMS alerts or make templates.</p> Learn More</a>  <div className="uvs-line-hover" />
 			</div>
 			<div className="col-md-3 border-bottom-uvs"> 
-			  <a href="http://www.qik.ai/Business" >		 <img src={require("./images/a4.svg").default} />
+			  <a href="https://www.qik.ai/Business" >		 <img src={require("./images/a4.svg").default} />
 				<h4>Expense  <br />Tracker</h4>
 				<p>Keep a record of all payment transactions with account details.</p> Learn More</a> <div className="uvs-line-hover" /> 
 			</div>
 			<div className="col-md-3 border-right-uvs border-bottom-uvs ">
-			  <a href="http://www.qik.ai/Business" >		 <img src={require("./images/a5.svg").default} />
+			  <a href="https://www.qik.ai/Business" >		 <img src={require("./images/a5.svg").default} />
 				<h4>Web <br /> Solution</h4>
 				<p>Create a website as per your requirement.</p> Learn More</a>
 			</div>
 			<div className="col-md-3 border-right-uvs border-bottom-uvs"> 
-			  <a href="http://www.qik.ai/Business" >		 <img src={require("./images/a6.svg").default} />
+			  <a href="https://www.qik.ai/Business" >		 <img src={require("./images/a6.svg").default} />
 				<h4>Task  <br />Management</h4>
 				<p>Create, assign, and track tasks.</p> Learn More</a>
 			</div>  
 			<div className="col-md-3 border-right-uvs border-bottom-uvs"> 
-			  <a href="http://www.qik.ai/Business" >		<img src={require("./images/a7.svg").default} />
+			  <a href="https://www.qik.ai/Business" >		<img src={require("./images/a7.svg").default} />
 				<h4>Payroll</h4>
 				<p>Manage &amp; track the salary generation of the employees.</p> Learn More</a>
 			</div>
 			<div className="col-md-3  border-bottom-uvs"> 
-			  <a href="http://www.qik.ai/Business" >		 <img src={require("./images/a8.svg").default} />
+			  <a href="https://www.qik.ai/Business" >		 <img src={require("./images/a8.svg").default} />
 				<h4>Social  <br />Media</h4>
 				<p>Create &amp; Upload the post on different social channel.</p> Learn More</a>
 			</div>
 			<div className="col-md-3 border-right-uvs">
-			  <a href="http://www.qik.ai/go/elearning/"> <img src={require("./images/logo.png").default} style={{width: '116px'}} />
+			  <a href="https://www.qik.ai/go/elearning/"> <img src={require("./images/logo.png").default} style={{width: '116px'}} />
 				<h4>Qik   <br />E-Learning</h4>
 				<p>Get your own E-Learning app on playstore and make money by selling premium recorded video, Audio & PDF courses like a pro. </p> Learn More</a>
 			</div>
@@ -320,7 +320,7 @@ const Academy = () => {
 	  <div className="container">
 		<div className="copyright">
 		  <p style={{textAlign: 'center'}}>   All rights reserved © 2023 <strong><span>
-			  <a href="http://qik.ai/" target="_blank">Qik.Ai</a></span></strong>   
+			  <a href="https://www.qik.ai/" target="_blank">Qik.Ai</a></span></strong>   
 		  </p></div>
 	  </div>
 	</footer> 
