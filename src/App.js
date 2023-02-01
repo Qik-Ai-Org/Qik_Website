@@ -7,7 +7,7 @@ import Business from './components/Business.js';
 class App extends Component {
 	render() {
 	  return (      
-		 <BrowserRouter>
+     <HashRouter>
      <div> <div  style={{display: 'none'}}>  <Navigation /></div>
    <Switch>
              <Route path="/" component={Home} exact/> 
@@ -15,7 +15,7 @@ class App extends Component {
              <Route path="/Business" component={Business}/> 
            </Switch> 
   </div>
-  </BrowserRouter>
+  </HashRouter>
     );
 }
 }
