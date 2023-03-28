@@ -5,9 +5,10 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { HashRouter } from "react-router-dom";
 
+console.log("process.env.PUBLIC_URL ", process.env.PUBLIC_URL)
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <App />
     </HashRouter>
   </React.StrictMode>,
