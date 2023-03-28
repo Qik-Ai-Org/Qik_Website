@@ -7,7 +7,7 @@ import Business from "./components/Business.js";
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div>
           <div style={{ display: "none" }}>
             <Navigation />
