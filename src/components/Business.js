@@ -318,7 +318,7 @@ const Business = () => {
                       <td>
                         <img
                           src={require("./images/Subjectwise.svg").default}
-                          alt=''
+                          alt=""
                         />
                       </td>
                       <td>
@@ -339,7 +339,7 @@ const Business = () => {
                   <tbody>
                     <tr>
                       <td>
-                        <img src={require("./images/sms.svg").default} alt=''/>
+                        <img src={require("./images/sms.svg").default} alt="" />
                       </td>
                       <td>
                         <h4>Auto SMS</h4>
@@ -359,7 +359,10 @@ const Business = () => {
                   <tbody>
                     <tr>
                       <td>
-                        <img src={require("./images/Exam.svg").default} alt=''/>
+                        <img
+                          src={require("./images/Exam.svg").default}
+                          alt=""
+                        />
                       </td>
                       <td>
                         <h4>Test</h4>
@@ -380,7 +383,8 @@ const Business = () => {
                     <tr>
                       <td>
                         <img
-                          src={require("./images/smstemplete.svg").default} alt=''
+                          src={require("./images/smstemplete.svg").default}
+                          alt=""
                         />
                       </td>
                       <td>
@@ -400,7 +404,10 @@ const Business = () => {
                   <tbody>
                     <tr>
                       <td>
-                        <img src={require("./images/email.svg").default} alt=''/>
+                        <img
+                          src={require("./images/email.svg").default}
+                          alt=""
+                        />
                       </td>
                       <td>
                         <h4>Email Alerts</h4>
@@ -418,7 +425,7 @@ const Business = () => {
                   <tbody>
                     <tr>
                       <td>
-                        <img src={require("./images/omr.svg").default} alt=''/>
+                        <img src={require("./images/omr.svg").default} alt="" />
                       </td>
                       <td>
                         <h4>OMR Integration</h4>
@@ -438,7 +445,10 @@ const Business = () => {
                   <tbody>
                     <tr>
                       <td>
-                        <img src={require("./images/expense.svg").default} alt=''/>
+                        <img
+                          src={require("./images/expense.svg").default}
+                          alt=""
+                        />
                       </td>
                       <td>
                         <h4>Manage Expense</h4>
@@ -459,7 +469,8 @@ const Business = () => {
                     <tr>
                       <td>
                         <img
-                          src={require("./images/subscription.svg").default} alt=''
+                          src={require("./images/subscription.svg").default}
+                          alt=""
                         />
                       </td>
                       <td>
@@ -547,14 +558,11 @@ const Business = () => {
                         </tr>
                         <tr>
                           <td className="select-td">
-                            <a
-                              href="JavaScript:Void(0);"
-                              className="btn btn-uvs"
-                            >
+                            <button className="btn btn-uvs">
                               Choose Plan &nbsp;&nbsp;
                               <i className="fa fa-angle-right"> </i>
                               <i className="fa fa-angle-right"> </i>
-                            </a>
+                            </button>
                           </td>
                         </tr>
                       </tbody>
@@ -606,14 +614,11 @@ const Business = () => {
                         </tr>
                         <tr>
                           <td className="select-td">
-                            <a
-                              href="JavaScript:Void(0);"
-                              className="btn btn-primary"
-                            >
+                            <button className="btn btn-primary">
                               Choose Plan &nbsp;&nbsp;
                               <i className="fa fa-angle-right"> </i>
                               <i className="fa fa-angle-right"> </i>
-                            </a>
+                            </button>
                           </td>
                         </tr>
                       </tbody>
@@ -676,14 +681,11 @@ const Business = () => {
                         </tr>
                         <tr>
                           <td className="select-td">
-                            <a
-                              href="JavaScript:Void(0);"
-                              className="btn btn-uvs"
-                            >
+                            <button className="btn btn-uvs">
                               Choose Plan &nbsp;&nbsp;
                               <i className="fa fa-angle-right"> </i>
                               <i className="fa fa-angle-right"> </i>
-                            </a>
+                            </button>
                           </td>
                         </tr>
                       </tbody>
@@ -706,7 +708,11 @@ const Business = () => {
               </h2>
             </div>
             <div className="col-md-6">
-              <img src={require("./images/contact.svg").default} width="100%" alt=''/>
+              <img
+                src={require("./images/contact.svg").default}
+                width="100%"
+                alt=""
+              />
             </div>
             <div className="col-md-6">
               <div className="form-uvsl">
@@ -736,7 +742,7 @@ const Business = () => {
               <div className="col-md-4">
                 <h4>
                   <a href="index.html">
-                    <img src={require("./images/logo.svg").default} alt=''/>
+                    <img src={require("./images/logo.svg").default} alt="" />
                   </a>
                 </h4>
                 <p>
@@ -768,16 +774,33 @@ const Business = () => {
               <div className="col-md-4 text-right-uvs">
                 <h4>Always reachable on</h4>
                 <div className="social-links" style={{ marginTop: "20px" }}>
-                  <a href="JavaScript:Void(0);">
-                    <img src={require("./images/linkedin.svg").default}  alt=''/>
-                  </a>
-                  <a href="JavaScript:Void(0);">
+                  <button
+                    style={{
+                      backgroundColor: "transparent",
+                      outlineColor: "transparent",
+                      borderColor: "transparent",
+                      outline: "none",
+                    }}
+                  >
+                    <img
+                      src={require("./images/linkedin.svg").default}
+                      alt=""
+                    />
+                  </button>
+                  <button
+                    style={{
+                      backgroundColor: "transparent",
+                      outlineColor: "transparent",
+                      borderColor: "transparent",
+                      outline: "none",
+                    }}
+                  >
                     <img
                       src={require("./images/gmail.svg").default}
                       style={{ marginLeft: "20px" }}
-                      alt=''
+                      alt=""
                     />
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>

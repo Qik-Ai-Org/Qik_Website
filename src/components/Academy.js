@@ -1,5 +1,6 @@
 import React from "react";
 import "../main-style-academy-business.css";
+import { Link } from "react-router-dom";
 const Academy = () => {
   return (
     <div>
@@ -100,7 +101,7 @@ const Academy = () => {
               <a href="/Business">
                 <img
                   src={require("./images/pc.svg").default}
-				  alt=''
+                  alt=""
                   className="vs-btns"
                 />
               </a>
@@ -133,9 +134,7 @@ const Academy = () => {
                 <br />
                 <br />
                 <small>
-                  <a href="/go/elearning/">
-                    Qik E-Learning App
-                  </a>
+                  <a href="/go/elearning/">Qik E-Learning App</a>
                 </small>
               </p>
             </div>
@@ -144,7 +143,7 @@ const Academy = () => {
               <div className="uvs-line-h" />
               <div className="col-md-3 border-right-uvs border-bottom-uvs">
                 <a href="/Business">
-                  <img src={require("./images/a1.svg").default} alt=''/>
+                  <img src={require("./images/a1.svg").default} alt="" />
                   <h4>CRM</h4>
                   <p>
                     Manage and track all the student inquiries in a single
@@ -156,7 +155,7 @@ const Academy = () => {
               </div>
               <div className="col-md-3 border-right-uvs border-bottom-uvs">
                 <a href="/Business">
-                  <img src={require("./images/a2.svg").default} alt=''/>
+                  <img src={require("./images/a2.svg").default} alt="" />
                   <h4>
                     Attendance <br />
                     Management
@@ -168,7 +167,7 @@ const Academy = () => {
               </div>
               <div className="col-md-3 border-right-uvs border-bottom-uvs">
                 <a href="/Business">
-                  <img src={require("./images/a3.svg").default} alt=''/>
+                  <img src={require("./images/a3.svg").default} alt="" />
                   <h4>Communication</h4>
                   <p>Send custom emails/SMS alerts or make templates.</p> Learn
                   More
@@ -177,7 +176,7 @@ const Academy = () => {
               </div>
               <div className="col-md-3 border-bottom-uvs">
                 <a href="/Business">
-                  <img src={require("./images/a4.svg").default} alt=''/>
+                  <img src={require("./images/a4.svg").default} alt="" />
                   <h4>
                     Expense <br />
                     Tracker
@@ -192,7 +191,7 @@ const Academy = () => {
               </div>
               <div className="col-md-3 border-right-uvs border-bottom-uvs ">
                 <a href="/Business">
-                  <img src={require("./images/a5.svg").default} />
+                  <img src={require("./images/a5.svg").default} alt="" />
                   <h4>
                     Web <br /> Solution
                   </h4>
@@ -201,7 +200,7 @@ const Academy = () => {
               </div>
               <div className="col-md-3 border-right-uvs border-bottom-uvs">
                 <a href="/Business">
-                  <img src={require("./images/a6.svg").default} alt=''/>
+                  <img src={require("./images/a6.svg").default} alt="" />
                   <h4>
                     Task <br />
                     Management
@@ -211,7 +210,7 @@ const Academy = () => {
               </div>
               <div className="col-md-3 border-right-uvs border-bottom-uvs">
                 <a href="/Business">
-                  <img src={require("./images/a7.svg").default} alt=''/>
+                  <img src={require("./images/a7.svg").default} alt="" />
                   <h4>Payroll</h4>
                   <p>
                     Manage &amp; track the salary generation of the employees.
@@ -221,7 +220,7 @@ const Academy = () => {
               </div>
               <div className="col-md-3  border-bottom-uvs">
                 <a href="/Business">
-                  <img src={require("./images/a8.svg").default} alt=''/>
+                  <img src={require("./images/a8.svg").default} alt="" />
                   <h4>
                     Social <br />
                     Media
@@ -236,7 +235,7 @@ const Academy = () => {
                 <a href="/go/elearning/">
                   <img
                     src={require("./images/logo.png").default}
-					alt=''
+                    alt=""
                     style={{ width: "116px" }}
                   />
                   <h4>
@@ -324,7 +323,7 @@ const Academy = () => {
                         <div className="col-md-4">
                           <img
                             src={require("./images/profile.jpg").default}
-							alt=''
+                            alt=""
                             style={{ width: "100%" }}
                           />
                         </div>
@@ -334,7 +333,7 @@ const Academy = () => {
                               src={
                                 require("./images/brain-academy.jpg").default
                               }
-							  alt=''
+                              alt=""
                             />
                           </div>
                           <div className="class-desript">
@@ -362,7 +361,7 @@ const Academy = () => {
                         <div className="col-md-4">
                           <img
                             src={require("./images/profile.jpg").default}
-							alt=''
+                            alt=""
                             style={{ width: "100%" }}
                           />
                         </div>
@@ -372,7 +371,7 @@ const Academy = () => {
                               src={
                                 require("./images/brain-academy.jpg").default
                               }
-							  alt=''
+                              alt=""
                             />
                           </div>
                           <div className="class-desript">
@@ -400,7 +399,7 @@ const Academy = () => {
                         <div className="col-md-4">
                           <img
                             src={require("./images/profile.jpg").default}
-							alt=''
+                            alt=""
                             style={{ width: "100%" }}
                           />
                         </div>
@@ -410,7 +409,7 @@ const Academy = () => {
                               src={
                                 require("./images/brain-academy.jpg").default
                               }
-							  alt=''
+                              alt=""
                             />
                           </div>
                           <div className="class-desript">
@@ -438,7 +437,7 @@ const Academy = () => {
                         <div className="col-md-4">
                           <img
                             src={require("./images/profile.jpg").default}
-							alt=''
+                            alt=""
                             style={{ width: "100%" }}
                           />
                         </div>
@@ -448,7 +447,7 @@ const Academy = () => {
                               src={
                                 require("./images/brain-academy.jpg").default
                               }
-							  alt=''
+                              alt=""
                             />
                           </div>
                           <div className="class-desript">
@@ -551,14 +550,11 @@ const Academy = () => {
                         </tr>
                         <tr>
                           <td className="select-td">
-                            <a
-                              href="JavaScript:Void(0);"
-                              className="btn btn-uvs"
-                            >
+                            <button className="btn btn-uvs">
                               Choose Plan &nbsp;&nbsp;
                               <i className="fa fa-angle-right"> </i>
                               <i className="fa fa-angle-right"> </i>
-                            </a>
+                            </button>
                           </td>
                         </tr>
                       </tbody>
@@ -610,14 +606,11 @@ const Academy = () => {
                         </tr>
                         <tr>
                           <td className="select-td">
-                            <a
-                              href="JavaScript:Void(0);"
-                              className="btn btn-primary"
-                            >
+                            <button className="btn btn-primary">
                               Choose Plan &nbsp;&nbsp;
                               <i className="fa fa-angle-right"> </i>
                               <i className="fa fa-angle-right"> </i>
-                            </a>
+                            </button>
                           </td>
                         </tr>
                       </tbody>
@@ -680,14 +673,11 @@ const Academy = () => {
                         </tr>
                         <tr>
                           <td className="select-td">
-                            <a
-                              href="JavaScript:Void(0);"
-                              className="btn btn-uvs"
-                            >
+                            <button className="btn btn-uvs">
                               Choose Plan &nbsp;&nbsp;
                               <i className="fa fa-angle-right"> </i>
                               <i className="fa fa-angle-right"> </i>
-                            </a>
+                            </button>
                           </td>
                         </tr>
                       </tbody>
@@ -710,7 +700,11 @@ const Academy = () => {
               </h2>
             </div>
             <div className="col-md-6">
-              <img src={require("./images/contact.svg").default} width="100%" alt=""/>
+              <img
+                src={require("./images/contact.svg").default}
+                width="100%"
+                alt=""
+              />
             </div>
             <div className="col-md-6">
               <div className="form-uvsl">
@@ -740,9 +734,9 @@ const Academy = () => {
             <div className="row">
               <div className="col-md-4">
                 <h4>
-                  <a href="http://gbmurarkacollege.com/qik/1/">
-                    <img src={require("./images/logo.svg").default} alt=''/>
-                  </a>
+                  <Link to="/">
+                    <img src={require("./images/logo.svg").default} alt="" />
+                  </Link>
                 </h4>
                 <p>
                   Supercharge your business with 50+ integrated business
@@ -773,16 +767,33 @@ const Academy = () => {
               <div className="col-md-4 text-right-uvs">
                 <h4>Always reachable on</h4>
                 <div className="social-links" style={{ marginTop: "20px" }}>
-                  <a href="JavaScript:Void(0);">
-                    <img src={require("./images/linkedin.svg").default} alt=''/>
-                  </a>
-                  <a href="JavaScript:Void(0);">
+                  <button
+                    style={{
+                      backgroundColor: "transparent",
+                      outlineColor: "transparent",
+                      borderColor: "transparent",
+                      outline: "none",
+                    }}
+                  >
+                    <img
+                      src={require("./images/linkedin.svg").default}
+                      alt=""
+                    />
+                  </button>
+                  <button
+                    style={{
+                      backgroundColor: "transparent",
+                      outlineColor: "transparent",
+                      borderColor: "transparent",
+                      outline: "none",
+                    }}
+                  >
                     <img
                       src={require("./images/gmail.svg").default}
-					  alt=''
+                      alt=""
                       style={{ marginLeft: "20px" }}
                     />
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>

@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../main-style.css";
 const Home = () => {
   return (
@@ -44,7 +44,15 @@ const Home = () => {
                       <div className="col-md-12" id="products">
                         <div className="row">
                           <div className="col-md-3 col-sm-6 col-6">
-                            <a id="hidevs-edu">
+                            <button
+                              style={{
+                                backgroundColor: "transparent",
+                                borderColor: "transparent",
+                                outlineColor: "transparent",
+                                outline: "none",
+                              }}
+                              id="hidevs-edu"
+                            >
                               <div className="feature-item">
                                 <img
                                   src={require("./images/1.svg").default}
@@ -53,10 +61,18 @@ const Home = () => {
                                 <br />
                                 Education
                               </div>
-                            </a>
+                            </button>
                           </div>
                           <div className="col-md-3 col-sm-6 col-6">
-                            <a id="hidevs">
+                            <button
+                              style={{
+                                backgroundColor: "transparent",
+                                borderColor: "transparent",
+                                outlineColor: "transparent",
+                                outline: "none",
+                              }}
+                              id="hidevs"
+                            >
                               <div className="feature-item">
                                 <img
                                   src={require("./images/2.svg").default}
@@ -65,10 +81,18 @@ const Home = () => {
                                 <br />
                                 Health care
                               </div>
-                            </a>
+                            </button>
                           </div>
                           <div className="col-md-3 col-sm-6 col-6">
-                            <a id="hidevs-retail">
+                            <button
+                              style={{
+                                backgroundColor: "transparent",
+                                borderColor: "transparent",
+                                outlineColor: "transparent",
+                                outline: "none",
+                              }}
+                              id="hidevs-retail"
+                            >
                               <div className="feature-item">
                                 <img
                                   src={require("./images/3.svg").default}
@@ -77,10 +101,18 @@ const Home = () => {
                                 <br />
                                 Retail
                               </div>
-                            </a>
+                            </button>
                           </div>
                           <div className="col-md-3 col-sm-6 col-6">
-                            <a id="hidevs-hr">
+                            <button
+                              style={{
+                                backgroundColor: "transparent",
+                                borderColor: "transparent",
+                                outlineColor: "transparent",
+                                outline: "none",
+                              }}
+                              id="hidevs-hr"
+                            >
                               <div className="feature-item">
                                 <img
                                   src={require("./images/4.svg").default}
@@ -89,16 +121,21 @@ const Home = () => {
                                 <br />
                                 HR
                               </div>
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div id="sub-edu-section" style={{ display: "none" }}>
                       <h5 style={{ marginBottom: "30px" }}>
-                        <a
-                          href="JavaScript:Void(0);"
-                          style={{ float: "left" }}
+                        <button
+                          style={{
+                            float: "left",
+                            backgroundColor: "transparent",
+                            borderColor: "transparent",
+                            outlineColor: "transparent",
+                            outline: "none",
+                          }}
                           id="showvs-edu"
                         >
                           <i className="fa fa-angle-left"> </i>
@@ -112,13 +149,13 @@ const Home = () => {
                           >
                             Back
                           </span>
-                        </a>
+                        </button>
                         Education sector
                       </h5>
                       <div className="col-md-12" id="products">
                         <div className="row" style={{ marginBottom: "60px" }}>
                           <div className="col-md-4 col-sm-6 col-6">
-                            <a href="/Academy">
+                            <Link to="Academy">
                               <div className="feature-item">
                                 <img
                                   src={require("./images/e3.svg").default}
@@ -127,10 +164,10 @@ const Home = () => {
                                 <br />
                                 Coaching
                               </div>
-                            </a>
+                            </Link>
                           </div>
                           <div className="col-md-4 col-sm-6 col-6">
-                            <a href="/Academy">
+                            <Link to="Academy">
                               <div className="feature-item">
                                 <img
                                   src={require("./images/e2.svg").default}
@@ -139,10 +176,10 @@ const Home = () => {
                                 <br />
                                 University / College
                               </div>
-                            </a>
+                            </Link>
                           </div>
                           <div className="col-md-4 col-sm-6 col-6">
-                            <a href="/Academy">
+                            <Link to="/Academy">
                               <div className="feature-item">
                                 <img
                                   src={require("./images/e1.svg").default}
@@ -151,10 +188,10 @@ const Home = () => {
                                 <br />
                                 Schools
                               </div>
-                            </a>
+                            </Link>
                           </div>
                           <div className="col-md-4 col-sm-6 col-6">
-                            <a href="/Academy">
+                            <Link to="/Academy">
                               <div className="feature-item">
                                 <img
                                   src={require("./images/e4.svg").default}
@@ -163,10 +200,10 @@ const Home = () => {
                                 <br />
                                 Play Schools
                               </div>
-                            </a>
+                            </Link>
                           </div>
                           <div className="col-md-4 col-sm-6 col-6">
-                            <a href="/Academy">
+                            <Link to="/Academy">
                               <div className="feature-item">
                                 <img
                                   src={require("./images/e5.svg").default}
@@ -175,10 +212,10 @@ const Home = () => {
                                 <br />
                                 Libraries
                               </div>
-                            </a>
+                            </Link>
                           </div>
                           <div className="col-md-4 col-sm-6 col-6">
-                            <a href="/Academy">
+                            <Link to="/Academy">
                               <div className="feature-item">
                                 <img
                                   src={require("./images/e6.svg").default}
@@ -187,16 +224,21 @@ const Home = () => {
                                 <br />
                                 Home Tutors
                               </div>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div id="sub-section" style={{ display: "none" }}>
                       <h5 style={{ marginBottom: "30px" }}>
-                        <a
-                          href="JavaScript:Void(0);"
-                          style={{ float: "left" }}
+                        <button
+                          style={{
+                            float: "left",
+                            backgroundColor: "transparent",
+                            borderColor: "transparent",
+                            outlineColor: "transparent",
+                            outline: "none",
+                          }}
                           id="showvs"
                         >
                           <i className="fa fa-angle-left"> </i>
@@ -210,7 +252,7 @@ const Home = () => {
                           >
                             Back
                           </span>
-                        </a>
+                        </button>
                         Heath Care Sector
                       </h5>
                       <div className="col-md-12" id="products">
@@ -230,9 +272,14 @@ const Home = () => {
                     </div>
                     <div id="sub-section-retail" style={{ display: "none" }}>
                       <h5 style={{ marginBottom: "30px" }}>
-                        <a
-                          href="JavaScript:Void(0);"
-                          style={{ float: "left" }}
+                        <button
+                          style={{
+                            float: "left",
+                            backgroundColor: "transparent",
+                            borderColor: "transparent",
+                            outlineColor: "transparent",
+                            outline: "none",
+                          }}
                           id="showvs-retail"
                         >
                           <i className="fa fa-angle-left"> </i>
@@ -246,7 +293,7 @@ const Home = () => {
                           >
                             Back
                           </span>
-                        </a>
+                        </button>
                         Retail Sector
                       </h5>
                       <div className="col-md-12" id="products">
@@ -266,9 +313,14 @@ const Home = () => {
                     </div>
                     <div id="sub-section-hr" style={{ display: "none" }}>
                       <h5 style={{ marginBottom: "30px" }}>
-                        <a
-                          href="JavaScript:Void(0);"
-                          style={{ float: "left" }}
+                        <button
+                          style={{
+                            float: "left",
+                            backgroundColor: "transparent",
+                            borderColor: "transparent",
+                            outlineColor: "transparent",
+                            outline: "none",
+                          }}
                           id="showvs-hr"
                         >
                           <i className="fa fa-angle-left"> </i>
@@ -282,7 +334,7 @@ const Home = () => {
                           >
                             Back
                           </span>
-                        </a>
+                        </button>
                         HR Sector
                       </h5>
                       <div className="col-md-12" id="products">
@@ -305,7 +357,11 @@ const Home = () => {
               </div>
             </div>
             <div className="col-md-5 animated animatedFadeInUp fadeInUp suvs-imgs">
-              <img src={require("./images/intro.svg").default} width="100%"alt=''/>
+              <img
+                src={require("./images/intro.svg").default}
+                width="100%"
+                alt=""
+              />
               <br />
             </div>
           </div>
@@ -325,7 +381,7 @@ const Home = () => {
               <div className="col-md-4">
                 <h4>
                   <a href="/">
-                    <img src={require("./images/logo.svg").default} alt=''/>
+                    <img src={require("./images/logo.svg").default} alt="" />
                   </a>
                 </h4>
                 <p>
@@ -357,16 +413,33 @@ const Home = () => {
               <div className="col-md-4 text-right-uvs">
                 <h4>Always reachable on</h4>
                 <div className="social-links" style={{ marginTop: "20px" }}>
-                  <a href="JavaScript:Void(0);">
-                    <img src={require("./images/linkedin.svg").default} alt=''/>
-                  </a>
-                  <a href="JavaScript:Void(0);">
+                  <button
+                    style={{
+                      backgroundColor: "transparent",
+                      borderColor: "transparent",
+                      outlineColor: "transparent",
+                      outline: "none",
+                    }}
+                  >
+                    <img
+                      src={require("./images/linkedin.svg").default}
+                      alt=""
+                    />
+                  </button>
+                  <button
+                    style={{
+                      backgroundColor: "transparent",
+                      borderColor: "transparent",
+                      outlineColor: "transparent",
+                      outline: "none",
+                    }}
+                  >
                     <img
                       src={require("./images/gmail.svg").default}
-                      alt=''
+                      alt=""
                       style={{ marginLeft: "20px" }}
                     />
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
