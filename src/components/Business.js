@@ -16,7 +16,7 @@ const Business = () => {
               </a>
             </div>
             <div className="col-md-6 col-3">
-              <nav className="nav-menu d-none d-lg-block float-right">
+              {/* <nav className="nav-menu d-none d-lg-block float-right">
                 <ul>
                   <li>
                     <a href="#qik-intro">Home</a>
@@ -31,7 +31,7 @@ const Business = () => {
                     <a href="#contact-us">Contact Us</a>
                   </li>
                 </ul>
-              </nav>
+              </nav> */}
             </div>
             <div className="col-md-3 col-sm-6 col-6 text-right">
               <div className="us-contact">

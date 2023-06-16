@@ -17,7 +17,7 @@ const Academy = () => {
               </a>
             </div>
             <div className="col-md-7 col-4">
-              <nav className="nav-menu d-none d-lg-block float-right">
+              {/* <nav className="nav-menu d-none d-lg-block float-right">
                 <ul>
                   <li>
                     <a href="#qik-intro">Home</a>
@@ -36,7 +36,7 @@ const Academy = () => {
                     <a href="#contact-us">Contact Us</a>
                   </li>
                 </ul>
-              </nav>
+              </nav> */}
             </div>
             <div className="col-md-3 col-sm-6 col-6 text-right">
               <div className="us-contact">
