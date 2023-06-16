@@ -8,7 +8,7 @@ const Navigation = () => {
         <li className="nav-item" style={{ height: "50px" }}></li>
         <li>
           <Link to="/">
-            <span> Home</span>{" "}
+            <span> Home</span>
           </Link>
         </li>
         <li>

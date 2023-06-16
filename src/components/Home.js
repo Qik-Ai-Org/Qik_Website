@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../main-style.css";
 const Home = () => {
+  const [showEducation, setShowEducation] = useState("mainSection");
   return (
     <div>
       <header id="header">
@@ -38,320 +39,341 @@ const Home = () => {
               <div className="row">
                 <div className="col-md-12">
                   <div>
-                    <div id="main-section">
-                      <br />
-                      <h5>Select your business industry</h5>
-                      <div className="col-md-12" id="products">
-                        <div className="row">
-                          <div className="col-md-3 col-sm-6 col-6">
-                            <button
-                              style={{
-                                backgroundColor: "transparent",
-                                borderColor: "transparent",
-                                outlineColor: "transparent",
-                                outline: "none",
-                              }}
-                              id="hidevs-edu"
-                            >
-                              <div className="feature-item">
-                                <img
-                                  src={require("./images/1.svg").default}
-                                  alt=""
-                                />
-                                <br />
-                                Education
-                              </div>
-                            </button>
-                          </div>
-                          <div className="col-md-3 col-sm-6 col-6">
-                            <button
-                              style={{
-                                backgroundColor: "transparent",
-                                borderColor: "transparent",
-                                outlineColor: "transparent",
-                                outline: "none",
-                              }}
-                              id="hidevs"
-                            >
-                              <div className="feature-item">
-                                <img
-                                  src={require("./images/2.svg").default}
-                                  alt=""
-                                />
-                                <br />
-                                Health care
-                              </div>
-                            </button>
-                          </div>
-                          <div className="col-md-3 col-sm-6 col-6">
-                            <button
-                              style={{
-                                backgroundColor: "transparent",
-                                borderColor: "transparent",
-                                outlineColor: "transparent",
-                                outline: "none",
-                              }}
-                              id="hidevs-retail"
-                            >
-                              <div className="feature-item">
-                                <img
-                                  src={require("./images/3.svg").default}
-                                  alt=""
-                                />
-                                <br />
-                                Retail
-                              </div>
-                            </button>
-                          </div>
-                          <div className="col-md-3 col-sm-6 col-6">
-                            <button
-                              style={{
-                                backgroundColor: "transparent",
-                                borderColor: "transparent",
-                                outlineColor: "transparent",
-                                outline: "none",
-                              }}
-                              id="hidevs-hr"
-                            >
-                              <div className="feature-item">
-                                <img
-                                  src={require("./images/4.svg").default}
-                                  alt=""
-                                />
-                                <br />
-                                HR
-                              </div>
-                            </button>
+                    {showEducation === "mainSection" && (
+                      <div id="main-section">
+                        <br />
+                        <h5>Select your business industry</h5>
+                        <div className="col-md-12" id="products">
+                          <div className="row">
+                            <div className="col-md-3 col-sm-6 col-6">
+                              <button
+                                style={{
+                                  backgroundColor: "transparent",
+                                  borderColor: "transparent",
+                                  outlineColor: "transparent",
+                                  outline: "none",
+                                  animationDuration: "10s",
+                                  WebkitAnimationDuration: "10s",
+                                }}
+                                // id="hidevs-edu"
+                                onClick={() => setShowEducation("education")}
+                              >
+                                <div className="feature-item">
+                                  <img
+                                    src={require("./images/1.svg").default}
+                                    alt=""
+                                  />
+                                  <br />
+                                  Education
+                                </div>
+                              </button>
+                            </div>
+                            <div className="col-md-3 col-sm-6 col-6">
+                              <button
+                                style={{
+                                  backgroundColor: "transparent",
+                                  borderColor: "transparent",
+                                  outlineColor: "transparent",
+                                  outline: "none",
+                                }}
+                                // id="hidevs"
+                                onClick={() => setShowEducation("healthCare")}
+                              >
+                                <div className="feature-item">
+                                  <img
+                                    src={require("./images/2.svg").default}
+                                    alt=""
+                                  />
+                                  <br />
+                                  Health care
+                                </div>
+                              </button>
+                            </div>
+                            <div className="col-md-3 col-sm-6 col-6">
+                              <button
+                                style={{
+                                  backgroundColor: "transparent",
+                                  borderColor: "transparent",
+                                  outlineColor: "transparent",
+                                  outline: "none",
+                                }}
+                                // id="hidevs-retail"
+                                onClick={() => setShowEducation("retail")}
+                              >
+                                <div className="feature-item">
+                                  <img
+                                    src={require("./images/3.svg").default}
+                                    alt=""
+                                  />
+                                  <br />
+                                  Retail
+                                </div>
+                              </button>
+                            </div>
+                            <div className="col-md-3 col-sm-6 col-6">
+                              <button
+                                style={{
+                                  backgroundColor: "transparent",
+                                  borderColor: "transparent",
+                                  outlineColor: "transparent",
+                                  outline: "none",
+                                }}
+                                onClick={() => setShowEducation("hr")}
+                                // id="hidevs-hr"
+                              >
+                                <div className="feature-item">
+                                  <img
+                                    src={require("./images/4.svg").default}
+                                    alt=""
+                                  />
+                                  <br />
+                                  HR
+                                </div>
+                              </button>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div id="sub-edu-section" style={{ display: "none" }}>
-                      <h5 style={{ marginBottom: "30px" }}>
-                        <button
-                          style={{
-                            float: "left",
-                            backgroundColor: "transparent",
-                            borderColor: "transparent",
-                            outlineColor: "transparent",
-                            outline: "none",
-                          }}
-                          id="showvs-edu"
-                        >
-                          <i className="fa fa-angle-left"> </i>
-                          <span
+                    )}
+                    {showEducation === "education" && (
+                      <div id="sub-edu-section">
+                        <h5 style={{ marginBottom: "30px" }}>
+                          <button
                             style={{
-                              fontSize: "14px",
-                              color: "#000",
-                              fontWeight: "normal",
-                              marginRight: "40px",
+                              float: "left",
+                              backgroundColor: "transparent",
+                              borderColor: "transparent",
+                              outlineColor: "transparent",
+                              outline: "none",
                             }}
+                            onClick={() => setShowEducation("mainSection")}
+                            id="showvs-edu"
                           >
-                            Back
-                          </span>
-                        </button>
-                        Education sector
-                      </h5>
-                      <div className="col-md-12" id="products">
-                        <div className="row" style={{ marginBottom: "60px" }}>
-                          <div className="col-md-4 col-sm-6 col-6">
-                            <Link to="Academy">
-                              <div className="feature-item">
-                                <img
-                                  src={require("./images/e3.svg").default}
-                                  alt=""
-                                />
-                                <br />
-                                Coaching
-                              </div>
-                            </Link>
-                          </div>
-                          <div className="col-md-4 col-sm-6 col-6">
-                            <Link to="Academy">
-                              <div className="feature-item">
-                                <img
-                                  src={require("./images/e2.svg").default}
-                                  alt=""
-                                />
-                                <br />
-                                University / College
-                              </div>
-                            </Link>
-                          </div>
-                          <div className="col-md-4 col-sm-6 col-6">
-                            <Link to="/Academy">
-                              <div className="feature-item">
-                                <img
-                                  src={require("./images/e1.svg").default}
-                                  alt=""
-                                />
-                                <br />
-                                Schools
-                              </div>
-                            </Link>
-                          </div>
-                          <div className="col-md-4 col-sm-6 col-6">
-                            <Link to="/Academy">
-                              <div className="feature-item">
-                                <img
-                                  src={require("./images/e4.svg").default}
-                                  alt=""
-                                />
-                                <br />
-                                Play Schools
-                              </div>
-                            </Link>
-                          </div>
-                          <div className="col-md-4 col-sm-6 col-6">
-                            <Link to="/Academy">
-                              <div className="feature-item">
-                                <img
-                                  src={require("./images/e5.svg").default}
-                                  alt=""
-                                />
-                                <br />
-                                Libraries
-                              </div>
-                            </Link>
-                          </div>
-                          <div className="col-md-4 col-sm-6 col-6">
-                            <Link to="/Academy">
-                              <div className="feature-item">
-                                <img
-                                  src={require("./images/e6.svg").default}
-                                  alt=""
-                                />
-                                <br />
-                                Home Tutors
-                              </div>
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div id="sub-section" style={{ display: "none" }}>
-                      <h5 style={{ marginBottom: "30px" }}>
-                        <button
-                          style={{
-                            float: "left",
-                            backgroundColor: "transparent",
-                            borderColor: "transparent",
-                            outlineColor: "transparent",
-                            outline: "none",
-                          }}
-                          id="showvs"
-                        >
-                          <i className="fa fa-angle-left"> </i>
-                          <span
-                            style={{
-                              fontSize: "14px",
-                              color: "#000",
-                              fontWeight: "normal",
-                              marginRight: "40px",
-                            }}
-                          >
-                            Back
-                          </span>
-                        </button>
-                        Heath Care Sector
-                      </h5>
-                      <div className="col-md-12" id="products">
-                        <div className="row">
-                          <div className="col-md-12">
-                            <h1
-                              style={{ color: "#00abf6", fontWeight: "bold" }}
+                            <i className="fa fa-angle-left"> </i>
+                            <span
+                              style={{
+                                fontSize: "14px",
+                                color: "#000",
+                                fontWeight: "normal",
+                                marginRight: "40px",
+                              }}
                             >
-                              Coming Soon...
-                            </h1>
+                              Back
+                            </span>
+                          </button>
+                          Education sector
+                        </h5>
+                        <div className="col-md-12" id="products">
+                          <div className="row" style={{ marginBottom: "60px" }}>
+                            <div className="col-md-4 col-sm-6 col-6">
+                              <Link to="Academy">
+                                <div className="feature-item">
+                                  <img
+                                    src={require("./images/e3.svg").default}
+                                    alt=""
+                                  />
+                                  <br />
+                                  Coaching
+                                </div>
+                              </Link>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-6">
+                              <Link to="Academy">
+                                <div className="feature-item">
+                                  <img
+                                    src={require("./images/e2.svg").default}
+                                    alt=""
+                                  />
+                                  <br />
+                                  University / College
+                                </div>
+                              </Link>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-6">
+                              <Link to="/Academy">
+                                <div className="feature-item">
+                                  <img
+                                    src={require("./images/e1.svg").default}
+                                    alt=""
+                                  />
+                                  <br />
+                                  Schools
+                                </div>
+                              </Link>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-6">
+                              <Link to="/Academy">
+                                <div className="feature-item">
+                                  <img
+                                    src={require("./images/e4.svg").default}
+                                    alt=""
+                                  />
+                                  <br />
+                                  Play Schools
+                                </div>
+                              </Link>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-6">
+                              <Link to="/Academy">
+                                <div className="feature-item">
+                                  <img
+                                    src={require("./images/e5.svg").default}
+                                    alt=""
+                                  />
+                                  <br />
+                                  Libraries
+                                </div>
+                              </Link>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-6">
+                              <Link to="/Academy">
+                                <div className="feature-item">
+                                  <img
+                                    src={require("./images/e6.svg").default}
+                                    alt=""
+                                  />
+                                  <br />
+                                  Home Tutors
+                                </div>
+                              </Link>
+                            </div>
                           </div>
-                          <div className="col-md-4 col-sm-4 col-4"> </div>
-                          <div className="col-md-4 col-sm-4 col-4"> </div>
-                          <div className="col-md-4 col-sm-4 col-4"> </div>
                         </div>
                       </div>
-                    </div>
-                    <div id="sub-section-retail" style={{ display: "none" }}>
-                      <h5 style={{ marginBottom: "30px" }}>
-                        <button
-                          style={{
-                            float: "left",
-                            backgroundColor: "transparent",
-                            borderColor: "transparent",
-                            outlineColor: "transparent",
-                            outline: "none",
-                          }}
-                          id="showvs-retail"
-                        >
-                          <i className="fa fa-angle-left"> </i>
-                          <span
+                    )}
+                    {showEducation === "healthCare" && (
+                      <div id="sub-section">
+                        <h5 style={{ marginBottom: "30px" }}>
+                          <button
                             style={{
-                              fontSize: "14px",
-                              color: "#000",
-                              fontWeight: "normal",
-                              marginRight: "40px",
+                              float: "left",
+                              backgroundColor: "transparent",
+                              borderColor: "transparent",
+                              outlineColor: "transparent",
+                              outline: "none",
                             }}
+                            onClick={() => setShowEducation("mainSection")}
+
+                            // id="showvs"
                           >
-                            Back
-                          </span>
-                        </button>
-                        Retail Sector
-                      </h5>
-                      <div className="col-md-12" id="products">
-                        <div className="row">
-                          <div className="col-md-12">
-                            <h1
-                              style={{ color: "#00abf6", fontWeight: "bold" }}
+                            <i className="fa fa-angle-left"> </i>
+                            <span
+                              style={{
+                                fontSize: "14px",
+                                color: "#000",
+                                fontWeight: "normal",
+                                marginRight: "40px",
+                              }}
                             >
-                              Coming Soon...
-                            </h1>
+                              Back
+                            </span>
+                          </button>
+                          Heath Care Sector
+                        </h5>
+                        <div className="col-md-12" id="products">
+                          <div className="row">
+                            <div className="col-md-12">
+                              <h1
+                                style={{ color: "#00abf6", fontWeight: "bold" }}
+                              >
+                                Coming Soon...
+                              </h1>
+                            </div>
+                            <div className="col-md-4 col-sm-4 col-4"> </div>
+                            <div className="col-md-4 col-sm-4 col-4"> </div>
+                            <div className="col-md-4 col-sm-4 col-4"> </div>
                           </div>
-                          <div className="col-md-4 col-sm-4 col-4"> </div>
-                          <div className="col-md-4 col-sm-4 col-4"> </div>
-                          <div className="col-md-4 col-sm-4 col-4"> </div>
                         </div>
                       </div>
-                    </div>
-                    <div id="sub-section-hr" style={{ display: "none" }}>
-                      <h5 style={{ marginBottom: "30px" }}>
-                        <button
-                          style={{
-                            float: "left",
-                            backgroundColor: "transparent",
-                            borderColor: "transparent",
-                            outlineColor: "transparent",
-                            outline: "none",
-                          }}
-                          id="showvs-hr"
-                        >
-                          <i className="fa fa-angle-left"> </i>
-                          <span
+                    )}
+                    {showEducation === "retail" && (
+                      <div id="sub-section-retail">
+                        <h5 style={{ marginBottom: "30px" }}>
+                          <button
                             style={{
-                              fontSize: "14px",
-                              color: "#000",
-                              fontWeight: "normal",
-                              marginRight: "40px",
+                              float: "left",
+                              backgroundColor: "transparent",
+                              borderColor: "transparent",
+                              outlineColor: "transparent",
+                              outline: "none",
                             }}
+                            // id="showvs-retail"
+                            onClick={() => setShowEducation("mainSection")}
                           >
-                            Back
-                          </span>
-                        </button>
-                        HR Sector
-                      </h5>
-                      <div className="col-md-12" id="products">
-                        <div className="row">
-                          <div className="col-md-12">
-                            <h1
-                              style={{ color: "#00abf6", fontWeight: "bold" }}
+                            <i className="fa fa-angle-left"> </i>
+                            <span
+                              style={{
+                                fontSize: "14px",
+                                color: "#000",
+                                fontWeight: "normal",
+                                marginRight: "40px",
+                              }}
                             >
-                              Coming Soon...
-                            </h1>
+                              Back
+                            </span>
+                          </button>
+                          Retail Sector
+                        </h5>
+                        <div className="col-md-12" id="products">
+                          <div className="row">
+                            <div className="col-md-12">
+                              <h1
+                                style={{ color: "#00abf6", fontWeight: "bold" }}
+                              >
+                                Coming Soon...
+                              </h1>
+                            </div>
+                            <div className="col-md-4 col-sm-4 col-4"> </div>
+                            <div className="col-md-4 col-sm-4 col-4"> </div>
+                            <div className="col-md-4 col-sm-4 col-4"> </div>
                           </div>
-                          <div className="col-md-4 col-sm-4 col-4"> </div>
-                          <div className="col-md-4 col-sm-4 col-4"> </div>
-                          <div className="col-md-4 col-sm-4 col-4"> </div>
                         </div>
                       </div>
-                    </div>
+                    )}
+                    {showEducation === "hr" && (
+                      <div id="sub-section-hr">
+                        <h5 style={{ marginBottom: "30px" }}>
+                          <button
+                            style={{
+                              float: "left",
+                              backgroundColor: "transparent",
+                              borderColor: "transparent",
+                              outlineColor: "transparent",
+                              outline: "none",
+                            }}
+                            // id="showvs-hr"
+                            onClick={() => setShowEducation("mainSection")}
+                          >
+                            <i className="fa fa-angle-left"> </i>
+                            <span
+                              style={{
+                                fontSize: "14px",
+                                color: "#000",
+                                fontWeight: "normal",
+                                marginRight: "40px",
+                              }}
+                            >
+                              Back
+                            </span>
+                          </button>
+                          HR Sector
+                        </h5>
+                        <div className="col-md-12" id="products">
+                          <div className="row">
+                            <div className="col-md-12">
+                              <h1
+                                style={{ color: "#00abf6", fontWeight: "bold" }}
+                              >
+                                Coming Soon...
+                              </h1>
+                            </div>
+                            <div className="col-md-4 col-sm-4 col-4"> </div>
+                            <div className="col-md-4 col-sm-4 col-4"> </div>
+                            <div className="col-md-4 col-sm-4 col-4"> </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
