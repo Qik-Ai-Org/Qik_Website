@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../main-style-academy-business.css";
 import { Link } from "react-router-dom";
 const Academy = () => {
+  const ref = useRef([]);
+  const handleClick = (idx, name) => {
+    // console.log("ref.current[idx || 1] ", ref.current);
+    ref.current[idx || 1].scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div>
       <header id="header">
@@ -17,26 +22,41 @@ const Academy = () => {
               </a>
             </div>
             <div className="col-md-7 col-4">
-              {/* <nav className="nav-menu d-none d-lg-block float-right">
+              <div className=" nav-menu d-none d-lg-block float-right" style={{ padding: 4 }}>
+                {/* <nav className="nav-menu d-none d-lg-block float-right"> */}
                 <ul>
                   <li>
-                    <a href="#qik-intro">Home</a>
+                    <div onClick={() => handleClick(1, "qik-intro")}>Home</div>
+                    {/* <a href="#qik-intro">Home</a> */}
                   </li>
+                  <li>
+                    <div onClick={() => handleClick(2, "qik-products")}>
+                      Products
+                    </div>
+                    {/* <a href="#qik-products">Products</a> */}
+                  </li>
+                  <li>
+                    <div onClick={() => handleClick(3, "customer")}>
+                      Our Customers
+                    </div>
+                    {/* <a href="#customer">Our Customers</a> */}
+                  </li>
+                  <li>
+                    <div onClick={() => handleClick(4, "qik-pricing")}>
+                      Pricing
+                    </div>
 
-                  <li>
-                    <a href="#qik-products">Products</a>
+                    {/* <a href="#qik-pricing">Pricing</a> */}
                   </li>
                   <li>
-                    <a href="#customer">Our Customers</a>
-                  </li>
-                  <li>
-                    <a href="#qik-pricing">Pricing</a>
-                  </li>
-                  <li>
-                    <a href="#contact-us">Contact Us</a>
+                    <div onClick={() => handleClick(5, "contact-us")}>
+                      Contact Us
+                    </div>
+                    {/* <a href="#contact-us">Contact Us</a> */}
                   </li>
                 </ul>
-              </nav> */}
+                {/* </nav> */}
+              </div>
             </div>
             <div className="col-md-3 col-sm-6 col-6 text-right">
               <div className="us-contact">
@@ -48,7 +68,11 @@ const Academy = () => {
           </div>
         </div>
       </header>
-      <section id="qik-intro" className="qik-intro">
+      <section
+        ref={(el) => (ref.current[1] = el)}
+        id="qik-intro"
+        className="qik-intro"
+      >
         <div className="container">
           <div className="row">
             <div className="col-md-5 introtext">
@@ -65,13 +89,14 @@ const Academy = () => {
                 stakeholders - students, parents, teachers and
                 <br /> management on a signle platform.
               </p>
-              <a
-                href="#qik-products"
+              <button
+                onClick={() => handleClick(2, "qik-products")}
+                // href="#qik-products"
                 className="btn btn-primary btn-lg"
                 style={{ marginBottom: "40px", borderRadius: "4px" }}
               >
                 Get Business App
-              </a>
+              </button>
             </div>
             <div className="col-md-7">
               <img
@@ -94,26 +119,30 @@ const Academy = () => {
             '   \n    .boxus { \n        align-self: flex-end;\n        animation-duration: 2s;\n        animation-iteration-count: infinite;\n        margin: 0 auto 0 auto;\n        transform-origin: bottom;\n    }\n    .bounce-1us {\n        animation-name: bounce-1us;\n        animation-timing-function: linear;\n    }\n    @keyframes bounce-1us {\n        0%   { transform: translateY(0); }\n        50%  { transform: translateY(-20px); }\n        100% { transform: translateY(0); }\n    }\n\t\n    .section-line-border {\n        position: relative;\n        overflow: hidden;\n        height: 4px;\n        width: 120px;\n        border:none;\n        background:#00abf6;\n        margin:15px 0;\n    }\n    .section-line-border::before {\n        content: "";\n        position: absolute;\n        top: 0;\n        left: 0;\n        height: 4px;\n        width: 60px;\n        background:#00abf6;\n    } .section-line-border1 {\n        position: relative;\n        overflow: hidden;\n        height: 4px;\n        width: 120px;\n        border:none;\n        background:#00abf6;\n        margin:15px auto;\n    }\n    .section-line-border1::before {\n        content: "";\n        position: absolute;\n        top: 0;\n        left: 0;\n        height: 4px;\n        width: 60px;\n        background:#00abf6;\n    }\n  .us-contact {\n    font-size: 14px;\n    line-height: 28px;color: #001e4b;\n}.btn-primary{border-radius: 4px;}.uvs-line{\n    height: 78%;\n    position: absolute;\n    width: 1px;\n    background: #ccc;\n    margin-top: -120px;margin-left:20px;\n}.uvs-line-h{\n   width:35%;\n    position: absolute;\n   height: 1px;\n    background: #ccc; margin-left:20px;\n} \n.container, .container-lg, .container-md, .container-sm, .container-xl {\n    max-width: 96%;\n}\n.border-left-uvs{border-left:1px solid #ccc;} \n.border-right-uvs{border-right:1px solid #ccc;} \n.border-bottom-uvs{border-bottom:1px solid #ccc;}\n.border-bottom-uvs:hover{ border-bottom:4px solid #ffc107;}  \n.container-text-center {\n    text-align: center;\n}.vs-btns{margin-top:45%;}\n.mshow{display:none;} .text-center-uvs{text-align:center;}.text-right-uvs{text-align:right;}\n@media (max-width:780px) { .text-center-uvs{text-align:left;}.text-right-uvs{text-align:left;}\n.mhide{display:none;}.mshow{display:block;}\n#qik-pricing{padding-bottom:20px;}.vs-btns{margin-top:0%;}.border-left-uvs{border-left:0px solid #ccc;} \n.border-right-uvs{border-right:0px solid #ccc;} \n.border-bottom-uvs{border-bottom:0px solid #ccc;}\n.border-bottom-uvs:hover{ border-bottom:0px solid #ffc107;} \n.uvs-line-h{display:none;}.uvs-line {display:none;}\n}\nhtml{overflow-x:hidden;}\n',
         }}
       />
-      <section id="qik-products" className="qik-products">
+      <section
+        ref={(el) => (ref.current[2] = el)}
+        id="qik-products"
+        className="qik-products"
+      >
         <div className="container">
           <div className="row">
             <div className="col-md-4 text-center">
-              <a href="/Business">
+              <Link to="/Business">
                 <img
                   src={require("./images/pc.svg").default}
                   alt=""
                   className="vs-btns"
                 />
-              </a>
+              </Link>
               <br />
               <br />
               <h5>
                 Qik Academy
                 <br /> Software
               </h5>
-              <a href="/">
+              <Link to="/">
                 Education <i className="fa fa-angle-down" />
-              </a>
+              </Link>
               <br />
               <br />
             </div>
@@ -130,7 +159,7 @@ const Academy = () => {
                 SMS updates to parents &amp; students for free reminder. test
                 results &amp; holidays. Other important features such as print
                 I-cards, progress reports of students &amp;
-                <a href="/Business"> Many more</a>
+                <Link to="/Business"> Many more</Link>
                 <br />
                 <br />
                 <small>
@@ -142,7 +171,7 @@ const Academy = () => {
             <div className="row text-center uvs-boxes">
               <div className="uvs-line-h" />
               <div className="col-md-3 border-right-uvs border-bottom-uvs">
-                <a href="/Business">
+                <Link to="/Business">
                   <img src={require("./images/a1.svg").default} alt="" />
                   <h4>CRM</h4>
                   <p>
@@ -150,11 +179,11 @@ const Academy = () => {
                     place.
                   </p>
                   Learn More
-                </a>
+                </Link>
                 <div className="uvs-line-hover" />
               </div>
               <div className="col-md-3 border-right-uvs border-bottom-uvs">
-                <a href="/Business">
+                <Link to="/Business">
                   <img src={require("./images/a2.svg").default} alt="" />
                   <h4>
                     Attendance <br />
@@ -162,20 +191,20 @@ const Academy = () => {
                   </h4>
                   <p>Daily track the batch-wise attendance of students.</p>
                   Learn More
-                </a>
+                </Link>
                 <div className="uvs-line-hover" />
               </div>
               <div className="col-md-3 border-right-uvs border-bottom-uvs">
-                <a href="/Business">
+                <Link to="/Business">
                   <img src={require("./images/a3.svg").default} alt="" />
                   <h4>Communication</h4>
                   <p>Send custom emails/SMS alerts or make templates.</p> Learn
                   More
-                </a>
+                </Link>
                 <div className="uvs-line-hover" />
               </div>
               <div className="col-md-3 border-bottom-uvs">
-                <a href="/Business">
+                <Link to="/Business">
                   <img src={require("./images/a4.svg").default} alt="" />
                   <h4>
                     Expense <br />
@@ -186,40 +215,40 @@ const Academy = () => {
                     details.
                   </p>
                   Learn More
-                </a>
+                </Link>
                 <div className="uvs-line-hover" />
               </div>
               <div className="col-md-3 border-right-uvs border-bottom-uvs ">
-                <a href="/Business">
+                <Link to="/Business">
                   <img src={require("./images/a5.svg").default} alt="" />
                   <h4>
                     Web <br /> Solution
                   </h4>
                   <p>Create a website as per your requirement.</p> Learn More
-                </a>
+                </Link>
               </div>
               <div className="col-md-3 border-right-uvs border-bottom-uvs">
-                <a href="/Business">
+                <Link to="/Business">
                   <img src={require("./images/a6.svg").default} alt="" />
                   <h4>
                     Task <br />
                     Management
                   </h4>
                   <p>Create, assign, and track tasks.</p> Learn More
-                </a>
+                </Link>
               </div>
               <div className="col-md-3 border-right-uvs border-bottom-uvs">
-                <a href="/Business">
+                <Link to="/Business">
                   <img src={require("./images/a7.svg").default} alt="" />
                   <h4>Payroll</h4>
                   <p>
                     Manage &amp; track the salary generation of the employees.
                   </p>
                   Learn More
-                </a>
+                </Link>
               </div>
               <div className="col-md-3  border-bottom-uvs">
-                <a href="/Business">
+                <Link to="/Business">
                   <img src={require("./images/a8.svg").default} alt="" />
                   <h4>
                     Social <br />
@@ -229,12 +258,12 @@ const Academy = () => {
                     Create &amp; Upload the post on different social channel.
                   </p>
                   Learn More
-                </a>
+                </Link>
               </div>
               <div className="col-md-3 border-right-uvs">
                 <a href="/go/elearning/">
                   <img
-                    src={require("./images/logo.png").default}
+                    src={require("./images/logo.png")}
                     alt=""
                     style={{ width: "116px" }}
                   />
@@ -251,8 +280,9 @@ const Academy = () => {
                 </a>
               </div>
               <div className="col-md-12 text-center">
-                <a
-                  href="#qik-pricing"
+                <button
+                  onClick={() => handleClick(4, "qik-pricing")}
+                  // href="#qik-pricing"
                   className="btn btn-primary btn-lg"
                   id="customer"
                   style={{
@@ -263,13 +293,17 @@ const Academy = () => {
                   }}
                 >
                   Buy Now
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="qik-products" className="qik-products">
+      <section
+        ref={(el) => (ref.current[3] = el)}
+        id="customer"
+        className="qik-products"
+      >
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -322,7 +356,7 @@ const Academy = () => {
                       <div className="row">
                         <div className="col-md-4">
                           <img
-                            src={require("./images/profile.jpg").default}
+                            src={require("../images/profile.jpg")}
                             alt=""
                             style={{ width: "100%" }}
                           />
@@ -330,9 +364,7 @@ const Academy = () => {
                         <div className="col-md-8">
                           <div className="img-uvss">
                             <img
-                              src={
-                                require("./images/brain-academy.jpg").default
-                              }
+                              src={require("../images/brain-academy.jpg")}
                               alt=""
                             />
                           </div>
@@ -360,7 +392,7 @@ const Academy = () => {
                       <div className="row">
                         <div className="col-md-4">
                           <img
-                            src={require("./images/profile.jpg").default}
+                            src={require("../images/profile.jpg")}
                             alt=""
                             style={{ width: "100%" }}
                           />
@@ -368,9 +400,7 @@ const Academy = () => {
                         <div className="col-md-8">
                           <div className="img-uvss">
                             <img
-                              src={
-                                require("./images/brain-academy.jpg").default
-                              }
+                              src={require("../images/brain-academy.jpg")}
                               alt=""
                             />
                           </div>
@@ -398,17 +428,15 @@ const Academy = () => {
                       <div className="row">
                         <div className="col-md-4">
                           <img
-                            src={require("./images/profile.jpg").default}
-                            alt=""
+                            src={require("../images/profile.jpg")}
+                            alt="img"
                             style={{ width: "100%" }}
                           />
                         </div>
                         <div className="col-md-8">
                           <div className="img-uvss">
                             <img
-                              src={
-                                require("./images/brain-academy.jpg").default
-                              }
+                              src={require("../images/brain-academy.jpg")}
                               alt=""
                             />
                           </div>
@@ -436,7 +464,7 @@ const Academy = () => {
                       <div className="row">
                         <div className="col-md-4">
                           <img
-                            src={require("./images/profile.jpg").default}
+                            src={require("./images/profile.jpg")}
                             alt=""
                             style={{ width: "100%" }}
                           />
@@ -444,9 +472,7 @@ const Academy = () => {
                         <div className="col-md-8">
                           <div className="img-uvss">
                             <img
-                              src={
-                                require("./images/brain-academy.jpg").default
-                              }
+                              src={require("./images/brain-academy.jpg")}
                               alt=""
                             />
                           </div>
@@ -476,7 +502,11 @@ const Academy = () => {
         </div>
       </section>
 
-      <section id="qik-pricing" className="qik-pricing">
+      <section
+        ref={(el) => (ref.current[4] = el)}
+        id="qik-pricing"
+        className="qik-pricing"
+      >
         <div className="container">
           <div className="row">
             <div
@@ -689,7 +719,7 @@ const Academy = () => {
           </div>
         </div>
       </section>
-      <section id="contact-us">
+      <section ref={(el) => (ref.current[5] = el)} id="contact-us">
         <div className="container">
           <div className="row">
             <div className="col-md-12 container-text-center">
@@ -805,9 +835,7 @@ const Academy = () => {
               All rights reserved © 2023
               <strong>
                 <span>
-                  <a href="/" target="_blank">
-                    Qik.Ai
-                  </a>
+                  <Link to="/">Qik.Ai</Link>
                 </span>
               </strong>
             </p>

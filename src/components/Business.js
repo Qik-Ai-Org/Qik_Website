@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../main-style-academy.css";
+import { Link } from "react-router-dom";
 const Business = () => {
+  const ref = useRef([]);
+  const handleClick = (idx, name) => {
+    // console.log("ref.current[idx || 1] ", ref.current);
+    ref.current[idx || 1].scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div>
       <header id="header">
@@ -16,22 +22,34 @@ const Business = () => {
               </a>
             </div>
             <div className="col-md-6 col-3">
-              {/* <nav className="nav-menu d-none d-lg-block float-right">
+              <div className=" nav-menu d-none d-lg-block float-right" style={{ padding: 4 }}>
+                {/* <nav className="nav-menu d-none d-lg-block float-right"> */}
                 <ul>
                   <li>
-                    <a href="#qik-intro">Home</a>
+                    <div onClick={() => handleClick(1, "qik-intro")}>Home</div>
+                    {/* <a href="#qik-intro">Home</a> */}
                   </li>
                   <li>
-                    <a href="#qik-features">Features</a>
+                    <div onClick={() => handleClick(2, "qik-features")}>
+                      Features
+                    </div>
+                    {/* <a href="#qik-features">Features</a> */}
                   </li>
                   <li>
-                    <a href="#qik-pricing">Pricing</a>
+                    <div onClick={() => handleClick(3, "qik-pricing")}>
+                      Pricing
+                    </div>
+                    {/* <a href="#qik-pricing">Pricing</a> */}
                   </li>
                   <li>
-                    <a href="#contact-us">Contact Us</a>
+                    <div onClick={() => handleClick(4, "contact-us")}>
+                      Contact Us
+                    </div>
+                    {/* <a href="#contact-us">Contact Us</a> */}
                   </li>
                 </ul>
-              </nav> */}
+                {/* </nav> */}
+              </div>
             </div>
             <div className="col-md-3 col-sm-6 col-6 text-right">
               <div className="us-contact">
@@ -42,7 +60,11 @@ const Business = () => {
           </div>
         </div>
       </header>
-      <section id="qik-intro" className="qik-intro">
+      <section
+        ref={(el) => (ref.current[1] = el)}
+        id="qik-intro"
+        className="qik-intro"
+      >
         <div className="containervs">
           <div className="col-md-12 row">
             <div className="col-md-6 introtext">
@@ -56,17 +78,18 @@ const Business = () => {
                 automate &amp; grow your coaching institute. Trusted by 2000+
                 institutions worldwide.
               </p>
-              <a
-                href="#qik-pricing"
+              <button
+                onClick={() => handleClick(3, "qik-pricing")}
+                // href="#qik-pricing"
                 className="btn btn-primary btn-lg"
                 style={{ marginBottom: "40px", borderRadius: "4px" }}
               >
                 Get Business App
-              </a>
+              </button>
             </div>
             <div className="col-md-6">
               <img
-                src={require("./images/academy-intro.png").default}
+                src={require("./images/academy-intro.png")}
                 alt=""
                 style={{ width: "100%" }}
               />
@@ -85,7 +108,11 @@ const Business = () => {
             '   .introtext h2{text-align:left;}\n    .boxus { \n        align-self: flex-end;\n        animation-duration: 2s;\n        animation-iteration-count: infinite;\n        margin: 0 auto 0 auto;\n        transform-origin: bottom;\n    }\n    .bounce-1us {\n        animation-name: bounce-1us;\n        animation-timing-function: linear;\n    }\n    @keyframes bounce-1us {\n        0%   { transform: translateY(0); }\n        50%  { transform: translateY(-20px); }\n        100% { transform: translateY(0); }\n    }\n\ttable.table.uvstable {\n    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.08);margin-bottom:50px;  -webkit-transition: all 0.25s linear;\n  transition: all 0.25s linear;\n  -webkit-box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.08);\n          box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.08);    min-height: 200px;\n}\n \n \n .section-line-border {\n        position: relative;\n        overflow: hidden;\n        height: 4px;\n        width: 120px;\n        border:none;\n        background:#00abf6;\n        margin:15px 0;\n    }\n    .section-line-border::before {\n        content: "";\n        position: absolute;\n        top: 0;\n        left: 0;\n        height: 4px;\n        width: 60px;\n        background:#00abf6;\n    } .section-line-border1 {\n        position: relative;\n        overflow: hidden;\n        height: 4px;\n        width: 120px;\n        border:none;\n        background:#00abf6;\n        margin:15px auto;\n    }\n    .section-line-border1::before {\n        content: "";\n        position: absolute;\n        top: 0;\n        left: 0;\n        height: 4px;\n        width: 60px;\n        background:#00abf6;\n    }\n.us-contact {\n    font-size: 14px;\n    line-height: 28px;color: #001e4b;\n}.uvstable td img {\n    width: 48px;\n    height: 48px;\n}.btn-primary{border-radius: 4px;}\n\n.container, .container-lg, .container-md, .container-sm, .container-xl {\n    max-width: 96%;\n}.mshow{display:none;}.text-center-uvs{text-align:center;}.text-right-uvs{text-align:right;}\n  @media only screen and (max-width: 780px) { section#contact-us {\n    padding-bottom: 20px;\n}  .mhide{display:none;}.introtext h2{text-align:center;}.mshow{display:block;} .span.uvs-span{font-size: 18px;}\n#qik-pricing,#qik-features {\n    padding-bottom: 10px;\n}\n.text-center-uvs{text-align:left;}.text-right-uvs{text-align:left;}\n }\n\nhtml{overflow-x:hidden;}.form-uvsl .form-control {\n    margin-bottom:16px;margin-top:8px;\n    border: 0px solid #eee;\n    background: #eee;\n    padding: 25px 15px;\n} \n\t',
         }}
       />
-      <section id="qik-features" className="qik-features">
+      <section
+        ref={(el) => (ref.current[2] = el)}
+        id="qik-features"
+        className="qik-features"
+      >
         <div className="containervs">
           <div className="col-md-12">
             <div className="col-md-12 containervs-text-center">
@@ -488,7 +515,11 @@ const Business = () => {
           </div>
         </div>
       </section>
-      <section id="qik-pricing" className="qik-pricing">
+      <section
+        ref={(el) => (ref.current[3] = el)}
+        id="qik-pricing"
+        className="qik-pricing"
+      >
         <div className="containervs">
           <div className="row">
             <div
@@ -697,7 +728,11 @@ const Business = () => {
           </div>
         </div>
       </section>
-      <section id="contact-us" style={{ paddingTop: "100px" }}>
+      <section
+        ref={(el) => (ref.current[4] = el)}
+        id="contact-us"
+        style={{ paddingTop: "100px" }}
+      >
         <div className="containervs">
           <div className="row">
             <div className="col-md-12 containervs-text-center">
@@ -741,9 +776,9 @@ const Business = () => {
             <div className="row">
               <div className="col-md-4">
                 <h4>
-                  <a href="index.html">
+                  <Link to="/">
                     <img src={require("./images/logo.svg").default} alt="" />
-                  </a>
+                  </Link>
                 </h4>
                 <p>
                   Supercharge your business with 50+ integrated business
@@ -812,9 +847,7 @@ const Business = () => {
               All rights reserved © 2023
               <strong>
                 <span>
-                  <a href="/" target="_blank">
-                    Qik.Ai
-                  </a>
+                  <Link to="/">Qik.Ai</Link>
                 </span>
               </strong>
             </p>
