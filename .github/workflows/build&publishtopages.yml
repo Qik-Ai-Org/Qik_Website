@@ -2,7 +2,7 @@ name: Build and Deploy to pages
 on:
   push:
     branches:
-      - adminicV2 # Change this to your branch
+      - master # Change this to your branch
 
 jobs:
   build-and-deploy:
