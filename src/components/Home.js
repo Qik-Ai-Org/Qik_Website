@@ -36,9 +36,9 @@ const Home = () => {
               </h2>
               <div className="row">
                 <div className="col-md-12">
-                  <a href="#" className="cta-create-intelligence">
+                  <button className="cta-create-intelligence" type="button">
                     Create with Intelligence
-                  </a>
+                  </button>
                   <div className="industry-selection">
                     {showEducation === "mainSection" && (
                       <div id="main-section">
