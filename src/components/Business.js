@@ -68,14 +68,14 @@ const Business = () => {
           <div className="col-md-12 row">
             <div className="col-md-6 introtext">
               <h2>
-                Qik Coaching Institute App on Cloud
+                Where Coaching Institutes Become Digital Masterpieces
                 <hr className="section-line-border mhide" />
                 <hr className="section-line-border1 mshow" />
               </h2>
               <p>
-                Undoubtedly the simplest yet most powerful software on cloud to
-                automate &amp; grow your coaching institute. Trusted by 2000+
-                institutions worldwide.
+                The most elegantly powerful cloud platform to automate and elevate your 
+                coaching institute. Trusted by 2000+ institutions who've mastered the art 
+                of digital growth.
               </p>
               <button
                 onClick={() => handleClick(3, "qik-pricing")}
@@ -83,7 +83,7 @@ const Business = () => {
                 className="btn btn-primary btn-lg"
                 style={{ marginBottom: "40px", borderRadius: "4px" }}
               >
-                Get Business App
+                Create Your Digital Legacy
               </button>
             </div>
             <div className="col-md-6">

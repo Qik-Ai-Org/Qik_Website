@@ -75,17 +75,17 @@ const Academy = () => {
           <div className="row">
             <div className="col-md-5 introtext">
               <h2>
-                Let's manage your <br />
-                academy just a few
+                Orchestrate Your <br />
+                Academy's Digital
                 <br />
-                clicks
+                Symphony
                 <hr className="section-line-border mhide" />
                 <hr className="section-line-border1 mshow" />
               </h2>
               <p>
-                Make your academy digital by bringing all the <br />
-                stakeholders - students, parents, teachers and
-                <br /> management on a signle platform.
+                Harmonize all stakeholders - students, parents, teachers, and
+                <br /> management - on a single, elegant platform designed for 
+                <br /> educational excellence.
               </p>
               <button
                 onClick={() => handleClick(2, "qik-products")}
@@ -93,7 +93,7 @@ const Academy = () => {
                 className="btn btn-primary btn-lg"
                 style={{ marginBottom: "40px", borderRadius: "4px" }}
               >
-                Get Business App
+                Begin Your Digital Transformation
               </button>
             </div>
             <div className="col-md-7">

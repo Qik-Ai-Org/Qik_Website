@@ -30,15 +30,15 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-7 animated animatedFadeInDown fadeInDown class-uvstext">
-              <h1 className="heading-h1-art">The Art of the Agreement</h1>
+              <h1 className="heading-h1-art">The Art of Digital Transformation</h1>
               <h2 className="heading-h2-art">
-                Where artificial intelligence meets legal elegance, crafting the future of intelligent contract creation
+                Where business intelligence meets creative excellence. Every tool you need to orchestrate growth across education, healthcare, retail, and beyond - unified in one revolutionary cloud ecosystem.
               </h2>
               <div className="row">
                 <div className="col-md-12">
-                  <a href="#" className="cta-create-intelligence">
-                    Create with Intelligence
-                  </a>
+                  <button className="cta-create-intelligence">
+                    Craft Your Digital Future
+                  </button>
                   <div className="industry-selection">
                     {showEducation === "mainSection" && (
                       <div id="main-section">
