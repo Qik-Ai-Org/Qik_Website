@@ -514,6 +514,126 @@ const Business = () => {
           </div>
         </div>
       </section>
+      
+      {/* AI Business Solutions Section */}
+      <section className="qik-features" style={{ backgroundColor: "#f8f9fa", paddingTop: "80px", paddingBottom: "80px" }}>
+        <div className="containervs">
+          <div className="col-md-12">
+            <div className="col-md-12 containervs-text-center">
+              <span className="uvs-span">AI-Powered Business Solutions</span>
+              <h2>
+                Transform Your Business with Intelligent Automation
+                <hr className="section-line-border1" />
+              </h2>
+            </div>
+            <div className="row">
+              <div className="col-md-6">
+                <table className="table uvstable">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <i className="fa fa-file-contract" style={{ fontSize: "48px", color: "#00abf6" }}></i>
+                      </td>
+                      <td>
+                        <h4>Qik Contract Generator</h4>
+                        <p>
+                          Intelligent contract creation and management system powered by AI. Generate legal documents, agreements, and contracts automatically.
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="col-md-6">
+                <table className="table uvstable">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <i className="fa fa-chart-line" style={{ fontSize: "48px", color: "#00abf6" }}></i>
+                      </td>
+                      <td>
+                        <h4>Qik Analytics Dashboard</h4>
+                        <p>
+                          Real-time business intelligence and data visualization. Get predictive insights and forecasting for better decision making.
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="col-md-6">
+                <table className="table uvstable">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <i className="fa fa-robot" style={{ fontSize: "48px", color: "#00abf6" }}></i>
+                      </td>
+                      <td>
+                        <h4>Qik Chat Assistant</h4>
+                        <p>
+                          AI-powered customer service chatbot that handles inquiries 24/7. Improve customer satisfaction and reduce response times.
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="col-md-6">
+                <table className="table uvstable">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <i className="fa fa-cogs" style={{ fontSize: "48px", color: "#00abf6" }}></i>
+                      </td>
+                      <td>
+                        <h4>Qik Workflow Optimizer</h4>
+                        <p>
+                          Intelligent business process automation that streamlines operations and eliminates repetitive tasks automatically.
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="col-md-6">
+                <table className="table uvstable">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <i className="fa fa-edit" style={{ fontSize: "48px", color: "#00abf6" }}></i>
+                      </td>
+                      <td>
+                        <h4>Qik Content Creator</h4>
+                        <p>
+                          AI-driven content writing and editing platform. Generate marketing copy, emails, and business communications effortlessly.
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="col-md-6">
+                <table className="table uvstable">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <i className="fa fa-receipt" style={{ fontSize: "48px", color: "#00abf6" }}></i>
+                      </td>
+                      <td>
+                        <h4>Qik Invoice Generator</h4>
+                        <p>
+                          Automated invoicing and billing system with smart payment tracking and follow-up capabilities.
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <section
         ref={(el) => (ref.current[3] = el)}
         id="qik-pricing"

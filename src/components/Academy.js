@@ -277,6 +277,47 @@ const Academy = () => {
                   Learn More
                 </a>
               </div>
+              
+              {/* AI-Powered Education Tools Section */}
+              <div className="col-md-12 text-center" style={{ marginTop: "40px", marginBottom: "20px" }}>
+                <span className="uvs-span">AI-Powered Tools</span>
+                <h3 style={{ color: "#001e4b", marginBottom: "30px" }}>
+                  Enhance Your Academy with AI Solutions
+                  <hr className="section-line-border" style={{ margin: "15px auto" }} />
+                </h3>
+              </div>
+              
+              <div className="col-md-4 border-right-uvs border-bottom-uvs">
+                <Link to="/Business">
+                  <i className="fa fa-file-text" style={{ fontSize: "48px", color: "#00abf6", marginBottom: "20px" }}></i>
+                  <h4>AI Document Generator</h4>
+                  <p>
+                    Automatically generate academic reports, contracts, and proposals with AI assistance.
+                  </p>
+                  Learn More
+                </Link>
+              </div>
+              <div className="col-md-4 border-right-uvs border-bottom-uvs">
+                <Link to="/Business">
+                  <i className="fa fa-comments" style={{ fontSize: "48px", color: "#00abf6", marginBottom: "20px" }}></i>
+                  <h4>AI Chat Assistant</h4>
+                  <p>
+                    24/7 AI-powered support for student inquiries and parent communication.
+                  </p>
+                  Learn More
+                </Link>
+              </div>
+              <div className="col-md-4 border-bottom-uvs">
+                <Link to="/Business">
+                  <i className="fa fa-chart-bar" style={{ fontSize: "48px", color: "#00abf6", marginBottom: "20px" }}></i>
+                  <h4>AI Analytics Dashboard</h4>
+                  <p>
+                    Get intelligent insights into student performance and academy operations.
+                  </p>
+                  Learn More
+                </Link>
+              </div>
+              
               <div className="col-md-12 text-center">
                 <button
                   onClick={() => handleClick(4, "qik-pricing")}
