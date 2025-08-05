@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import "../main-style-academy.css";
+import "../digital-sunrise-theme.css";
 import { Link } from "react-router-dom";
 const Business = () => {
   const ref = useRef([]);
@@ -67,23 +68,22 @@ const Business = () => {
         <div className="containervs">
           <div className="col-md-12 row">
             <div className="col-md-6 introtext">
-              <h2>
-                Qik Coaching Institute App on Cloud
+              <h2 className="heading-h1-art" style={{fontSize: "clamp(2.5rem, 6vw, 4rem)"}}>
+                The Art of Business <br />
+                Intelligence
                 <hr className="section-line-border mhide" />
                 <hr className="section-line-border1 mshow" />
               </h2>
-              <p>
-                Undoubtedly the simplest yet most powerful software on cloud to
-                automate &amp; grow your coaching institute. Trusted by 2000+
-                institutions worldwide.
+              <p className="heading-h2-art" style={{fontSize: "clamp(1rem, 2.5vw, 1.3rem)", marginBottom: "2rem"}}>
+                Orchestrate your coaching institute's growth with the most sophisticated yet intuitive cloud platform. 
+                Trusted by visionary institutions worldwide to automate excellence.
               </p>
               <button
                 onClick={() => handleClick(3, "qik-pricing")}
-                // href="#qik-pricing"
-                className="btn btn-primary btn-lg"
-                style={{ marginBottom: "40px", borderRadius: "4px" }}
+                className="cta-create-intelligence"
+                style={{ marginBottom: "40px", border: "none", background: "transparent", padding: 0 }}
               >
-                Get Business App
+                Craft Your Business Future
               </button>
             </div>
             <div className="col-md-6">

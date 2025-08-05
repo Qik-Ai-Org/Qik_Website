@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import "../main-style-academy-business.css";
+import "../digital-sunrise-theme.css";
 import { Link } from "react-router-dom";
 const Academy = () => {
   const ref = useRef([]);
@@ -74,26 +75,22 @@ const Academy = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-5 introtext">
-              <h2>
-                Let's manage your <br />
-                academy just a few
-                <br />
-                clicks
+              <h2 className="heading-h1-art" style={{fontSize: "clamp(2.5rem, 6vw, 4rem)"}}>
+                The Art of Academy <br />
+                Excellence
                 <hr className="section-line-border mhide" />
                 <hr className="section-line-border1 mshow" />
               </h2>
-              <p>
-                Make your academy digital by bringing all the <br />
-                stakeholders - students, parents, teachers and
-                <br /> management on a signle platform.
+              <p className="heading-h2-art" style={{fontSize: "clamp(1rem, 2.5vw, 1.3rem)", marginBottom: "2rem"}}>
+                Transform your educational institution with our digital orchestration platform. 
+                Bring students, parents, teachers and management together in one revolutionary ecosystem.
               </p>
               <button
                 onClick={() => handleClick(2, "qik-products")}
-                // href="#qik-products"
-                className="btn btn-primary btn-lg"
-                style={{ marginBottom: "40px", borderRadius: "4px" }}
+                className="cta-create-intelligence"
+                style={{ marginBottom: "40px", border: "none", background: "transparent", padding: 0 }}
               >
-                Get Business App
+                Craft Your Academy Future
               </button>
             </div>
             <div className="col-md-7">
