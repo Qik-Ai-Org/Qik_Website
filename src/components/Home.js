@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../main-style.css";
+import "../digital-sunrise-theme.css";
 const Home = () => {
   const [showEducation, setShowEducation] = useState("mainSection");
   return (
@@ -25,22 +26,24 @@ const Home = () => {
           </div>
         </div>
       </header>
-      <section id="qik-intro" className="qik-intro ">
+      <section id="qik-intro" className="qik-intro">
         <div className="container">
           <div className="row">
             <div className="col-md-7 animated animatedFadeInDown fadeInDown class-uvstext">
-              <h1 className="heading-h1">Qik cloud stack </h1>
-              <h2 className="heading-h2" style={{ fontWeight: "normal" }}>
-                Every business tool you will ever need to fuel your business
-                growth
+              <h1 className="heading-h1-art">The Art of the Agreement</h1>
+              <h2 className="heading-h2-art">
+                Where artificial intelligence meets legal elegance, crafting the future of intelligent contract creation
               </h2>
               <div className="row">
                 <div className="col-md-12">
-                  <div>
+                  <a href="#" className="cta-create-intelligence">
+                    Create with Intelligence
+                  </a>
+                  <div className="industry-selection">
                     {showEducation === "mainSection" && (
                       <div id="main-section">
                         <br />
-                        <h5>Select your business industry</h5>
+                        <h5>Explore your business domain</h5>
                         <div className="col-md-12" id="products">
                           <div className="row">
                             <div className="col-md-3 col-sm-6 col-6">
@@ -53,7 +56,6 @@ const Home = () => {
                                   animationDuration: "10s",
                                   WebkitAnimationDuration: "10s",
                                 }}
-                                // id="hidevs-edu"
                                 onClick={() => setShowEducation("education")}
                               >
                                 <div className="feature-item">
@@ -74,7 +76,6 @@ const Home = () => {
                                   outlineColor: "transparent",
                                   outline: "none",
                                 }}
-                                // id="hidevs"
                                 onClick={() => setShowEducation("healthCare")}
                               >
                                 <div className="feature-item">
@@ -95,7 +96,6 @@ const Home = () => {
                                   outlineColor: "transparent",
                                   outline: "none",
                                 }}
-                                // id="hidevs-retail"
                                 onClick={() => setShowEducation("retail")}
                               >
                                 <div className="feature-item">
@@ -117,7 +117,6 @@ const Home = () => {
                                   outline: "none",
                                 }}
                                 onClick={() => setShowEducation("hr")}
-                                // id="hidevs-hr"
                               >
                                 <div className="feature-item">
                                   <img
