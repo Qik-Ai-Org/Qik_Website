@@ -19,8 +19,6 @@ const Home = () => {
             </div>
             <div className="col-md-8 col-sm-8 col-8 text-right">
               <div className="us-contact">
-                <i className="fa fa-phone" /> 🇺🇸 +1 8453637505 🇮🇳 +91-9209157677
-                <br />
                 <i className="fa fa-envelope" /> hello@qik.ai
               </div>
             </div>
@@ -425,11 +423,6 @@ const Home = () => {
                   }}
                 >
                   <li style={{ marginBottom: "13px" }}>Email: hello@qik.ai</li>
-                  <li>
-                    Phone: 🇺🇸 +1 8453637505 🇮🇳 +91-9209157677
-                    <br />
-                    <br />
-                  </li>
                 </ul>
               </div>
               <div className="col-md-4 text-right-uvs">

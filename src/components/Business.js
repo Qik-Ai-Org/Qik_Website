@@ -53,7 +53,6 @@ const Business = () => {
             </div>
             <div className="col-md-3 col-sm-6 col-6 text-right">
               <div className="us-contact">
-                <i className="fa fa-phone" /> +91 9503122314 <br />
                 <i className="fa fa-envelope" /> hello@qik.ai
               </div>
             </div>
@@ -799,11 +798,6 @@ const Business = () => {
                   }}
                 >
                   <li style={{ marginBottom: "13px" }}>Email: hello@qik.ai</li>
-                  <li>
-                    Phone: 🇺🇸 +1 8453637505 🇮🇳 +91-9209157677
-                    <br />
-                    <br />
-                  </li>
                 </ul>
               </div>
               <div className="col-md-4 text-right-uvs">
