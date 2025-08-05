@@ -51,7 +51,7 @@ const Home = () => {
                         <h5>Explore your business domain</h5>
                         <div className="col-md-12" id="products">
                           <div className="row">
-                            <div className="col-md-3 col-sm-6 col-6">
+                            <div className="col-md-2 col-sm-6 col-6">
                               <button
                                 style={{
                                   backgroundColor: "transparent",
@@ -73,7 +73,7 @@ const Home = () => {
                                 </div>
                               </button>
                             </div>
-                            <div className="col-md-3 col-sm-6 col-6">
+                            <div className="col-md-2 col-sm-6 col-6">
                               <button
                                 style={{
                                   backgroundColor: "transparent",
@@ -93,7 +93,7 @@ const Home = () => {
                                 </div>
                               </button>
                             </div>
-                            <div className="col-md-3 col-sm-6 col-6">
+                            <div className="col-md-2 col-sm-6 col-6">
                               <button
                                 style={{
                                   backgroundColor: "transparent",
@@ -113,7 +113,7 @@ const Home = () => {
                                 </div>
                               </button>
                             </div>
-                            <div className="col-md-3 col-sm-6 col-6">
+                            <div className="col-md-2 col-sm-6 col-6">
                               <button
                                 style={{
                                   backgroundColor: "transparent",
@@ -130,6 +130,23 @@ const Home = () => {
                                   />
                                   <br />
                                   HR
+                                </div>
+                              </button>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-6">
+                              <button
+                                style={{
+                                  backgroundColor: "transparent",
+                                  borderColor: "transparent",
+                                  outlineColor: "transparent",
+                                  outline: "none",
+                                }}
+                                onClick={() => setShowEducation("aiSolutions")}
+                              >
+                                <div className="feature-item">
+                                  <i className="fa fa-robot" style={{ fontSize: "48px", color: "#00abf6", marginBottom: "10px" }}></i>
+                                  <br />
+                                  AI Solutions
                                 </div>
                               </button>
                             </div>
@@ -372,6 +389,84 @@ const Home = () => {
                             <div className="col-md-4 col-sm-4 col-4"> </div>
                             <div className="col-md-4 col-sm-4 col-4"> </div>
                             <div className="col-md-4 col-sm-4 col-4"> </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                    {showEducation === "aiSolutions" && (
+                      <div id="sub-ai-solutions">
+                        <h5 style={{ marginBottom: "30px" }}>
+                          <button
+                            style={{
+                              float: "left",
+                              backgroundColor: "transparent",
+                              borderColor: "transparent",
+                              outlineColor: "transparent",
+                              outline: "none",
+                            }}
+                            onClick={() => setShowEducation("mainSection")}
+                          >
+                            <i className="fa fa-angle-left"> </i>
+                            <span
+                              style={{
+                                fontSize: "14px",
+                                color: "#000",
+                                fontWeight: "normal",
+                                marginRight: "40px",
+                              }}
+                            >
+                              Back
+                            </span>
+                          </button>
+                          AI-Powered Solutions
+                        </h5>
+                        <div className="col-md-12" id="products">
+                          <div className="row" style={{ marginBottom: "60px" }}>
+                            <div className="col-md-4 col-sm-6 col-6">
+                              <div className="feature-item">
+                                <i className="fa fa-file-text" style={{ fontSize: "48px", color: "#00abf6", marginBottom: "10px" }}></i>
+                                <br />
+                                <h4 style={{ color: "#001e4b", marginBottom: "15px" }}>Document Generation</h4>
+                                <p style={{ fontSize: "14px", marginBottom: "15px" }}>Contract Generator, Report Builder, Proposal Writer</p>
+                                <Link to="/Business" style={{ color: "#00abf6", fontSize: "14px" }}>Learn More</Link>
+                              </div>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-6">
+                              <div className="feature-item">
+                                <i className="fa fa-chart-bar" style={{ fontSize: "48px", color: "#00abf6", marginBottom: "10px" }}></i>
+                                <br />
+                                <h4 style={{ color: "#001e4b", marginBottom: "15px" }}>Data Analysis & Intelligence</h4>
+                                <p style={{ fontSize: "14px", marginBottom: "15px" }}>Analytics Dashboard, Insights Engine, Data Processor</p>
+                                <Link to="/Business" style={{ color: "#00abf6", fontSize: "14px" }}>Learn More</Link>
+                              </div>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-6">
+                              <div className="feature-item">
+                                <i className="fa fa-comments" style={{ fontSize: "48px", color: "#00abf6", marginBottom: "10px" }}></i>
+                                <br />
+                                <h4 style={{ color: "#001e4b", marginBottom: "15px" }}>Communication & Collaboration</h4>
+                                <p style={{ fontSize: "14px", marginBottom: "15px" }}>Chat Assistant, Meeting Summarizer, Email Composer</p>
+                                <Link to="/Business" style={{ color: "#00abf6", fontSize: "14px" }}>Learn More</Link>
+                              </div>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-6">
+                              <div className="feature-item">
+                                <i className="fa fa-image" style={{ fontSize: "48px", color: "#00abf6", marginBottom: "10px" }}></i>
+                                <br />
+                                <h4 style={{ color: "#001e4b", marginBottom: "15px" }}>Content & Media</h4>
+                                <p style={{ fontSize: "14px", marginBottom: "15px" }}>Content Creator, Image Generator, Video Editor</p>
+                                <Link to="/Business" style={{ color: "#00abf6", fontSize: "14px" }}>Learn More</Link>
+                              </div>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-6">
+                              <div className="feature-item">
+                                <i className="fa fa-cogs" style={{ fontSize: "48px", color: "#00abf6", marginBottom: "10px" }}></i>
+                                <br />
+                                <h4 style={{ color: "#001e4b", marginBottom: "15px" }}>Business Process Automation</h4>
+                                <p style={{ fontSize: "14px", marginBottom: "15px" }}>Workflow Optimizer, Task Manager, Invoice Generator</p>
+                                <Link to="/Business" style={{ color: "#00abf6", fontSize: "14px" }}>Learn More</Link>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
