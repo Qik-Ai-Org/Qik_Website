@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8eeb3287.css",
-    "main.js": "/static/js/main.dcf1a858.js",
+    "main.js": "/static/js/main.ba2d19ab.js",
     "static/media/intro.svg": "/static/media/intro.e019c5163b9796cc16552ab8c1a1f30b.svg",
     "static/media/cf8.svg": "/static/media/cf8.9bf0f8b82c96be6bfae38da4be5ac7b9.svg",
     "static/media/logo.svg": "/static/media/logo.e9ab5cffa2eb3575e113759b0a7ee16a.svg",
@@ -46,16 +46,16 @@
     "static/media/cf5.svg": "/static/media/cf5.4e0d6a858f6e9bcbf66e4d4b195085cb.svg",
     "static/media/email.svg": "/static/media/email.a64df50b65923c065ea590d840ebb289.svg",
     "static/media/cf7.svg": "/static/media/cf7.bee56268493ec3e7eb0ee9734d3460dd.svg",
-    "index.html": "/index.html",
     "static/media/gmail.svg": "/static/media/gmail.8dc11941eb4711097672e4f2de8be5b3.svg",
     "static/media/a8.svg": "/static/media/a8.a966423b56b584cbdd34f495cdcea242.svg",
+    "index.html": "/index.html",
     "static/media/linkedin.svg": "/static/media/linkedin.b824542e20e83dfe98df7cc3d7daccc7.svg",
     "static/media/plan-v.svg": "/static/media/plan-v.c3c416826cc592f31a0d.svg",
     "main.8eeb3287.css.map": "/static/css/main.8eeb3287.css.map",
-    "main.dcf1a858.js.map": "/static/js/main.dcf1a858.js.map"
+    "main.ba2d19ab.js.map": "/static/js/main.ba2d19ab.js.map"
   },
   "entrypoints": [
     "static/css/main.8eeb3287.css",
-    "static/js/main.dcf1a858.js"
+    "static/js/main.ba2d19ab.js"
   ]
 }
