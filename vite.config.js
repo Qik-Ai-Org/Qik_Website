@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './', // For GitHub Pages deployment compatibility
+  base: '/', // Custom domain (www.qik.ai) uses root path
   build: {
     outDir: 'docs', // Build to docs folder for GitHub Pages
     assetsDir: 'static', // Match the current structure
