@@ -130,6 +130,28 @@ const Home = () => {
                               </button>
                             </div>
                           </div>
+                          <div className="row" style={{ marginTop: "30px" }}>
+                            <div className="col-md-6 col-sm-12 col-12">
+                              <button
+                                style={{
+                                  backgroundColor: "transparent",
+                                  borderColor: "transparent",
+                                  outlineColor: "transparent",
+                                  outline: "none",
+                                }}
+                                onClick={() => setShowEducation("businessSolutions")}
+                              >
+                                <div className="feature-item">
+                                  <img
+                                    src={require("./images/crm.svg").default}
+                                    alt=""
+                                  />
+                                  <br />
+                                  Business Solutions
+                                </div>
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     )}
@@ -372,6 +394,214 @@ const Home = () => {
                         </div>
                       </div>
                     )}
+                    {showEducation === "businessSolutions" && (
+                      <div id="sub-business-solutions">
+                        <h5 style={{ marginBottom: "30px" }}>
+                          <button
+                            style={{
+                              float: "left",
+                              backgroundColor: "transparent",
+                              borderColor: "transparent",
+                              outlineColor: "transparent",
+                              outline: "none",
+                            }}
+                            onClick={() => setShowEducation("mainSection")}
+                          >
+                            <i className="fa fa-angle-left"> </i>
+                            <span
+                              style={{
+                                fontSize: "14px",
+                                color: "#000",
+                                fontWeight: "normal",
+                                marginRight: "40px",
+                              }}
+                            >
+                              Back
+                            </span>
+                          </button>
+                          Business Solutions
+                        </h5>
+                        <div className="col-md-12" id="products">
+                          <div className="row">
+                            <div className="col-md-12" style={{ marginBottom: "20px" }}>
+                              <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
+                                Compliance & Risk Management
+                              </h6>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
+                              <div className="feature-item business-product">
+                                <img
+                                  src={require("./images/cf7.svg").default}
+                                  alt=""
+                                />
+                                <br />
+                                <strong>Qik Policy Management Portal</strong>
+                                <p style={{ fontSize: "12px", marginTop: "8px" }}>
+                                  Centralized policy creation, management, and compliance tracking
+                                </p>
+                              </div>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
+                              <div className="feature-item business-product">
+                                <img
+                                  src={require("./images/cf1.svg").default}
+                                  alt=""
+                                />
+                                <br />
+                                <strong>Qik Whistleblower</strong>
+                                <p style={{ fontSize: "12px", marginTop: "8px" }}>
+                                  Anonymous reporting and incident management system
+                                </p>
+                              </div>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
+                              <div className="feature-item business-product">
+                                <img
+                                  src={require("./images/cf9.svg").default}
+                                  alt=""
+                                />
+                                <br />
+                                <strong>Qik RetainRight</strong>
+                                <p style={{ fontSize: "12px", marginTop: "8px" }}>
+                                  Document Retention & Auto-Purge Scheduler: Automated compliance for data retention policies
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div className="row">
+                            <div className="col-md-12" style={{ marginBottom: "20px" }}>
+                              <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
+                                Legal & Documentation
+                              </h6>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
+                              <div className="feature-item business-product">
+                                <img
+                                  src={require("./images/email.svg").default}
+                                  alt=""
+                                />
+                                <br />
+                                <strong>Qik LegaDraft</strong>
+                                <p style={{ fontSize: "12px", marginTop: "8px" }}>
+                                  AI-Powered Legal Document Assistant: AI-driven legal document creation and review
+                                </p>
+                              </div>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
+                              <div className="feature-item business-product">
+                                <img
+                                  src={require("./images/cf9.svg").default}
+                                  alt=""
+                                />
+                                <br />
+                                <strong>Qik RetainRight</strong>
+                                <p style={{ fontSize: "12px", marginTop: "8px" }}>
+                                  Document Retention & Auto-Purge Scheduler: Legal document lifecycle management
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="row">
+                            <div className="col-md-12" style={{ marginBottom: "20px" }}>
+                              <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
+                                Asset & Resource Management
+                              </h6>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
+                              <div className="feature-item business-product">
+                                <img
+                                  src={require("./images/cf3.svg").default}
+                                  alt=""
+                                />
+                                <br />
+                                <strong>Qik AssetGrid</strong>
+                                <p style={{ fontSize: "12px", marginTop: "8px" }}>
+                                  Company Asset Tracker: Comprehensive asset inventory and management system
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="row">
+                            <div className="col-md-12" style={{ marginBottom: "20px" }}>
+                              <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
+                                Human Resources & Workforce
+                              </h6>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
+                              <div className="feature-item business-product">
+                                <img
+                                  src={require("./images/cf4.svg").default}
+                                  alt=""
+                                />
+                                <br />
+                                <strong>Qik OnboardFlow</strong>
+                                <p style={{ fontSize: "12px", marginTop: "8px" }}>
+                                  Employee Onboarding and Off-boarding: Streamlined employee lifecycle management
+                                </p>
+                              </div>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
+                              <div className="feature-item business-product">
+                                <img
+                                  src={require("./images/cf2.svg").default}
+                                  alt=""
+                                />
+                                <br />
+                                <strong>Qik OKR & Goals</strong>
+                                <p style={{ fontSize: "12px", marginTop: "8px" }}>
+                                  Objective and key results tracking and performance management
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="row">
+                            <div className="col-md-12" style={{ marginBottom: "20px" }}>
+                              <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
+                                Marketing & Communications
+                              </h6>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
+                              <div className="feature-item business-product">
+                                <img
+                                  src={require("./images/sms.svg").default}
+                                  alt=""
+                                />
+                                <br />
+                                <strong>Qik DragonDrip</strong>
+                                <p style={{ fontSize: "12px", marginTop: "8px" }}>
+                                  Email Campaign Builder: Marketing automation and email campaign management
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="row">
+                            <div className="col-md-12" style={{ marginBottom: "20px" }}>
+                              <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
+                                Product & Development
+                              </h6>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
+                              <div className="feature-item business-product">
+                                <img
+                                  src={require("./images/cf8.svg").default}
+                                  alt=""
+                                />
+                                <br />
+                                <strong>Qik Feature Maestro</strong>
+                                <p style={{ fontSize: "12px", marginTop: "8px" }}>
+                                  SaaS Feature Request Board: Product development and feature request management
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
@@ -390,7 +620,7 @@ const Home = () => {
       <style
         dangerouslySetInnerHTML={{
           __html:
-            "   \n    .boxus { \n        align-self: flex-end;\n        animation-duration: 2s;\n        animation-iteration-count: infinite;\n        margin: 0 auto 0 auto;\n        transform-origin: bottom;\n    }\n    .bounce-1us {\n        animation-name: bounce-1us;\n        animation-timing-function: linear;\n    }\n    @keyframes bounce-1us {\n        0%   { transform: translateY(0); }\n        50%  { transform: translateY(-20px); }\n        100% { transform: translateY(0); }\n    }\n\t\n\n\t#products img {\n    text-align: center;\n    margin: 25px 0;\n}\n\t#products a {font-size:18px;color: #001e4b;  text-align: center;\n    font-weight: 600;}#products a:hover{color:#00abf6;}\n\t\n.feature-item{  -webkit-transition: all 0.25s linear;\n  transition: all 0.25s linear;}\n.feature-item:hover { \n  -webkit-transform: translateY(-10px);\n          transform: translateY(-10px);\n}\n\n .us-contact {\n    font-size: 14px;\n    line-height: 28px;color: #001e4b;\n}a.btn-primary {\n    background: #2f42fc;\n    border-color: #2f42fc;\n    border-radius: 0;\n    text-align: left;padding: 15px 40px;font-size: 16px;font-weight:600;\n}\n.btn-primary{border-radius: 4px;}p{color: #001e4b;}body {\n    color: #001e4b;\n}.container, .container-lg, .container-md, .container-sm, .container-xl {\n    max-width: 96%;\n}\n",
+            "   \n    .boxus { \n        align-self: flex-end;\n        animation-duration: 2s;\n        animation-iteration-count: infinite;\n        margin: 0 auto 0 auto;\n        transform-origin: bottom;\n    }\n    .bounce-1us {\n        animation-name: bounce-1us;\n        animation-timing-function: linear;\n    }\n    @keyframes bounce-1us {\n        0%   { transform: translateY(0); }\n        50%  { transform: translateY(-20px); }\n        100% { transform: translateY(0); }\n    }\n\t\n\n\t#products img {\n    text-align: center;\n    margin: 25px 0;\n}\n\t#products a {font-size:18px;color: #001e4b;  text-align: center;\n    font-weight: 600;}#products a:hover{color:#00abf6;}\n\t\n.feature-item{  -webkit-transition: all 0.25s linear;\n  transition: all 0.25s linear;}\n.feature-item:hover { \n  -webkit-transform: translateY(-10px);\n          transform: translateY(-10px);\n}\n\n.business-product {\n  border: 1px solid #eee;\n  border-radius: 8px;\n  padding: 20px;\n  text-align: center;\n  min-height: 200px;\n  margin-bottom: 20px;\n  box-shadow: 0 2px 4px rgba(0,0,0,0.1);\n}\n\n.business-product:hover {\n  box-shadow: 0 4px 8px rgba(0,0,0,0.15);\n  border-color: #00abf6;\n}\n\n.business-product img {\n  width: 48px;\n  height: 48px;\n  margin: 0 auto 15px;\n}\n\n.business-product strong {\n  display: block;\n  color: #001e4b;\n  font-size: 16px;\n  margin-bottom: 10px;\n}\n\n .us-contact {\n    font-size: 14px;\n    line-height: 28px;color: #001e4b;\n}a.btn-primary {\n    background: #2f42fc;\n    border-color: #2f42fc;\n    border-radius: 0;\n    text-align: left;padding: 15px 40px;font-size: 16px;font-weight:600;\n}\n.btn-primary{border-radius: 4px;}p{color: #001e4b;}body {\n    color: #001e4b;\n}.container, .container-lg, .container-md, .container-sm, .container-xl {\n    max-width: 96%;\n}\n",
         }}
       />
 
