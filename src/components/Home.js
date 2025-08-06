@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../main-style.css";
 const Home = () => {
   const [showEducation, setShowEducation] = useState("mainSection");
+  const [activeTab, setActiveTab] = useState("businessSolutions");
   return (
     <div>
       <header id="header">
@@ -37,9 +38,57 @@ const Home = () => {
               <div className="row">
                 <div className="col-md-12">
                   <div>
-                    {showEducation === "mainSection" && (
+                    <br />
+                    {/* Tab Navigation */}
+                    <div className="tab-navigation" style={{ marginBottom: "30px" }}>
+                      <button
+                        className={`tab-button ${activeTab === "businessSolutions" ? "active" : ""}`}
+                        onClick={() => {
+                          setActiveTab("businessSolutions");
+                          setShowEducation("businessSolutions");
+                        }}
+                        style={{
+                          backgroundColor: activeTab === "businessSolutions" ? "#00abf6" : "transparent",
+                          color: activeTab === "businessSolutions" ? "white" : "#001e4b",
+                          border: "2px solid #00abf6",
+                          borderRadius: "8px",
+                          padding: "12px 24px",
+                          marginRight: "10px",
+                          fontSize: "16px",
+                          fontWeight: "600",
+                          cursor: "pointer",
+                          outline: "none",
+                          transition: "all 0.3s ease"
+                        }}
+                      >
+                        Business Solutions
+                      </button>
+                      <button
+                        className={`tab-button ${activeTab === "industries" ? "active" : ""}`}
+                        onClick={() => {
+                          setActiveTab("industries");
+                          setShowEducation("mainSection");
+                        }}
+                        style={{
+                          backgroundColor: activeTab === "industries" ? "#00abf6" : "transparent",
+                          color: activeTab === "industries" ? "white" : "#001e4b",
+                          border: "2px solid #00abf6",
+                          borderRadius: "8px",
+                          padding: "12px 24px",
+                          fontSize: "16px",
+                          fontWeight: "600",
+                          cursor: "pointer",
+                          outline: "none",
+                          transition: "all 0.3s ease"
+                        }}
+                      >
+                        Industries
+                      </button>
+                    </div>
+
+                    {/* Tab Content */}
+                    {activeTab === "industries" && showEducation === "mainSection" && (
                       <div id="main-section">
-                        <br />
                         <h5>Select your business industry</h5>
                         <div className="col-md-12" id="products">
                           <div className="row">
@@ -53,7 +102,6 @@ const Home = () => {
                                   animationDuration: "10s",
                                   WebkitAnimationDuration: "10s",
                                 }}
-                                // id="hidevs-edu"
                                 onClick={() => setShowEducation("education")}
                               >
                                 <div className="feature-item">
@@ -74,7 +122,6 @@ const Home = () => {
                                   outlineColor: "transparent",
                                   outline: "none",
                                 }}
-                                // id="hidevs"
                                 onClick={() => setShowEducation("healthCare")}
                               >
                                 <div className="feature-item">
@@ -95,7 +142,6 @@ const Home = () => {
                                   outlineColor: "transparent",
                                   outline: "none",
                                 }}
-                                // id="hidevs-retail"
                                 onClick={() => setShowEducation("retail")}
                               >
                                 <div className="feature-item">
@@ -117,7 +163,6 @@ const Home = () => {
                                   outline: "none",
                                 }}
                                 onClick={() => setShowEducation("hr")}
-                                // id="hidevs-hr"
                               >
                                 <div className="feature-item">
                                   <img
@@ -130,32 +175,10 @@ const Home = () => {
                               </button>
                             </div>
                           </div>
-                          <div className="row" style={{ marginTop: "30px" }}>
-                            <div className="col-md-6 col-sm-12 col-12">
-                              <button
-                                style={{
-                                  backgroundColor: "transparent",
-                                  borderColor: "transparent",
-                                  outlineColor: "transparent",
-                                  outline: "none",
-                                }}
-                                onClick={() => setShowEducation("businessSolutions")}
-                              >
-                                <div className="feature-item">
-                                  <img
-                                    src={require("./images/crm.svg").default}
-                                    alt=""
-                                  />
-                                  <br />
-                                  Business Solutions
-                                </div>
-                              </button>
-                            </div>
-                          </div>
                         </div>
                       </div>
                     )}
-                    {showEducation === "education" && (
+                    {activeTab === "industries" && showEducation === "education" && (
                       <div id="sub-edu-section">
                         <h5 style={{ marginBottom: "30px" }}>
                           <button
@@ -261,7 +284,7 @@ const Home = () => {
                         </div>
                       </div>
                     )}
-                    {showEducation === "healthCare" && (
+                    {activeTab === "industries" && showEducation === "healthCare" && (
                       <div id="sub-section">
                         <h5 style={{ marginBottom: "30px" }}>
                           <button
@@ -306,7 +329,7 @@ const Home = () => {
                         </div>
                       </div>
                     )}
-                    {showEducation === "retail" && (
+                    {activeTab === "industries" && showEducation === "retail" && (
                       <div id="sub-section-retail">
                         <h5 style={{ marginBottom: "30px" }}>
                           <button
@@ -350,7 +373,7 @@ const Home = () => {
                         </div>
                       </div>
                     )}
-                    {showEducation === "hr" && (
+                    {activeTab === "industries" && showEducation === "hr" && (
                       <div id="sub-section-hr">
                         <h5 style={{ marginBottom: "30px" }}>
                           <button
@@ -394,31 +417,9 @@ const Home = () => {
                         </div>
                       </div>
                     )}
-                    {showEducation === "businessSolutions" && (
+                    {activeTab === "businessSolutions" && (
                       <div id="sub-business-solutions">
                         <h5 style={{ marginBottom: "30px" }}>
-                          <button
-                            style={{
-                              float: "left",
-                              backgroundColor: "transparent",
-                              borderColor: "transparent",
-                              outlineColor: "transparent",
-                              outline: "none",
-                            }}
-                            onClick={() => setShowEducation("mainSection")}
-                          >
-                            <i className="fa fa-angle-left"> </i>
-                            <span
-                              style={{
-                                fontSize: "14px",
-                                color: "#000",
-                                fontWeight: "normal",
-                                marginRight: "40px",
-                              }}
-                            >
-                              Back
-                            </span>
-                          </button>
                           Business Solutions
                         </h5>
                         <div className="col-md-12" id="products">
