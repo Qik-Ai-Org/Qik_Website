@@ -20,17 +20,20 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build
-        
+        run: |
+          npm run build
+          mkdir -p docs
+          mv build/* docs/
+
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add .
+          git add docs
           git commit -m "Update docs with built app" || exit 0
 
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          branch: gh-pages
