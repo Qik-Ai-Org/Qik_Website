@@ -10,10 +10,10 @@
 
 # production
 /build
-/docs/static
+/docs
+/dist
 
 # Vite
-dist
 .vite
 
 # misc

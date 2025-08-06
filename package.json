@@ -25,12 +25,12 @@
   },
   "scripts": {
     "dev": "vite",
-    "start": "serve -s docs",
+    "start": "serve -s dist",
     "start-dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d docs",
+    "deploy": "gh-pages -d dist",
     "test": "vitest"
   },
   "browserslist": {
