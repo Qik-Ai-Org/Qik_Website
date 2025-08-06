@@ -2,7 +2,7 @@ name: Build and Deploy to pages
 on:
   push:
     branches:
-      - master # Change this to your branch
+      - master
 
 jobs:
   build-and-deploy:
@@ -21,6 +21,9 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Add .nojekyll
+        run: touch ./docs/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
