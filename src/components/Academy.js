@@ -15,7 +15,7 @@ const Academy = () => {
             <div className="col-md-2 col-sm-2 col-2" style={{ padding: 0 }}>
               <a href="/">
                 <img
-                  src={require("./images/logo.svg").default}
+                  src="./images/logo.svg"
                   alt="Qik.ai"
                   className="img-logovs"
                 />
@@ -98,7 +98,7 @@ const Academy = () => {
             </div>
             <div className="col-md-7">
               <img
-                src={require("./images/academy-intro.png")}
+                src="./images/academy-intro.png"
                 className="img-fluid"
                 width="100%"
                 alt=""
@@ -127,7 +127,7 @@ const Academy = () => {
             <div className="col-md-4 text-center">
               <Link to="/Business">
                 <img
-                  src={require("./images/pc.svg").default}
+                  src="./images/pc.svg"
                   alt=""
                   className="vs-btns"
                 />
@@ -170,7 +170,7 @@ const Academy = () => {
               <div className="uvs-line-h" />
               <div className="col-md-3 border-right-uvs border-bottom-uvs">
                 <Link to="/Business">
-                  <img src={require("./images/a1.svg").default} alt="" />
+                  <img src="./images/a1.svg" alt="" />
                   <h4>CRM</h4>
                   <p>
                     Manage and track all the student inquiries in a single
@@ -182,7 +182,7 @@ const Academy = () => {
               </div>
               <div className="col-md-3 border-right-uvs border-bottom-uvs">
                 <Link to="/Business">
-                  <img src={require("./images/a2.svg").default} alt="" />
+                  <img src="./images/a2.svg" alt="" />
                   <h4>
                     Attendance <br />
                     Management
@@ -194,7 +194,7 @@ const Academy = () => {
               </div>
               <div className="col-md-3 border-right-uvs border-bottom-uvs">
                 <Link to="/Business">
-                  <img src={require("./images/a3.svg").default} alt="" />
+                  <img src="./images/a3.svg" alt="" />
                   <h4>Communication</h4>
                   <p>Send custom emails/SMS alerts or make templates.</p> Learn
                   More
@@ -203,7 +203,7 @@ const Academy = () => {
               </div>
               <div className="col-md-3 border-bottom-uvs">
                 <Link to="/Business">
-                  <img src={require("./images/a4.svg").default} alt="" />
+                  <img src="./images/a4.svg" alt="" />
                   <h4>
                     Expense <br />
                     Tracker
@@ -218,7 +218,7 @@ const Academy = () => {
               </div>
               <div className="col-md-3 border-right-uvs border-bottom-uvs ">
                 <Link to="/Business">
-                  <img src={require("./images/a5.svg").default} alt="" />
+                  <img src="./images/a5.svg" alt="" />
                   <h4>
                     Web <br /> Solution
                   </h4>
@@ -227,7 +227,7 @@ const Academy = () => {
               </div>
               <div className="col-md-3 border-right-uvs border-bottom-uvs">
                 <Link to="/Business">
-                  <img src={require("./images/a6.svg").default} alt="" />
+                  <img src="./images/a6.svg" alt="" />
                   <h4>
                     Task <br />
                     Management
@@ -237,7 +237,7 @@ const Academy = () => {
               </div>
               <div className="col-md-3 border-right-uvs border-bottom-uvs">
                 <Link to="/Business">
-                  <img src={require("./images/a7.svg").default} alt="" />
+                  <img src="./images/a7.svg" alt="" />
                   <h4>Payroll</h4>
                   <p>
                     Manage &amp; track the salary generation of the employees.
@@ -247,7 +247,7 @@ const Academy = () => {
               </div>
               <div className="col-md-3  border-bottom-uvs">
                 <Link to="/Business">
-                  <img src={require("./images/a8.svg").default} alt="" />
+                  <img src="./images/a8.svg" alt="" />
                   <h4>
                     Social <br />
                     Media
@@ -261,7 +261,7 @@ const Academy = () => {
               <div className="col-md-3 border-right-uvs">
                 <a href="/go/elearning/">
                   <img
-                    src={require("./images/logo.png")}
+                    src="./images/logo.png"
                     alt=""
                     style={{ width: "116px" }}
                   />
@@ -354,7 +354,7 @@ const Academy = () => {
                       <div className="row">
                         <div className="col-md-4">
                           <img
-                            src={require("../images/profile.jpg")}
+                            src="./images/profile.jpg"
                             alt=""
                             style={{ width: "100%" }}
                           />
@@ -362,7 +362,7 @@ const Academy = () => {
                         <div className="col-md-8">
                           <div className="img-uvss">
                             <img
-                              src={require("../images/brain-academy.jpg")}
+                              src="./images/brain-academy.jpg"
                               alt=""
                             />
                           </div>
@@ -390,7 +390,7 @@ const Academy = () => {
                       <div className="row">
                         <div className="col-md-4">
                           <img
-                            src={require("../images/profile.jpg")}
+                            src="./images/profile.jpg"
                             alt=""
                             style={{ width: "100%" }}
                           />
@@ -398,7 +398,7 @@ const Academy = () => {
                         <div className="col-md-8">
                           <div className="img-uvss">
                             <img
-                              src={require("../images/brain-academy.jpg")}
+                              src="./images/brain-academy.jpg"
                               alt=""
                             />
                           </div>
@@ -426,7 +426,7 @@ const Academy = () => {
                       <div className="row">
                         <div className="col-md-4">
                           <img
-                            src={require("../images/profile.jpg")}
+                            src="./images/profile.jpg"
                             alt="img"
                             style={{ width: "100%" }}
                           />
@@ -434,7 +434,7 @@ const Academy = () => {
                         <div className="col-md-8">
                           <div className="img-uvss">
                             <img
-                              src={require("../images/brain-academy.jpg")}
+                              src="./images/brain-academy.jpg"
                               alt=""
                             />
                           </div>
@@ -462,7 +462,7 @@ const Academy = () => {
                       <div className="row">
                         <div className="col-md-4">
                           <img
-                            src={require("./images/profile.jpg")}
+                            src="./images/profile.jpg"
                             alt=""
                             style={{ width: "100%" }}
                           />
@@ -470,7 +470,7 @@ const Academy = () => {
                         <div className="col-md-8">
                           <div className="img-uvss">
                             <img
-                              src={require("./images/brain-academy.jpg")}
+                              src="./images/brain-academy.jpg"
                               alt=""
                             />
                           </div>
@@ -729,7 +729,7 @@ const Academy = () => {
             </div>
             <div className="col-md-6">
               <img
-                src={require("./images/contact.svg").default}
+                src="./images/contact.svg"
                 width="100%"
                 alt=""
               />
@@ -763,7 +763,7 @@ const Academy = () => {
               <div className="col-md-4">
                 <h4>
                   <Link to="/">
-                    <img src={require("./images/logo.svg").default} alt="" />
+                    <img src="./images/logo.svg" alt="" />
                   </Link>
                 </h4>
                 <p>
@@ -799,7 +799,7 @@ const Academy = () => {
                     }}
                   >
                     <img
-                      src={require("./images/linkedin.svg").default}
+                      src="./images/linkedin.svg"
                       alt=""
                     />
                   </button>
@@ -812,7 +812,7 @@ const Academy = () => {
                     }}
                   >
                     <img
-                      src={require("./images/gmail.svg").default}
+                      src="./images/gmail.svg"
                       alt=""
                       style={{ marginLeft: "20px" }}
                     />

@@ -12,7 +12,7 @@ const Home = () => {
             <div className="col-md-4 col-sm-4 col-4">
               <a href="/">
                 <img
-                  src={require("./images/logo.svg").default}
+                  src="./images/logo.svg"
                   alt="Qik.ai"
                   className="img-logovs"
                 />
@@ -40,25 +40,12 @@ const Home = () => {
                   <div>
                     <br />
                     {/* Tab Navigation */}
-                    <div className="tab-navigation" style={{ marginBottom: "30px" }}>
+                    <div className="tab-navigation">
                       <button
                         className={`tab-button ${activeTab === "businessSolutions" ? "active" : ""}`}
                         onClick={() => {
                           setActiveTab("businessSolutions");
                           setShowEducation("businessSolutions");
-                        }}
-                        style={{
-                          backgroundColor: activeTab === "businessSolutions" ? "#00abf6" : "transparent",
-                          color: activeTab === "businessSolutions" ? "white" : "#001e4b",
-                          border: "2px solid #00abf6",
-                          borderRadius: "8px",
-                          padding: "12px 24px",
-                          marginRight: "10px",
-                          fontSize: "16px",
-                          fontWeight: "600",
-                          cursor: "pointer",
-                          outline: "none",
-                          transition: "all 0.3s ease"
                         }}
                       >
                         Business Solutions
@@ -68,18 +55,6 @@ const Home = () => {
                         onClick={() => {
                           setActiveTab("industries");
                           setShowEducation("mainSection");
-                        }}
-                        style={{
-                          backgroundColor: activeTab === "industries" ? "#00abf6" : "transparent",
-                          color: activeTab === "industries" ? "white" : "#001e4b",
-                          border: "2px solid #00abf6",
-                          borderRadius: "8px",
-                          padding: "12px 24px",
-                          fontSize: "16px",
-                          fontWeight: "600",
-                          cursor: "pointer",
-                          outline: "none",
-                          transition: "all 0.3s ease"
                         }}
                       >
                         Industries
@@ -106,7 +81,7 @@ const Home = () => {
                               >
                                 <div className="feature-item">
                                   <img
-                                    src={require("./images/1.svg").default}
+                                    src="./images/1.svg"
                                     alt=""
                                   />
                                   <br />
@@ -126,7 +101,7 @@ const Home = () => {
                               >
                                 <div className="feature-item">
                                   <img
-                                    src={require("./images/2.svg").default}
+                                    src="./images/2.svg"
                                     alt=""
                                   />
                                   <br />
@@ -146,7 +121,7 @@ const Home = () => {
                               >
                                 <div className="feature-item">
                                   <img
-                                    src={require("./images/3.svg").default}
+                                    src="./images/3.svg"
                                     alt=""
                                   />
                                   <br />
@@ -166,7 +141,7 @@ const Home = () => {
                               >
                                 <div className="feature-item">
                                   <img
-                                    src={require("./images/4.svg").default}
+                                    src="./images/4.svg"
                                     alt=""
                                   />
                                   <br />
@@ -212,7 +187,7 @@ const Home = () => {
                               <Link to="Academy">
                                 <div className="feature-item">
                                   <img
-                                    src={require("./images/e3.svg").default}
+                                    src="./images/e3.svg"
                                     alt=""
                                   />
                                   <br />
@@ -224,7 +199,7 @@ const Home = () => {
                               <Link to="Academy">
                                 <div className="feature-item">
                                   <img
-                                    src={require("./images/e2.svg").default}
+                                    src="./images/e2.svg"
                                     alt=""
                                   />
                                   <br />
@@ -236,7 +211,7 @@ const Home = () => {
                               <Link to="/Academy">
                                 <div className="feature-item">
                                   <img
-                                    src={require("./images/e1.svg").default}
+                                    src="./images/e1.svg"
                                     alt=""
                                   />
                                   <br />
@@ -248,7 +223,7 @@ const Home = () => {
                               <Link to="/Academy">
                                 <div className="feature-item">
                                   <img
-                                    src={require("./images/e4.svg").default}
+                                    src="./images/e4.svg"
                                     alt=""
                                   />
                                   <br />
@@ -260,7 +235,7 @@ const Home = () => {
                               <Link to="/Academy">
                                 <div className="feature-item">
                                   <img
-                                    src={require("./images/e5.svg").default}
+                                    src="./images/e5.svg"
                                     alt=""
                                   />
                                   <br />
@@ -272,7 +247,7 @@ const Home = () => {
                               <Link to="/Academy">
                                 <div className="feature-item">
                                   <img
-                                    src={require("./images/e6.svg").default}
+                                    src="./images/e6.svg"
                                     alt=""
                                   />
                                   <br />
@@ -432,7 +407,7 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src={require("./images/cf7.svg").default}
+                                  src="./images/cf7.svg"
                                   alt=""
                                 />
                                 <br />
@@ -445,7 +420,7 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src={require("./images/cf1.svg").default}
+                                  src="./images/cf1.svg"
                                   alt=""
                                 />
                                 <br />
@@ -458,7 +433,7 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src={require("./images/cf9.svg").default}
+                                  src="./images/cf9.svg"
                                   alt=""
                                 />
                                 <br />
@@ -479,7 +454,7 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src={require("./images/email.svg").default}
+                                  src="./images/email.svg"
                                   alt=""
                                 />
                                 <br />
@@ -492,7 +467,7 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src={require("./images/cf9.svg").default}
+                                  src="./images/cf9.svg"
                                   alt=""
                                 />
                                 <br />
@@ -513,7 +488,7 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src={require("./images/cf3.svg").default}
+                                  src="./images/cf3.svg"
                                   alt=""
                                 />
                                 <br />
@@ -534,7 +509,7 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src={require("./images/cf4.svg").default}
+                                  src="./images/cf4.svg"
                                   alt=""
                                 />
                                 <br />
@@ -547,7 +522,7 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src={require("./images/cf2.svg").default}
+                                  src="./images/cf2.svg"
                                   alt=""
                                 />
                                 <br />
@@ -568,7 +543,7 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src={require("./images/sms.svg").default}
+                                  src="./images/sms.svg"
                                   alt=""
                                 />
                                 <br />
@@ -589,7 +564,7 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src={require("./images/cf8.svg").default}
+                                  src="./images/cf8.svg"
                                   alt=""
                                 />
                                 <br />
@@ -609,7 +584,7 @@ const Home = () => {
             </div>
             <div className="col-md-5 animated animatedFadeInUp fadeInUp suvs-imgs">
               <img
-                src={require("./images/intro.svg").default}
+                src="./images/intro.svg"
                 width="100%"
                 alt=""
               />
@@ -632,7 +607,7 @@ const Home = () => {
               <div className="col-md-4">
                 <h4>
                   <a href="/">
-                    <img src={require("./images/logo.svg").default} alt="" />
+                    <img src="./images/logo.svg" alt="" />
                   </a>
                 </h4>
                 <p>
@@ -668,7 +643,7 @@ const Home = () => {
                     }}
                   >
                     <img
-                      src={require("./images/linkedin.svg").default}
+                      src="./images/linkedin.svg"
                       alt=""
                     />
                   </button>
@@ -681,7 +656,7 @@ const Home = () => {
                     }}
                   >
                     <img
-                      src={require("./images/gmail.svg").default}
+                      src="./images/gmail.svg"
                       alt=""
                       style={{ marginLeft: "20px" }}
                     />

@@ -15,7 +15,7 @@ const Business = () => {
             <div className="col-md-2 col-sm-2 col-2">
               <a href="/">
                 <img
-                  src={require("./images/logo.svg").default}
+                  src="./images/logo.svg"
                   alt="Qik.ai"
                   className="img-logovs"
                 />
@@ -88,7 +88,7 @@ const Business = () => {
             </div>
             <div className="col-md-6">
               <img
-                src={require("./images/academy-intro.png")}
+                src="./images/academy-intro.png"
                 alt=""
                 style={{ width: "100%" }}
               />
@@ -129,7 +129,7 @@ const Business = () => {
                   <tbody>
                     <tr>
                       <td>
-                        <img src={require("./images/cf1.svg").default} alt="" />
+                        <img src="./images/cf1.svg" alt="" />
                       </td>
                       <td>
                         <h4>Student Record</h4>
@@ -148,7 +148,7 @@ const Business = () => {
                   <tbody>
                     <tr>
                       <td>
-                        <img src={require("./images/cf2.svg").default} alt="" />
+                        <img src="./images/cf2.svg" alt="" />
                       </td>
                       <td>
                         <h4>Test Management</h4>
@@ -168,7 +168,7 @@ const Business = () => {
                   <tbody>
                     <tr>
                       <td>
-                        <img src={require("./images/cf3.svg").default} alt="" />
+                        <img src="./images/cf3.svg" alt="" />
                       </td>
                       <td>
                         <h4>Fees Management</h4>
@@ -187,7 +187,7 @@ const Business = () => {
                   <tbody>
                     <tr>
                       <td>
-                        <img src={require("./images/cf4.svg").default} alt="" />
+                        <img src="./images/cf4.svg" alt="" />
                       </td>
                       <td>
                         <h4>Assign Homework</h4>
@@ -202,7 +202,7 @@ const Business = () => {
                   <tbody>
                     <tr>
                       <td>
-                        <img src={require("./images/cf5.svg").default} alt="" />
+                        <img src="./images/cf5.svg" alt="" />
                       </td>
                       <td>
                         <h4>I-Card Printing</h4>
@@ -222,7 +222,7 @@ const Business = () => {
                   <tbody>
                     <tr>
                       <td>
-                        <img src={require("./images/cf6.svg").default} alt="" />
+                        <img src="./images/cf6.svg" alt="" />
                       </td>
                       <td>
                         <h4>Videos</h4>
@@ -237,7 +237,7 @@ const Business = () => {
                   <tbody>
                     <tr>
                       <td>
-                        <img src={require("./images/cf7.svg").default} alt="" />
+                        <img src="./images/cf7.svg" alt="" />
                       </td>
                       <td>
                         <h4>Custom Setting</h4>
@@ -257,7 +257,7 @@ const Business = () => {
                   <tbody>
                     <tr>
                       <td>
-                        <img src={require("./images/cf8.svg").default} alt="" />
+                        <img src="./images/cf8.svg" alt="" />
                       </td>
                       <td>
                         <h4>Mobile Application</h4>
@@ -276,7 +276,7 @@ const Business = () => {
                   <tbody>
                     <tr>
                       <td>
-                        <img src={require("./images/cf9.svg").default} alt="" />
+                        <img src="./images/cf9.svg" alt="" />
                       </td>
                       <td>
                         <h4>Reports</h4>
@@ -298,7 +298,7 @@ const Business = () => {
                     <tr>
                       <td>
                         <img
-                          src={require("./images/Enquiry.svg").default}
+                          src="./images/Enquiry.svg"
                           alt=""
                         />
                       </td>
@@ -321,7 +321,7 @@ const Business = () => {
                     <tr>
                       <td>
                         <img
-                          src={require("./images/Biometric.svg").default}
+                          src="./images/Biometric.svg"
                           alt=""
                         />
                       </td>
@@ -343,7 +343,7 @@ const Business = () => {
                     <tr>
                       <td>
                         <img
-                          src={require("./images/Subjectwise.svg").default}
+                          src="./images/Subjectwise.svg"
                           alt=""
                         />
                       </td>
@@ -365,7 +365,7 @@ const Business = () => {
                   <tbody>
                     <tr>
                       <td>
-                        <img src={require("./images/sms.svg").default} alt="" />
+                        <img src="./images/sms.svg" alt="" />
                       </td>
                       <td>
                         <h4>Auto SMS</h4>
@@ -386,7 +386,7 @@ const Business = () => {
                     <tr>
                       <td>
                         <img
-                          src={require("./images/Exam.svg").default}
+                          src="./images/Exam.svg"
                           alt=""
                         />
                       </td>
@@ -409,7 +409,7 @@ const Business = () => {
                     <tr>
                       <td>
                         <img
-                          src={require("./images/smstemplete.svg").default}
+                          src="./images/smstemplete.svg"
                           alt=""
                         />
                       </td>
@@ -431,7 +431,7 @@ const Business = () => {
                     <tr>
                       <td>
                         <img
-                          src={require("./images/email.svg").default}
+                          src="./images/email.svg"
                           alt=""
                         />
                       </td>
@@ -451,7 +451,7 @@ const Business = () => {
                   <tbody>
                     <tr>
                       <td>
-                        <img src={require("./images/omr.svg").default} alt="" />
+                        <img src="./images/omr.svg" alt="" />
                       </td>
                       <td>
                         <h4>OMR Integration</h4>
@@ -472,7 +472,7 @@ const Business = () => {
                     <tr>
                       <td>
                         <img
-                          src={require("./images/expense.svg").default}
+                          src="./images/expense.svg"
                           alt=""
                         />
                       </td>
@@ -495,7 +495,7 @@ const Business = () => {
                     <tr>
                       <td>
                         <img
-                          src={require("./images/subscription.svg").default}
+                          src="./images/subscription.svg"
                           alt=""
                         />
                       </td>
@@ -743,7 +743,7 @@ const Business = () => {
             </div>
             <div className="col-md-6">
               <img
-                src={require("./images/contact.svg").default}
+                src="./images/contact.svg"
                 width="100%"
                 alt=""
               />
@@ -776,7 +776,7 @@ const Business = () => {
               <div className="col-md-4">
                 <h4>
                   <Link to="/">
-                    <img src={require("./images/logo.svg").default} alt="" />
+                    <img src="./images/logo.svg" alt="" />
                   </Link>
                 </h4>
                 <p>
@@ -812,7 +812,7 @@ const Business = () => {
                     }}
                   >
                     <img
-                      src={require("./images/linkedin.svg").default}
+                      src="./images/linkedin.svg"
                       alt=""
                     />
                   </button>
@@ -825,7 +825,7 @@ const Business = () => {
                     }}
                   >
                     <img
-                      src={require("./images/gmail.svg").default}
+                      src="./images/gmail.svg"
                       style={{ marginLeft: "20px" }}
                       alt=""
                     />
