@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../main-style.css";
 const Home = () => {
   const [showEducation, setShowEducation] = useState("mainSection");
+  const [activeTab, setActiveTab] = useState("businessSolutions");
   return (
     <div>
       <header id="header">
@@ -38,11 +39,141 @@ const Home = () => {
               </h2>
               <div className="row">
                 <div className="col-md-12">
+                  {/* Tab Navigation */}
+                  <div className="tab-navigation" style={{ marginBottom: "30px" }}>
+                    <button
+                      onClick={() => setActiveTab("businessSolutions")}
+                      className={`tab-button ${activeTab === "businessSolutions" ? "active" : ""}`}
+                      style={{
+                        backgroundColor: activeTab === "businessSolutions" ? "#00abf6" : "transparent",
+                        color: activeTab === "businessSolutions" ? "#fff" : "#001e4b",
+                        border: "2px solid #00abf6",
+                        padding: "15px 30px",
+                        marginRight: "10px",
+                        borderRadius: "8px",
+                        fontSize: "16px",
+                        fontWeight: "600",
+                        cursor: "pointer",
+                        transition: "all 0.3s ease"
+                      }}
+                    >
+                      Business Solutions
+                    </button>
+                    <button
+                      onClick={() => setActiveTab("industryBased")}
+                      className={`tab-button ${activeTab === "industryBased" ? "active" : ""}`}
+                      style={{
+                        backgroundColor: activeTab === "industryBased" ? "#00abf6" : "transparent",
+                        color: activeTab === "industryBased" ? "#fff" : "#001e4b",
+                        border: "2px solid #00abf6",
+                        padding: "15px 30px",
+                        borderRadius: "8px",
+                        fontSize: "16px",
+                        fontWeight: "600",
+                        cursor: "pointer",
+                        transition: "all 0.3s ease"
+                      }}
+                    >
+                      Solutions by Business Industry
+                    </button>
+                  </div>
+
                   <div>
-                    {showEducation === "mainSection" && (
+                    {/* Business Solutions Tab */}
+                    {activeTab === "businessSolutions" && (
+                      <div id="business-solutions-section">
+                        <br />
+                        <h5>Our Business Solutions</h5>
+                        <p style={{ marginBottom: "30px", color: "#666" }}>
+                          Comprehensive business applications designed to streamline your operations
+                        </p>
+                        <div className="col-md-12" id="products">
+                          <div className="row" style={{ marginBottom: "60px" }}>
+                            <div className="col-md-4 col-sm-6 col-6">
+                              <Link to="Academy">
+                                <div className="feature-item">
+                                  <img
+                                    src={require("./images/e3.svg").default}
+                                    alt=""
+                                  />
+                                  <br />
+                                  Coaching
+                                </div>
+                              </Link>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-6">
+                              <Link to="Academy">
+                                <div className="feature-item">
+                                  <img
+                                    src={require("./images/e2.svg").default}
+                                    alt=""
+                                  />
+                                  <br />
+                                  University / College
+                                </div>
+                              </Link>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-6">
+                              <Link to="/Academy">
+                                <div className="feature-item">
+                                  <img
+                                    src={require("./images/e1.svg").default}
+                                    alt=""
+                                  />
+                                  <br />
+                                  Schools
+                                </div>
+                              </Link>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-6">
+                              <Link to="/Academy">
+                                <div className="feature-item">
+                                  <img
+                                    src={require("./images/e4.svg").default}
+                                    alt=""
+                                  />
+                                  <br />
+                                  Play Schools
+                                </div>
+                              </Link>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-6">
+                              <Link to="/Academy">
+                                <div className="feature-item">
+                                  <img
+                                    src={require("./images/e5.svg").default}
+                                    alt=""
+                                  />
+                                  <br />
+                                  Libraries
+                                </div>
+                              </Link>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-6">
+                              <Link to="/Academy">
+                                <div className="feature-item">
+                                  <img
+                                    src={require("./images/e6.svg").default}
+                                    alt=""
+                                  />
+                                  <br />
+                                  Home Tutors
+                                </div>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Industry Based Solutions Tab */}
+                    {activeTab === "industryBased" && showEducation === "mainSection" && (
                       <div id="main-section">
                         <br />
                         <h5>Select your business industry</h5>
+                        <p style={{ marginBottom: "30px", color: "#666" }}>
+                          Choose your industry to see tailored solutions
+                        </p>
                         <div className="col-md-12" id="products">
                           <div className="row">
                             <div className="col-md-3 col-sm-6 col-6">
@@ -135,7 +266,7 @@ const Home = () => {
                         </div>
                       </div>
                     )}
-                    {showEducation === "education" && (
+                    {activeTab === "industryBased" && showEducation === "education" && (
                       <div id="sub-edu-section">
                         <h5 style={{ marginBottom: "30px" }}>
                           <button
@@ -241,7 +372,7 @@ const Home = () => {
                         </div>
                       </div>
                     )}
-                    {showEducation === "healthCare" && (
+                    {activeTab === "industryBased" && showEducation === "healthCare" && (
                       <div id="sub-section">
                         <h5 style={{ marginBottom: "30px" }}>
                           <button
@@ -286,7 +417,7 @@ const Home = () => {
                         </div>
                       </div>
                     )}
-                    {showEducation === "retail" && (
+                    {activeTab === "industryBased" && showEducation === "retail" && (
                       <div id="sub-section-retail">
                         <h5 style={{ marginBottom: "30px" }}>
                           <button
@@ -330,7 +461,7 @@ const Home = () => {
                         </div>
                       </div>
                     )}
-                    {showEducation === "hr" && (
+                    {activeTab === "industryBased" && showEducation === "hr" && (
                       <div id="sub-section-hr">
                         <h5 style={{ marginBottom: "30px" }}>
                           <button
