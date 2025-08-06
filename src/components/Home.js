@@ -40,25 +40,12 @@ const Home = () => {
                   <div>
                     <br />
                     {/* Tab Navigation */}
-                    <div className="tab-navigation" style={{ marginBottom: "30px" }}>
+                    <div className="tab-navigation">
                       <button
                         className={`tab-button ${activeTab === "businessSolutions" ? "active" : ""}`}
                         onClick={() => {
                           setActiveTab("businessSolutions");
                           setShowEducation("businessSolutions");
-                        }}
-                        style={{
-                          backgroundColor: activeTab === "businessSolutions" ? "#00abf6" : "transparent",
-                          color: activeTab === "businessSolutions" ? "white" : "#001e4b",
-                          border: "2px solid #00abf6",
-                          borderRadius: "8px",
-                          padding: "12px 24px",
-                          marginRight: "10px",
-                          fontSize: "16px",
-                          fontWeight: "600",
-                          cursor: "pointer",
-                          outline: "none",
-                          transition: "all 0.3s ease"
                         }}
                       >
                         Business Solutions
@@ -68,18 +55,6 @@ const Home = () => {
                         onClick={() => {
                           setActiveTab("industries");
                           setShowEducation("mainSection");
-                        }}
-                        style={{
-                          backgroundColor: activeTab === "industries" ? "#00abf6" : "transparent",
-                          color: activeTab === "industries" ? "white" : "#001e4b",
-                          border: "2px solid #00abf6",
-                          borderRadius: "8px",
-                          padding: "12px 24px",
-                          fontSize: "16px",
-                          fontWeight: "600",
-                          cursor: "pointer",
-                          outline: "none",
-                          transition: "all 0.3s ease"
                         }}
                       >
                         Industries
