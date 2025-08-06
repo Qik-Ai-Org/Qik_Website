@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: '/', // Custom domain (www.qik.ai) uses root path
   build: {
-    outDir: 'docs', // Build to docs folder for GitHub Pages
+    outDir: 'dist', // Build to dist folder (build artifacts should not be committed)
     assetsDir: 'static', // Match the current structure
   },
   server: {
