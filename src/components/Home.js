@@ -13,7 +13,7 @@ const Home = () => {
               <a href="/">
                 <img
                   src="./images/logo.svg"
-                  alt="Qik.ai"
+                  alt="Qik.ai Logo - Complete Business Cloud Stack"
                   className="img-logovs"
                 />
               </a>
@@ -82,7 +82,7 @@ const Home = () => {
                                 <div className="feature-item">
                                   <img
                                     src="./images/1.svg"
-                                    alt=""
+                                    alt="Education sector icon"
                                   />
                                   <br />
                                   Education
@@ -102,7 +102,7 @@ const Home = () => {
                                 <div className="feature-item">
                                   <img
                                     src="./images/2.svg"
-                                    alt=""
+                                    alt="Healthcare sector icon"
                                   />
                                   <br />
                                   Health care
@@ -122,7 +122,7 @@ const Home = () => {
                                 <div className="feature-item">
                                   <img
                                     src="./images/3.svg"
-                                    alt=""
+                                    alt="Retail sector icon"
                                   />
                                   <br />
                                   Retail
@@ -142,7 +142,7 @@ const Home = () => {
                                 <div className="feature-item">
                                   <img
                                     src="./images/4.svg"
-                                    alt=""
+                                    alt="HR sector icon"
                                   />
                                   <br />
                                   HR
@@ -188,7 +188,7 @@ const Home = () => {
                                 <div className="feature-item">
                                   <img
                                     src="./images/e3.svg"
-                                    alt=""
+                                    alt="Coaching service icon"
                                   />
                                   <br />
                                   Coaching
@@ -200,7 +200,7 @@ const Home = () => {
                                 <div className="feature-item">
                                   <img
                                     src="./images/e2.svg"
-                                    alt=""
+                                    alt="University and College education icon"
                                   />
                                   <br />
                                   University / College
@@ -607,7 +607,7 @@ const Home = () => {
               <div className="col-md-4">
                 <h4>
                   <a href="/">
-                    <img src="./images/logo.svg" alt="" />
+                    <img src="./images/logo.svg" alt="Qik.ai Logo" />
                   </a>
                 </h4>
                 <p>
