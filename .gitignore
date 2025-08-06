@@ -10,7 +10,7 @@
 
 # production
 /build
-/docs/static
+# Note: /docs/static is needed for GitHub Pages deployment, so it's not ignored
 
 # Vite
 dist
