@@ -443,6 +443,32 @@ const Home = () => {
                                 </p>
                               </div>
                             </div>
+                            <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
+                              <div className="feature-item business-product">
+                                <img
+                                  src="./images/nexuspost.svg"
+                                  alt="NexusPost Social Media Management icon"
+                                />
+                                <br />
+                                <strong>NexusPost</strong>
+                                <p style={{ fontSize: "12px", marginTop: "8px" }}>
+                                  Social Media Management
+                                </p>
+                              </div>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
+                              <div className="feature-item business-product">
+                                <img
+                                  src="./images/email-validator.svg"
+                                  alt="Qik Email Validator icon"
+                                />
+                                <br />
+                                <strong>Qik Email Validator</strong>
+                                <p style={{ fontSize: "12px", marginTop: "8px" }}>
+                                  Email verification
+                                </p>
+                              </div>
+                            </div>
                           </div>
                           
                           <div className="row">
@@ -571,6 +597,74 @@ const Home = () => {
                                 <strong>Qik Feature Maestro</strong>
                                 <p style={{ fontSize: "12px", marginTop: "8px" }}>
                                   SaaS Feature Request Board: Product development and feature request management
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="row">
+                            <div className="col-md-12" style={{ marginBottom: "20px" }}>
+                              <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
+                                Resource Reservation System
+                              </h6>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
+                              <div className="feature-item business-product">
+                                <img
+                                  src="./images/bookit.svg"
+                                  alt="Qik BookIt icon"
+                                />
+                                <br />
+                                <strong>Qik BookIt</strong>
+                                <p style={{ fontSize: "12px", marginTop: "8px" }}>
+                                  Resource booking and reservation management system
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="row">
+                            <div className="col-md-12" style={{ marginBottom: "20px" }}>
+                              <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
+                                Engagement & Communication
+                              </h6>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
+                              <div className="feature-item business-product">
+                                <img
+                                  src="./images/allvoices.svg"
+                                  alt="Qik AllVoices icon"
+                                />
+                                <br />
+                                <strong>Qik AllVoices</strong>
+                                <p style={{ fontSize: "12px", marginTop: "8px" }}>
+                                  Employee voice and feedback collection platform
+                                </p>
+                              </div>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
+                              <div className="feature-item business-product">
+                                <img
+                                  src="./images/surveys.svg"
+                                  alt="Qik Surveys icon"
+                                />
+                                <br />
+                                <strong>Qik Surveys</strong>
+                                <p style={{ fontSize: "12px", marginTop: "8px" }}>
+                                  Survey creation and data collection tools
+                                </p>
+                              </div>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
+                              <div className="feature-item business-product">
+                                <img
+                                  src="./images/forms.svg"
+                                  alt="Qik Forms icon"
+                                />
+                                <br />
+                                <strong>Qik Forms</strong>
+                                <p style={{ fontSize: "12px", marginTop: "8px" }}>
+                                  Dynamic form builder and data collection
                                 </p>
                               </div>
                             </div>
