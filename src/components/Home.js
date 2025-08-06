@@ -13,7 +13,7 @@ const Home = () => {
               <a href="/">
                 <img
                   src="./images/logo.svg"
-                  alt="Qik.ai"
+                  alt="Qik.ai Logo - Complete Business Cloud Stack"
                   className="img-logovs"
                 />
               </a>
@@ -82,7 +82,7 @@ const Home = () => {
                                 <div className="feature-item">
                                   <img
                                     src="./images/1.svg"
-                                    alt=""
+                                    alt="Education sector icon"
                                   />
                                   <br />
                                   Education
@@ -102,7 +102,7 @@ const Home = () => {
                                 <div className="feature-item">
                                   <img
                                     src="./images/2.svg"
-                                    alt=""
+                                    alt="Healthcare sector icon"
                                   />
                                   <br />
                                   Health care
@@ -122,7 +122,7 @@ const Home = () => {
                                 <div className="feature-item">
                                   <img
                                     src="./images/3.svg"
-                                    alt=""
+                                    alt="Retail sector icon"
                                   />
                                   <br />
                                   Retail
@@ -142,7 +142,7 @@ const Home = () => {
                                 <div className="feature-item">
                                   <img
                                     src="./images/4.svg"
-                                    alt=""
+                                    alt="HR sector icon"
                                   />
                                   <br />
                                   HR
@@ -188,7 +188,7 @@ const Home = () => {
                                 <div className="feature-item">
                                   <img
                                     src="./images/e3.svg"
-                                    alt=""
+                                    alt="Coaching service icon"
                                   />
                                   <br />
                                   Coaching
@@ -200,7 +200,7 @@ const Home = () => {
                                 <div className="feature-item">
                                   <img
                                     src="./images/e2.svg"
-                                    alt=""
+                                    alt="University and College education icon"
                                   />
                                   <br />
                                   University / College
@@ -212,7 +212,7 @@ const Home = () => {
                                 <div className="feature-item">
                                   <img
                                     src="./images/e1.svg"
-                                    alt=""
+                                    alt="Business solution icon"
                                   />
                                   <br />
                                   Schools
@@ -224,7 +224,7 @@ const Home = () => {
                                 <div className="feature-item">
                                   <img
                                     src="./images/e4.svg"
-                                    alt=""
+                                    alt="Business solution icon"
                                   />
                                   <br />
                                   Play Schools
@@ -236,7 +236,7 @@ const Home = () => {
                                 <div className="feature-item">
                                   <img
                                     src="./images/e5.svg"
-                                    alt=""
+                                    alt="Business solution icon"
                                   />
                                   <br />
                                   Libraries
@@ -248,7 +248,7 @@ const Home = () => {
                                 <div className="feature-item">
                                   <img
                                     src="./images/e6.svg"
-                                    alt=""
+                                    alt="Business solution icon"
                                   />
                                   <br />
                                   Home Tutors
@@ -408,7 +408,7 @@ const Home = () => {
                               <div className="feature-item business-product">
                                 <img
                                   src="./images/cf7.svg"
-                                  alt=""
+                                  alt="Business solution icon"
                                 />
                                 <br />
                                 <strong>Qik Policy Management Portal</strong>
@@ -421,7 +421,7 @@ const Home = () => {
                               <div className="feature-item business-product">
                                 <img
                                   src="./images/cf1.svg"
-                                  alt=""
+                                  alt="Business solution icon"
                                 />
                                 <br />
                                 <strong>Qik Whistleblower</strong>
@@ -434,7 +434,7 @@ const Home = () => {
                               <div className="feature-item business-product">
                                 <img
                                   src="./images/cf9.svg"
-                                  alt=""
+                                  alt="Business solution icon"
                                 />
                                 <br />
                                 <strong>Qik RetainRight</strong>
@@ -455,7 +455,7 @@ const Home = () => {
                               <div className="feature-item business-product">
                                 <img
                                   src="./images/email.svg"
-                                  alt=""
+                                  alt="Business solution icon"
                                 />
                                 <br />
                                 <strong>Qik LegaDraft</strong>
@@ -468,7 +468,7 @@ const Home = () => {
                               <div className="feature-item business-product">
                                 <img
                                   src="./images/cf9.svg"
-                                  alt=""
+                                  alt="Business solution icon"
                                 />
                                 <br />
                                 <strong>Qik RetainRight</strong>
@@ -489,7 +489,7 @@ const Home = () => {
                               <div className="feature-item business-product">
                                 <img
                                   src="./images/cf3.svg"
-                                  alt=""
+                                  alt="Business solution icon"
                                 />
                                 <br />
                                 <strong>Qik AssetGrid</strong>
@@ -510,7 +510,7 @@ const Home = () => {
                               <div className="feature-item business-product">
                                 <img
                                   src="./images/cf4.svg"
-                                  alt=""
+                                  alt="Business solution icon"
                                 />
                                 <br />
                                 <strong>Qik OnboardFlow</strong>
@@ -523,7 +523,7 @@ const Home = () => {
                               <div className="feature-item business-product">
                                 <img
                                   src="./images/cf2.svg"
-                                  alt=""
+                                  alt="Business solution icon"
                                 />
                                 <br />
                                 <strong>Qik OKR & Goals</strong>
@@ -544,7 +544,7 @@ const Home = () => {
                               <div className="feature-item business-product">
                                 <img
                                   src="./images/sms.svg"
-                                  alt=""
+                                  alt="Business solution icon"
                                 />
                                 <br />
                                 <strong>Qik DragonDrip</strong>
@@ -565,7 +565,7 @@ const Home = () => {
                               <div className="feature-item business-product">
                                 <img
                                   src="./images/cf8.svg"
-                                  alt=""
+                                  alt="Business solution icon"
                                 />
                                 <br />
                                 <strong>Qik Feature Maestro</strong>
@@ -586,7 +586,7 @@ const Home = () => {
               <img
                 src="./images/intro.svg"
                 width="100%"
-                alt=""
+                alt="Business solution icon"
               />
               <br />
             </div>
@@ -607,7 +607,7 @@ const Home = () => {
               <div className="col-md-4">
                 <h4>
                   <a href="/">
-                    <img src="./images/logo.svg" alt="" />
+                    <img src="./images/logo.svg" alt="Qik.ai Logo" />
                   </a>
                 </h4>
                 <p>
@@ -644,7 +644,7 @@ const Home = () => {
                   >
                     <img
                       src="./images/linkedin.svg"
-                      alt=""
+                      alt="Business solution icon"
                     />
                   </button>
                   <button
@@ -657,7 +657,7 @@ const Home = () => {
                   >
                     <img
                       src="./images/gmail.svg"
-                      alt=""
+                      alt="Business solution icon"
                       style={{ marginLeft: "20px" }}
                     />
                   </button>

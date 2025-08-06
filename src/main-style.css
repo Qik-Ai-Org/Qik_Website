@@ -172,6 +172,196 @@ h6 {
   right: 15px;
 }
 
+/* Enhanced Mobile Responsiveness */
+
+/* Extra Small Devices (Phones, 320px and up) */
+@media (max-width: 320px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .heading-h1 {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .heading-h2 {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .img-logovs {
+    max-height: 35px !important;
+  }
+  
+  .us-contact {
+    font-size: 11px !important;
+  }
+  
+  .feature-item {
+    padding: 10px 5px !important;
+    min-height: 80px !important;
+  }
+  
+  .feature-item img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+
+/* Small Devices (Phones, 375px and up) */
+@media (max-width: 375px) {
+  .heading-h1 {
+    font-size: 28px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .heading-h2 {
+    font-size: 18px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 25px !important;
+  }
+  
+  .img-logovs {
+    max-height: 40px !important;
+  }
+  
+  .us-contact {
+    font-size: 12px !important;
+    padding: 5px 0;
+  }
+  
+  #header {
+    padding: 10px 0;
+  }
+  
+  .qik-intro {
+    padding: 30px 0 !important;
+  }
+  
+  .feature-item {
+    padding: 15px 8px !important;
+    margin-bottom: 15px !important;
+    min-height: 100px !important;
+    font-size: 13px !important;
+  }
+  
+  .feature-item img {
+    width: 35px !important;
+    height: 35px !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .tab-button {
+    font-size: 13px !important;
+    padding: 8px 12px !important;
+    margin: 5px 2px !important;
+  }
+  
+  .col-6 {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+}
+
+/* Medium Small Devices (414px and up) */
+@media (max-width: 414px) {
+  .heading-h1 {
+    font-size: 32px !important;
+    line-height: 1.3 !important;
+  }
+  
+  .heading-h2 {
+    font-size: 20px !important;
+    line-height: 1.4 !important;
+  }
+  
+  .img-logovs {
+    max-height: 45px !important;
+  }
+  
+  .feature-item {
+    padding: 20px 10px !important;
+    min-height: 120px !important;
+    font-size: 14px !important;
+  }
+  
+  .feature-item img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
+/* Tablets (768px and up) */
+@media (max-width: 768px) {
+  .heading-h1 {
+    font-size: 36px !important;
+    line-height: 1.3 !important;
+  }
+  
+  .heading-h2 {
+    font-size: 22px !important;
+    line-height: 1.4 !important;
+  }
+  
+  .qik-intro {
+    padding: 50px 0 !important;
+  }
+  
+  .feature-item {
+    margin-bottom: 20px !important;
+    min-height: 140px !important;
+  }
+  
+  .feature-item img {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  .tab-button {
+    width: 100% !important;
+    margin-bottom: 10px !important;
+  }
+}
+
+/* Improve touch targets for mobile */
+@media (max-width: 768px) {
+  button, .btn, .tab-button {
+    min-height: 44px !important;
+    min-width: 44px !important;
+    padding: 12px 16px !important;
+  }
+  
+  .feature-item {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .feature-item:hover, .feature-item:active {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+}
+
+/* Typography scaling */
+@media (max-width: 768px) {
+  h1 { font-size: clamp(24px, 5vw, 36px) !important; }
+  h2 { font-size: clamp(18px, 4vw, 24px) !important; }
+  h3 { font-size: clamp(16px, 3.5vw, 20px) !important; }
+  h4 { font-size: clamp(14px, 3vw, 18px) !important; }
+  h5 { font-size: clamp(13px, 2.5vw, 16px) !important; }
+  h6 { font-size: clamp(12px, 2vw, 14px) !important; }
+  
+  p, div, span {
+    font-size: clamp(12px, 2.5vw, 16px) !important;
+    line-height: 1.5 !important;
+  }
+}
+
 @media (max-width: 1366px) {
   .nav-menu .drop-down .drop-down ul {
     left: -90%;
@@ -1461,4 +1651,190 @@ i.fa.fa-angle-left {
   box-shadow: 
     0 8px 24px rgba(244, 162, 97, 0.4),
     0 0 20px rgba(244, 162, 97, 0.2);
+}
+
+/* Enhanced Animations and Transitions */
+
+/* Fade In Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(244, 162, 97, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(244, 162, 97, 0.6);
+  }
+}
+
+/* Apply animations to elements */
+.qik-intro {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.heading-h1 {
+  animation: slideInDown 0.6s ease-out;
+}
+
+.heading-h2 {
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.feature-item {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(45, 74, 58, 0.15);
+}
+
+.tab-button {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.tab-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.tab-button:hover::before {
+  left: 100%;
+}
+
+.tab-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(244, 162, 97, 0.4);
+}
+
+.tab-button.active {
+  animation: glow 2s infinite;
+}
+
+.img-logovs {
+  transition: transform 0.3s ease;
+}
+
+.img-logovs:hover {
+  transform: scale(1.05);
+}
+
+/* Smooth page transitions */
+.router-wrapper {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Loading animation for better UX */
+.loading-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(244, 162, 97, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--amber-glow);
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Staggered animation for feature items */
+.feature-item:nth-child(1) { animation-delay: 0.1s; }
+.feature-item:nth-child(2) { animation-delay: 0.2s; }
+.feature-item:nth-child(3) { animation-delay: 0.3s; }
+.feature-item:nth-child(4) { animation-delay: 0.4s; }
+.feature-item:nth-child(5) { animation-delay: 0.5s; }
+.feature-item:nth-child(6) { animation-delay: 0.6s; }
+
+/* Micro-interactions */
+button, .btn {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:active, .btn:active {
+  transform: scale(0.95);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced focus states for accessibility */
+button:focus, .btn:focus, .tab-button:focus {
+  outline: 2px solid var(--amber-glow);
+  outline-offset: 2px;
+}
+
+/* Animation on scroll (for future implementation) */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
