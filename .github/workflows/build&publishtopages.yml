@@ -22,14 +22,12 @@ jobs:
       - name: Build
         run: |
           npm run build
-          mkdir -p docs
-          mv build/* docs/
 
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add docs
+          git add .
           git commit -m "Update docs with built app" || exit 0
 
       - name: Push changes
