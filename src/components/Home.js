@@ -1,25 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../main-style.css";
-
 const Home = () => {
   const [showEducation, setShowEducation] = useState("mainSection");
   const [activeTab, setActiveTab] = useState("businessSolutions");
-
-  useEffect(() => {
-    // Load advanced animations script
-    const script = document.createElement('script');
-    script.src = '/advanced-animations.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      // Cleanup
-      if (script.parentNode) {
-        script.parentNode.removeChild(script);
-      }
-    };
-  }, []);
   return (
     <div>
       <header id="header">
@@ -28,7 +12,7 @@ const Home = () => {
             <div className="col-md-4 col-sm-4 col-4">
               <a href="/">
                 <img
-                  src="/logo.svg"
+                  src="./images/logo.svg"
                   alt="Qik.ai Logo - Complete Business Cloud Stack"
                   className="img-logovs"
                 />
@@ -423,8 +407,8 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src="/images/icon-compliance.svg"
-                                  alt="Compliance solution icon"
+                                  src="./images/cf7.svg"
+                                  alt="Business solution icon"
                                 />
                                 <br />
                                 <strong>Qik Policy Management Portal</strong>
@@ -436,8 +420,8 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src="/images/icon-compliance.svg"
-                                  alt="Compliance solution icon"
+                                  src="./images/cf1.svg"
+                                  alt="Business solution icon"
                                 />
                                 <br />
                                 <strong>Qik Whistleblower</strong>
@@ -509,8 +493,8 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src="/images/icon-asset.svg"
-                                  alt="Asset management icon"
+                                  src="./images/cf3.svg"
+                                  alt="Business solution icon"
                                 />
                                 <br />
                                 <strong>Qik AssetGrid</strong>
@@ -530,8 +514,8 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src="/images/icon-hr.svg"
-                                  alt="HR solution icon"
+                                  src="./images/cf4.svg"
+                                  alt="Business solution icon"
                                 />
                                 <br />
                                 <strong>Qik OnboardFlow</strong>
@@ -543,8 +527,8 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src="/images/icon-hr.svg"
-                                  alt="HR solution icon"
+                                  src="./images/cf2.svg"
+                                  alt="Business solution icon"
                                 />
                                 <br />
                                 <strong>Qik OKR & Goals</strong>
@@ -564,8 +548,8 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src="/images/icon-marketing.svg"
-                                  alt="Marketing solution icon"
+                                  src="./images/sms.svg"
+                                  alt="Business solution icon"
                                 />
                                 <br />
                                 <strong>Qik DragonDrip</strong>
@@ -585,8 +569,8 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src="/images/icon-product.svg"
-                                  alt="Product development icon"
+                                  src="./images/cf8.svg"
+                                  alt="Business solution icon"
                                 />
                                 <br />
                                 <strong>Qik Feature Maestro</strong>
