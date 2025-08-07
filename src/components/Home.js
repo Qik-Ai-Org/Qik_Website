@@ -446,6 +446,19 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
+                                  src="./images/email.svg"
+                                  alt="Business solution icon"
+                                />
+                                <br />
+                                <strong>Qik LegaDraft</strong>
+                                <p style={{ fontSize: "12px", marginTop: "8px" }}>
+                                  AI-Powered Legal Document Assistant: AI-driven legal document creation and review
+                                </p>
+                              </div>
+                            </div>
+                            <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
+                              <div className="feature-item business-product">
+                                <img
                                   src="./images/nexuspost.svg"
                                   alt="NexusPost Social Media Management icon"
                                 />
@@ -466,40 +479,6 @@ const Home = () => {
                                 <strong>Qik Email Validator</strong>
                                 <p style={{ fontSize: "12px", marginTop: "8px" }}>
                                   Email verification
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          
-                          <div className="row">
-                            <div className="col-md-12" style={{ marginBottom: "20px" }}>
-                              <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
-                                Legal & Documentation
-                              </h6>
-                            </div>
-                            <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
-                              <div className="feature-item business-product">
-                                <img
-                                  src="./images/email.svg"
-                                  alt="Business solution icon"
-                                />
-                                <br />
-                                <strong>Qik LegaDraft</strong>
-                                <p style={{ fontSize: "12px", marginTop: "8px" }}>
-                                  AI-Powered Legal Document Assistant: AI-driven legal document creation and review
-                                </p>
-                              </div>
-                            </div>
-                            <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
-                              <div className="feature-item business-product">
-                                <img
-                                  src="./images/cf9.svg"
-                                  alt="Business solution icon"
-                                />
-                                <br />
-                                <strong>Qik RetainRight</strong>
-                                <p style={{ fontSize: "12px", marginTop: "8px" }}>
-                                  Document Retention & Auto-Purge Scheduler: Legal document lifecycle management
                                 </p>
                               </div>
                             </div>
