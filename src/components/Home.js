@@ -6,27 +6,31 @@ const Home = () => {
   const [activeTab, setActiveTab] = useState("businessSolutions");
   return (
     <div>
-      <header id="header">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-4 col-sm-4 col-4">
-              <a href="/">
+      <header className="fixed w-full top-0 z-50 bg-surface-elevated/95 backdrop-blur-md border-b border-qik-purple/10 shadow-lg shadow-qik-purple/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-20 sm:h-24">
+            {/* Logo Section */}
+            <div className="flex-shrink-0">
+              <a href="/" className="block">
                 <img
                   src="./images/logo.png"
                   alt="Qik.ai Logo - Complete Business Cloud Stack"
-                  className="img-logovs"
+                  className="h-10 sm:h-12 lg:h-14 w-auto transition-transform duration-300 hover:scale-105"
                 />
               </a>
             </div>
-            <div className="col-md-8 col-sm-8 col-8 text-right">
-              <div className="us-contact">
-                <i className="fa fa-envelope" /> hello@qik.ai
+            
+            {/* Contact Section */}
+            <div className="flex items-center">
+              <div className="flex items-center text-text-secondary text-sm sm:text-base">
+                <i className="fa fa-envelope mr-2 text-qik-purple" />
+                <span className="font-medium">hello@qik.ai</span>
               </div>
             </div>
           </div>
         </div>
       </header>
-      <section id="qik-intro" className="qik-intro ">
+      <section id="qik-intro" className="qik-intro pt-20 sm:pt-24 lg:pt-28">
         <div className="container">
           <div className="row">
             <div className="col-md-7 animated animatedFadeInDown fadeInDown class-uvstext">
