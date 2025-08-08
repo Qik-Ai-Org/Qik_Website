@@ -13,10 +13,11 @@ const Home = () => {
             <div className="flex-shrink-0">
               <a href="/" className="block">
                 <img
-                  src="./images/logo.png"
-                  alt="Qik.ai Logo - Complete Business Cloud Stack"
-                  className="h-10 sm:h-12 lg:h-14 w-auto transition-transform duration-300 hover:scale-105"
-                />
+  src="./images/logo.png"
+  alt="Qik.ai Logo - Complete Business Cloud Stack"
+  className="h-10 sm:h-12 lg:h-14 w-auto transition-transform duration-300 hover:scale-105"
+  style={{ maxHeight: "48px", height: "auto", maxWidth: "90vw" }}
+/>
               </a>
             </div>
             
