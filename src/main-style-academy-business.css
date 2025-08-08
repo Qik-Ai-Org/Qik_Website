@@ -1,16 +1,46 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&display=swap');
 
+/* Import main theme variables */
+:root {
+  /* Primary gradient colors */
+  --qik-purple: #8B5CF6;
+  --qik-blue: #3B82F6;
+  --qik-purple-light: #A78BFA;
+  --qik-purple-dark: #7C3AED;
+  --qik-blue-light: #60A5FA;
+  --qik-blue-dark: #2563EB;
+  
+  /* Background variations */
+  --bg-gradient-primary: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
+  --bg-gradient-light: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
+  --bg-surface: #FAFCFF;
+  --bg-surface-elevated: #F8FAFC;
+  
+  /* Text colors */
+  --text-primary: #1E293B;
+  --text-secondary: #475569;
+  --text-accent: #8B5CF6;
+  --text-on-gradient: #FFFFFF;
+  
+  /* Interactive states */
+  --hover-bg: rgba(139, 92, 246, 0.08);
+  --soft-shadow: rgba(139, 92, 246, 0.12);
+}
+
 body {
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
+  background: var(--bg-surface);
 }
 
 body {
-  color: #001e4b;
+  color: var(--text-primary);
 }
 
 div.btn-primary {
-  border: #2f42fc;
+  border: var(--qik-purple);
+  background: var(--bg-gradient-primary);
+  color: var(--text-on-gradient);
   font-weight: 500;
 }
 
@@ -20,7 +50,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #001e4b;
+  color: var(--text-primary);
   font-weight: 700;
 }
 
@@ -34,10 +64,11 @@ section#contact-us {
 }
 
 #header {
-  background: #fff;
+  background: var(--bg-surface-elevated);
+  background-image: var(--bg-gradient-light);
   height: 94px;
   padding-top: 8px;
-  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 32px var(--soft-shadow);
   position: fixed;
   width: 100%;
   z-index: 99;
