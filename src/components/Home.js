@@ -12,7 +12,7 @@ const Home = () => {
             <div className="col-md-4 col-sm-4 col-4">
               <a href="/">
                 <img
-                  src="./images/logo.svg"
+                  src="https://github.com/user-attachments/assets/9f961eac-a2b4-495a-9afa-fb45b0ce992d"
                   alt="Qik.ai Logo - Complete Business Cloud Stack"
                   className="img-logovs"
                 />
