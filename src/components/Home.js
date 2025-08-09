@@ -407,8 +407,8 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src="./images/cf7.svg"
-                                  alt="Business solution icon"
+                                  src="./images/logos/Qik Policy Management Portal.PNG"
+                                  alt="Qik Policy Management Portal icon"
                                 />
                                 <br />
                                 <strong>Qik Policy Management Portal</strong>
@@ -420,8 +420,8 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src="./images/cf1.svg"
-                                  alt="Business solution icon"
+                                  src="./images/logos/Qik Whistleblower.PNG"
+                                  alt="Qik Whistleblower icon"
                                 />
                                 <br />
                                 <strong>Qik Whistleblower</strong>
@@ -433,8 +433,8 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src="./images/cf9.svg"
-                                  alt="Business solution icon"
+                                  src="./images/logos/Qik RetainRight.PNG"
+                                  alt="Qik RetainRight icon"
                                 />
                                 <br />
                                 <strong>Qik RetainRight</strong>
@@ -446,8 +446,8 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src="./images/email.svg"
-                                  alt="Business solution icon"
+                                  src="./images/logos/LegaDraft.PNG"
+                                  alt="LegaDraft icon"
                                 />
                                 <br />
                                 <strong>Qik LegaDraft</strong>
@@ -459,7 +459,7 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src="./images/nexuspost.svg"
+                                  src="./images/logos/NexusPost.PNG"
                                   alt="NexusPost Social Media Management icon"
                                 />
                                 <br />
@@ -472,7 +472,7 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src="./images/email-validator.svg"
+                                  src="./images/logos/Qik Email Validator.PNG"
                                   alt="Qik Email Validator icon"
                                 />
                                 <br />
@@ -493,8 +493,8 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src="./images/cf3.svg"
-                                  alt="Business solution icon"
+                                  src="./images/logos/Qik AssetGrid.PNG"
+                                  alt="Qik AssetGrid icon"
                                 />
                                 <br />
                                 <strong>Qik AssetGrid</strong>
@@ -514,8 +514,8 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src="./images/cf4.svg"
-                                  alt="Business solution icon"
+                                  src="./images/logos/Qik OnboardFlow.PNG"
+                                  alt="Qik OnboardFlow icon"
                                 />
                                 <br />
                                 <strong>Qik OnboardFlow</strong>
@@ -527,8 +527,8 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src="./images/cf2.svg"
-                                  alt="Business solution icon"
+                                  src="./images/logos/Qik OKR & Goals.PNG"
+                                  alt="Qik OKR & Goals icon"
                                 />
                                 <br />
                                 <strong>Qik OKR & Goals</strong>
@@ -548,8 +548,8 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src="./images/sms.svg"
-                                  alt="Business solution icon"
+                                  src="./images/logos/Qik DragonDrip.PNG"
+                                  alt="Qik DragonDrip icon"
                                 />
                                 <br />
                                 <strong>Qik DragonDrip</strong>
@@ -569,8 +569,8 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src="./images/cf8.svg"
-                                  alt="Business solution icon"
+                                  src="./images/logos/Qik Feature Maestro.png"
+                                  alt="Qik Feature Maestro icon"
                                 />
                                 <br />
                                 <strong>Qik Feature Maestro</strong>
@@ -590,7 +590,7 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src="./images/bookit.svg"
+                                  src="./images/logos/Qik BookIt.PNG"
                                   alt="Qik BookIt icon"
                                 />
                                 <br />
@@ -611,7 +611,7 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src="./images/allvoices.svg"
+                                  src="./images/logos/Qik AllVoices.PNG"
                                   alt="Qik AllVoices icon"
                                 />
                                 <br />
@@ -624,7 +624,7 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src="./images/surveys.svg"
+                                  src="./images/logos/Qik Surveys.PNG"
                                   alt="Qik Surveys icon"
                                 />
                                 <br />
@@ -637,7 +637,7 @@ const Home = () => {
                             <div className="col-md-4 col-sm-6 col-12" style={{ marginBottom: "20px" }}>
                               <div className="feature-item business-product">
                                 <img
-                                  src="./images/forms.svg"
+                                  src="./images/logos/Qik Forms.PNG"
                                   alt="Qik Forms icon"
                                 />
                                 <br />
@@ -655,7 +655,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-5 animated animatedFadeInUp fadeInUp suvs-imgs">
+            <div className="col-md-5 animated animatedFadeInUp fadeInUp suvs-imgs sticky-column">
               <img
                 src="./images/intro.svg"
                 width="100%"
@@ -669,7 +669,7 @@ const Home = () => {
       <style
         dangerouslySetInnerHTML={{
           __html:
-            "   \n    .boxus { \n        align-self: flex-end;\n        animation-duration: 2s;\n        animation-iteration-count: infinite;\n        margin: 0 auto 0 auto;\n        transform-origin: bottom;\n    }\n    .bounce-1us {\n        animation-name: bounce-1us;\n        animation-timing-function: linear;\n    }\n    @keyframes bounce-1us {\n        0%   { transform: translateY(0); }\n        50%  { transform: translateY(-20px); }\n        100% { transform: translateY(0); }\n    }\n\t\n\n\t#products img {\n    text-align: center;\n    margin: 25px 0;\n}\n\t#products a {font-size:18px;color: #001e4b;  text-align: center;\n    font-weight: 600;}#products a:hover{color:#00abf6;}\n\t\n.feature-item{  -webkit-transition: all 0.25s linear;\n  transition: all 0.25s linear;}\n.feature-item:hover { \n  -webkit-transform: translateY(-10px);\n          transform: translateY(-10px);\n}\n\n.business-product {\n  border: 1px solid #eee;\n  border-radius: 8px;\n  padding: 20px;\n  text-align: center;\n  min-height: 200px;\n  margin-bottom: 20px;\n  box-shadow: 0 2px 4px rgba(0,0,0,0.1);\n}\n\n.business-product:hover {\n  box-shadow: 0 4px 8px rgba(0,0,0,0.15);\n  border-color: #00abf6;\n}\n\n.business-product img {\n  width: 48px;\n  height: 48px;\n  margin: 0 auto 15px;\n}\n\n.business-product strong {\n  display: block;\n  color: #001e4b;\n  font-size: 16px;\n  margin-bottom: 10px;\n}\n\n .us-contact {\n    font-size: 14px;\n    line-height: 28px;color: #001e4b;\n}a.btn-primary {\n    background: #2f42fc;\n    border-color: #2f42fc;\n    border-radius: 0;\n    text-align: left;padding: 15px 40px;font-size: 16px;font-weight:600;\n}\n.btn-primary{border-radius: 4px;}p{color: #001e4b;}body {\n    color: #001e4b;\n}.container, .container-lg, .container-md, .container-sm, .container-xl {\n    max-width: 96%;\n}\n",
+            "   \n    .boxus { \n        align-self: flex-end;\n        animation-duration: 2s;\n        animation-iteration-count: infinite;\n        margin: 0 auto 0 auto;\n        transform-origin: bottom;\n    }\n    .bounce-1us {\n        animation-name: bounce-1us;\n        animation-timing-function: linear;\n    }\n    @keyframes bounce-1us {\n        0%   { transform: translateY(0); }\n        50%  { transform: translateY(-20px); }\n        100% { transform: translateY(0); }\n    }\n\t\n\n\t#products img {\n    text-align: center;\n    margin: 25px 0;\n}\n\t#products a {font-size:18px;color: #001e4b;  text-align: center;\n    font-weight: 600;}#products a:hover{color:#00abf6;}\n\t\n.feature-item{  -webkit-transition: all 0.25s linear;\n  transition: all 0.25s linear;}\n.feature-item:hover { \n  -webkit-transform: translateY(-10px);\n          transform: translateY(-10px);\n}\n\n.business-product {\n  border: 1px solid #eee;\n  border-radius: 8px;\n  padding: 20px;\n  text-align: center;\n  min-height: 200px;\n  margin-bottom: 20px;\n  box-shadow: 0 2px 4px rgba(0,0,0,0.1);\n}\n\n.business-product:hover {\n  box-shadow: 0 4px 8px rgba(0,0,0,0.15);\n  border-color: #00abf6;\n}\n\n.business-product img {\n  width: 100%;\n  height: auto;\n  margin: 0 auto 15px;\n  aspect-ratio: 16/9;\n  object-fit: contain;\n}\n\n.business-product strong {\n  display: block;\n  color: #001e4b;\n  font-size: 16px;\n  margin-bottom: 10px;\n}\n\n .us-contact {\n    font-size: 14px;\n    line-height: 28px;color: #001e4b;\n}a.btn-primary {\n    background: #2f42fc;\n    border-color: #2f42fc;\n    border-radius: 0;\n    text-align: left;padding: 15px 40px;font-size: 16px;font-weight:600;\n}.btn-primary{border-radius: 4px;}p{color: #001e4b;}body {\n    color: #001e4b;\n}.container, .container-lg, .container-md, .container-sm, .container-xl {\n    max-width: 96%;\n}\n\n.sticky-column {\n  position: -webkit-sticky;\n  position: sticky;\n  top: 20px;\n  align-self: flex-start;\n}\n",
         }}
       />
 
@@ -742,7 +742,7 @@ const Home = () => {
         <div className="containervs">
           <div className="copyright">
             <p style={{ textAlign: "center" }}>
-              All rights reserved © 2023
+              All rights reserved © 2025
               <strong>
                 <span>
                   <a href="/" target="_blank">
