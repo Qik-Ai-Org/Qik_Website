@@ -1,40 +1,44 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&display=swap');
 
-/* New Qik.ai Purple-Blue Gradient Theme Variables */
+/* Qik.ai Logo-Inspired Cyan-to-Purple Gradient Theme Variables */
 :root {
-  /* Primary gradient colors */
-  --qik-purple: #61DAFB;
-  --qik-blue: #21A1C4;
-  --qik-purple-light: #AEEFFF;
-  --qik-purple-dark: #289FC1;
-  --qik-blue-light: #6FCFFF;
-  --qik-blue-dark: #1D8AB0;
+  /* Primary gradient colors from logo */
+  --qik-cyan: #00D4E6;
+  --qik-cyan-light: #1DE8F9;
+  --qik-cyan-dark: #00B8CC;
+  --qik-purple: #4F46E5;
+  --qik-purple-light: #6366F1;
+  --qik-purple-dark: #4338CA;
+  --qik-magenta: #E879F9;
   
-  /* Background variations */
-  --bg-gradient-primary: linear-gradient(135deg, var(--qik-purple) 0%, var(--qik-blue) 100%);
-  --bg-gradient-light: linear-gradient(135deg, rgba(97, 218, 251, 0.05) 0%, rgba(33, 161, 196, 0.05) 100%);
-  --bg-gradient-medium: linear-gradient(135deg, rgba(97, 218, 251, 0.1) 0%, rgba(33, 161, 196, 0.1) 100%);
+  /* Logo-inspired gradients */
+  --bg-gradient-primary: linear-gradient(135deg, var(--qik-cyan) 0%, var(--qik-purple) 100%);
+  --bg-gradient-light: linear-gradient(135deg, rgba(0, 212, 230, 0.05) 0%, rgba(79, 70, 229, 0.05) 100%);
+  --bg-gradient-medium: linear-gradient(135deg, rgba(0, 212, 230, 0.1) 0%, rgba(79, 70, 229, 0.1) 100%);
+  --bg-gradient-vivid: linear-gradient(135deg, var(--qik-cyan-light) 0%, var(--qik-purple-light) 50%, var(--qik-magenta) 100%);
+  
+  /* Background surfaces */
   --bg-surface: #FAFCFF;
-  --bg-surface-elevated: #F8FAFC;
+  --bg-surface-elevated: #F8FBFF;
   --bg-surface-dimmed: #F1F5F9;
   
   /* Text colors */
   --text-primary: #1E293B;
   --text-secondary: #475569;
-  --text-accent: var(--qik-purple);
+  --text-accent: var(--qik-cyan);
   --text-on-gradient: #FFFFFF;
   
   /* Interactive states */
-  --accent-glow: var(--qik-purple);
-  --accent-light: var(--qik-purple-light);
-  --accent-dark: var(--qik-purple-dark);
-  --hover-bg: rgba(97, 218, 251, 0.08);
-  --active-bg: rgba(97, 218, 251, 0.12);
+  --accent-glow: var(--qik-cyan);
+  --accent-light: var(--qik-cyan-light);
+  --accent-dark: var(--qik-cyan-dark);
+  --hover-bg: rgba(0, 212, 230, 0.08);
+  --active-bg: rgba(0, 212, 230, 0.12);
   
   /* Shadows and effects */
-  --soft-shadow: rgba(97, 218, 251, 0.12);
-  --ambient-light: rgba(248, 250, 252, 0.9);
-  --glow-effect: 0 0 20px rgba(97, 218, 251, 0.3);
+  --soft-shadow: rgba(0, 212, 230, 0.12);
+  --ambient-light: rgba(248, 251, 255, 0.9);
+  --glow-effect: 0 0 20px rgba(0, 212, 230, 0.3);
 }
 
 body {
@@ -42,13 +46,13 @@ body {
   overflow-x: hidden;
   background: var(--bg-surface);
   background-image: 
-    radial-gradient(circle at 20% 80%, rgba(139, 92, 246, 0.04) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(248, 250, 252, 0.8) 0%, transparent 50%);
+    radial-gradient(circle at 20% 80%, rgba(0, 212, 230, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(79, 70, 229, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(248, 251, 255, 0.8) 0%, transparent 50%);
   position: relative;
 }
 
-/* Soft ambient lighting overlay with purple-blue gradient */
+/* Soft ambient lighting overlay with cyan-purple gradient */
 body::before {
   content: '';
   position: fixed;
@@ -57,8 +61,8 @@ body::before {
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(ellipse at 50% -20%, rgba(139, 92, 246, 0.06) 0%, transparent 60%),
-    linear-gradient(180deg, rgba(248, 250, 252, 0.7) 0%, rgba(248, 250, 252, 0.3) 100%);
+    radial-gradient(ellipse at 50% -20%, rgba(0, 212, 230, 0.06) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(248, 251, 255, 0.7) 0%, rgba(248, 251, 255, 0.3) 100%);
   pointer-events: none;
   z-index: -1;
 }
@@ -89,7 +93,7 @@ h6 {
   position: fixed;
   width: 100%;
   z-index: 99;
-  border-bottom: 1px solid rgba(139, 92, 246, 0.08);
+  border-bottom: 1px solid rgba(0, 212, 230, 0.08);
 }
 
 .nav-menu,
@@ -136,7 +140,7 @@ h6 {
   background: var(--bg-surface-elevated);
   backdrop-filter: blur(15px);
   box-shadow: 0px 16px 48px var(--soft-shadow);
-  border: 1px solid rgba(139, 92, 246, 0.12);
+  border: 1px solid rgba(0, 212, 230, 0.12);
   border-radius: 12px;
   transition: all 0.3s ease;
 }
@@ -209,7 +213,7 @@ h6 {
   font-size: 1.15rem !important;
   padding: 0.85em 2.5em !important;
   transition: background 0.25s, color 0.25s, box-shadow 0.25s, border-color 0.25s;
-  box-shadow: 0 2px 12px 0 var(--soft-shadow, rgba(139,92,246,0.12));
+  box-shadow: 0 2px 12px 0 var(--soft-shadow, rgba(0,212,230,0.12));
   outline: none;
   line-height: 1.3;
   border-width: 2px;
@@ -233,16 +237,16 @@ h6 {
 }
 
  .btn-primary.hero-btn:hover, .btn.btn-primary.hero-btn:hover {
-  background: linear-gradient(135deg, var(--qik-purple-dark), var(--qik-blue-dark));
+  background: linear-gradient(135deg, var(--qik-cyan-dark), var(--qik-purple-dark));
   color: #fff;
   box-shadow: 0 6px 32px 0 var(--accent-glow);
   transform: translateY(-2px) scale(1.03);
 }
 
 .btn-outline-primary.hero-btn, .btn.btn-outline-primary.hero-btn {
-  background: rgba(139,92,246,0.06);
-  color: var(--qik-purple);
-  border: 2px solid var(--qik-purple);
+  background: rgba(0,212,230,0.06);
+  color: var(--qik-cyan);
+  border: 2px solid var(--qik-cyan);
   box-shadow: 0 2px 12px 0 var(--soft-shadow);
   height: 4rem !important;
   height: 4rem !important;
@@ -250,8 +254,8 @@ h6 {
 
 .btn-outline-primary.hero-btn:hover, .btn.btn-outline-primary.hero-btn:hover {
   background: var(--bg-gradient-light);
-  color: var(--qik-purple-dark);
-  border-color: var(--qik-purple-dark);
+  color: var(--qik-cyan-dark);
+  border-color: var(--qik-cyan-dark);
   box-shadow: 0 6px 32px 0 var(--accent-glow);
   transform: translateY(-2px) scale(1.03);
 }
@@ -449,8 +453,8 @@ h6 {
   }
 }
 
-/* Mobile Navigation */
-.mobile-nav {
+/* Mobile Navigation - OVERRIDDEN BY HOME.JS INLINE STYLES */
+.mobile-nav.legacy {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -461,17 +465,17 @@ h6 {
   padding-top: 18px;
   background: var(--bg-surface-elevated);
   backdrop-filter: blur(15px);
-  border-right: 1px solid rgba(139, 92, 246, 0.12);
+  border-right: 1px solid rgba(0, 212, 230, 0.12);
   transition: 0.4s;
 }
 
-.mobile-nav * {
+.mobile-nav.legacy * {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.mobile-nav a {
+.mobile-nav.legacy a {
   display: block;
   position: relative;
   color: var(--text-primary);
@@ -481,9 +485,9 @@ h6 {
   transition: all 0.3s ease;
 }
 
-.mobile-nav a:hover,
-.mobile-nav .active>a,
-.mobile-nav li:hover>a {
+.mobile-nav.legacy a:hover,
+.mobile-nav.legacy .active>a,
+.mobile-nav.legacy li:hover>a {
   color: var(--text-accent);
   text-decoration: none;
   background: var(--hover-bg);
@@ -559,15 +563,15 @@ h6 {
   display: none;
 }
 
-.mobile-nav-active {
+.mobile-nav-active.legacy {
   overflow: hidden;
 }
 
-.mobile-nav-active .mobile-nav {
+.mobile-nav-active.legacy .mobile-nav {
   left: 0;
 }
 
-.mobile-nav-active .mobile-nav-toggle i {
+.mobile-nav-active.legacy .mobile-nav-toggle i {
   color: #fff;
 }
 
@@ -589,7 +593,7 @@ h5 {
   position: relative;
 }
 
-/* Central purple droplet with glow effect */
+/* Central cyan droplet with glow effect */
 #qik-intro::before {
   content: '';
   position: absolute;
@@ -597,7 +601,7 @@ h5 {
   right: 15%;
   width: 120px;
   height: 120px;
-  background: radial-gradient(circle, var(--qik-purple) 0%, var(--qik-purple-light) 40%, transparent 70%);
+  background: radial-gradient(circle, var(--qik-cyan) 0%, var(--qik-cyan-light) 40%, transparent 70%);
   border-radius: 50%;
   opacity: 0.6;
   filter: blur(2px);
@@ -605,7 +609,7 @@ h5 {
   z-index: -1;
 }
 
-/* Purple-blue gradient light effects */
+/* Cyan-purple gradient light effects */
 #qik-intro::after {
   content: '';
   position: absolute;
@@ -614,8 +618,8 @@ h5 {
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(ellipse at 70% 30%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
-    radial-gradient(ellipse at 30% 70%, rgba(59, 130, 246, 0.08) 0%, transparent 40%);
+    radial-gradient(ellipse at 70% 30%, rgba(0, 212, 230, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at 30% 70%, rgba(79, 70, 229, 0.08) 0%, transparent 40%);
   animation: caustics 8s ease-in-out infinite;
   pointer-events: none;
   z-index: -1;
@@ -686,7 +690,7 @@ h5 {
   padding: 12px 32px;
   margin: 20px 0;
   box-shadow: 
-    0 4px 16px rgba(139, 92, 246, 0.3),
+    0 4px 16px rgba(0, 212, 230, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease;
   cursor: pointer;
@@ -695,10 +699,10 @@ h5 {
 .btn-custom-vs:hover {
   transform: translateY(-2px);
   box-shadow: 
-    0 8px 24px rgba(139, 92, 246, 0.4),
-    0 0 20px rgba(139, 92, 246, 0.3);
+    0 8px 24px rgba(0, 212, 230, 0.4),
+    0 0 20px rgba(0, 212, 230, 0.3);
   color: var(--text-on-gradient);
-  background: linear-gradient(135deg, #7C3AED 0%, #2563EB 100%);
+  background: linear-gradient(135deg, var(--qik-cyan-dark) 0%, var(--qik-purple-dark) 100%);
 }
 
 .introtext {
@@ -848,7 +852,7 @@ span.uvs-line {
 
 .products-1vs {
   padding: 50px 30px;
-  border: 1px solid rgba(139, 92, 246, 0.15);
+  border: 1px solid rgba(0, 212, 230, 0.15);
   border-radius: 16px;
   text-align: center;
   background: var(--bg-surface-elevated);
@@ -863,7 +867,7 @@ span.uvs-line {
   transform: translateY(-4px);
   box-shadow: 
     0 16px 48px var(--soft-shadow),
-    0 0 24px rgba(139, 92, 246, 0.12);
+    0 0 24px rgba(0, 212, 230, 0.12);
 }
 
 .heading-h1 {
@@ -1588,7 +1592,7 @@ div#sub-edu-section,
   background: var(--bg-surface-elevated);
   background-image: var(--bg-gradient-light);
   box-shadow: 0 4px 16px var(--soft-shadow);
-  border: 1px solid rgba(139, 92, 246, 0.06);
+  border: 1px solid rgba(0, 212, 230, 0.06);
 }
 
 .feature-item::before {
@@ -1598,7 +1602,7 @@ div#sub-edu-section,
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at center, rgba(139, 92, 246, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle at center, rgba(0, 212, 230, 0.08) 0%, transparent 70%);
   border-radius: 16px;
   opacity: 0;
   transition: opacity 0.4s ease;
@@ -1610,7 +1614,7 @@ div#sub-edu-section,
   transform: translateY(-8px);
   box-shadow: 
     0 12px 32px var(--soft-shadow),
-    0 0 24px rgba(139, 92, 246, 0.15);
+    0 0 24px rgba(0, 212, 230, 0.15);
 }
 
 .feature-item:hover::before {
@@ -1633,7 +1637,7 @@ a.btn-primary {
   font-weight: 600;
   color: var(--text-on-gradient);
   box-shadow: 
-    0 6px 20px rgba(139, 92, 246, 0.3),
+    0 6px 20px rgba(0, 212, 230, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease;
 }
@@ -1641,10 +1645,10 @@ a.btn-primary {
 a.btn-primary:hover {
   transform: translateY(-3px);
   box-shadow: 
-    0 10px 28px rgba(139, 92, 246, 0.4),
-    0 0 24px rgba(139, 92, 246, 0.3);
+    0 10px 28px rgba(0, 212, 230, 0.4),
+    0 0 24px rgba(0, 212, 230, 0.3);
   color: var(--text-on-gradient);
-  background: linear-gradient(135deg, #7C3AED 0%, #2563EB 100%);
+  background: linear-gradient(135deg, var(--qik-cyan-dark) 0%, var(--qik-purple-dark) 100%);
 }
 
 .btn-primary {
@@ -1779,9 +1783,9 @@ i.fa.fa-angle-left {
   display: inline-block;
   width: 20px;
   height: 20px;
-  border: 3px solid rgba(139, 92, 246, 0.3);
+  border: 3px solid rgba(0, 212, 230, 0.3);
   border-radius: 50%;
-  border-top-color: var(--qik-purple);
+  border-top-color: var(--qik-cyan);
   animation: spin 1s ease-in-out infinite;
 }
 
@@ -1813,7 +1817,7 @@ html {
 
 /* Enhanced focus states for accessibility */
 button:focus, .btn:focus {
-  outline: 2px solid var(--qik-purple);
+  outline: 2px solid var(--qik-cyan);
   outline-offset: 2px;
 }
 
