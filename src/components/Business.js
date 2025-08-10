@@ -15,7 +15,7 @@ const Business = () => {
             <div className="col-md-2 col-sm-2 col-2">
               <a href="/">
                 <img
-                  src="./images/logo.svg"
+                  src="./images/logo.png"
                   alt="Qik.ai"
                   className="img-logovs"
                 />
@@ -776,7 +776,7 @@ const Business = () => {
               <div className="col-md-4">
                 <h4>
                   <Link to="/">
-                    <img src="./images/logo.svg" alt="" />
+                    <img src="./images/logo.png" alt="" />
                   </Link>
                 </h4>
                 <p>
