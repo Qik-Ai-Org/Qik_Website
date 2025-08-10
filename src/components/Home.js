@@ -117,7 +117,7 @@ const Home = () => {
       top: 0;
       left: 0;
       right: 0;
-      z-index: 1000;
+      z-index: 10003;
       transition: all 0.3s ease;
       padding: 8px 0;
     }
@@ -278,16 +278,28 @@ const Home = () => {
       box-shadow: 0 6px 20px rgba(0, 212, 230, 0.2);
     }
 
-    /* Mobile Menu */
+    /* Mobile Menu Toggle */
     .mobile-menu-toggle {
-      display: none;
-      background: none;
-      border: none;
-      padding: 8px;
-      cursor: pointer;
-      z-index: 10000;
-      transition: all 0.3s ease;
-      position: relative;
+      display: none !important;
+      background: none !important;
+      border: none !important;
+      padding: 12px !important;
+      cursor: pointer !important;
+      z-index: 10002 !important;
+      transition: all 0.3s ease !important;
+      position: relative !important;
+      border-radius: 8px !important;
+    }
+
+    .mobile-menu-toggle:hover {
+      background: rgba(139, 92, 246, 0.1) !important;
+    }
+
+    /* Show mobile menu toggle on mobile devices */
+    @media (max-width: 768px) {
+      .mobile-menu-toggle {
+        display: block !important;
+      }
     }
 
     .hamburger {
@@ -296,6 +308,7 @@ const Home = () => {
       width: 24px;
       height: 18px;
       position: relative;
+      justify-content: space-between;
     }
 
     .hamburger span {
@@ -304,7 +317,7 @@ const Home = () => {
       width: 100%;
       background: var(--text-primary);
       border-radius: 1px;
-      transition: all 0.3s ease;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       transform-origin: center;
     }
 
@@ -313,11 +326,11 @@ const Home = () => {
     }
 
     .hamburger span:nth-child(2) {
-      transform: translateY(6px);
+      transform: translateY(0);
     }
 
     .hamburger span:nth-child(3) {
-      transform: translateY(12px);
+      transform: translateY(0);
     }
 
     .hamburger.active span:nth-child(1) {
@@ -326,32 +339,38 @@ const Home = () => {
 
     .hamburger.active span:nth-child(2) {
       opacity: 0;
+      transform: scale(0);
     }
 
     .hamburger.active span:nth-child(3) {
-      transform: translateY(4px) rotate(-45deg);
+      transform: translateY(-8px) rotate(-45deg);
     }
 
     .mobile-nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(248, 250, 252, 0.98);
-      backdrop-filter: blur(20px);
-      transform: translateX(100%);
-      transition: transform 0.3s ease, visibility 0.3s ease, opacity 0.3s ease;
-      z-index: 9999;
-      display: block;
-      visibility: hidden;
-      opacity: 0;
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      width: 100vw !important;
+      height: 100vh !important;
+      background: rgba(248, 250, 252, 0.98) !important;
+      backdrop-filter: blur(20px) !important;
+      transform: translateX(100%) !important;
+      transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), visibility 0.4s ease, opacity 0.4s ease !important;
+      z-index: 10001 !important;
+      display: block !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      overflow: hidden !important;
+      pointer-events: none !important;
     }
 
     .mobile-nav.active {
-      transform: translateX(0);
-      visibility: visible;
-      opacity: 1;
+      transform: translateX(0) !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      pointer-events: auto !important;
     }
 
     .mobile-nav-content {
@@ -359,29 +378,73 @@ const Home = () => {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100%;
-      padding: 40px 20px;
-      gap: 40px;
+      width: 100%;
+      height: 100vh;
+      padding: 80px 20px 40px;
+      gap: 50px;
+      position: relative;
+      pointer-events: auto;
+      transform: translateX(30px);
+      opacity: 0;
+      transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s, opacity 0.4s ease 0.1s;
+    }
+
+    .mobile-nav.active .mobile-nav-content {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    /* Overlay click area */
+    .mobile-nav::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: transparent;
+      z-index: -1;
     }
 
     .mobile-nav-links {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 30px;
+      gap: 40px;
+      width: 100%;
+      padding: 0 40px;
     }
 
     .mobile-nav-link {
       color: var(--text-primary);
       text-decoration: none;
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: 600;
       transition: all 0.3s ease;
+      transform: translateY(20px);
+      opacity: 0;
+      animation: slideInUp 0.6s ease forwards;
+      text-align: center;
+      width: 100%;
+      padding: 15px 0;
+      border-radius: 10px;
+    }
+
+    .mobile-nav-link:nth-child(1) { animation-delay: 0.2s; }
+    .mobile-nav-link:nth-child(2) { animation-delay: 0.3s; }
+    .mobile-nav-link:nth-child(3) { animation-delay: 0.4s; }
+
+    @keyframes slideInUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
 
     .mobile-nav-link:hover {
       color: var(--qik-purple);
-      transform: translateY(-2px);
+      transform: translateY(-2px) scale(1.05);
+      background: rgba(139, 92, 246, 0.1);
     }
 
     .mobile-nav-cta {
@@ -978,19 +1041,19 @@ const Home = () => {
     /* Responsive Design */
     @media (max-width: 768px) {
       .desktop-nav {
-        display: none;
+        display: none !important;
       }
       
       .mobile-menu-toggle {
-        display: block;
+        display: block !important;
       }
       
       .mobile-nav {
-        display: block;
+        display: block !important;
       }
       
       .header-contact {
-        display: none;
+        display: none !important;
       }
       
       .hero-enhanced {

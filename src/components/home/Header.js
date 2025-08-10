@@ -22,9 +22,20 @@ const Header = () => {
       document.body.style.overflow = 'unset';
     }
 
+    // Close menu on escape key press
+    const handleKeyPress = (e) => {
+      if (e.key === 'Escape' && isMobileMenuOpen) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    // Add event listener for escape key
+    document.addEventListener('keydown', handleKeyPress);
+
     // Cleanup on unmount
     return () => {
       document.body.style.overflow = 'unset';
+      document.removeEventListener('keydown', handleKeyPress);
     };
   }, [isMobileMenuOpen]);
 
@@ -76,7 +87,15 @@ const Header = () => {
           </button>
 
           {/* Mobile Navigation */}
-          <div className={`mobile-nav ${isMobileMenuOpen ? 'active' : ''}`}>
+          <div 
+            className={`mobile-nav ${isMobileMenuOpen ? 'active' : ''}`}
+            onClick={(e) => {
+              // Close menu when clicking on the overlay (not the content)
+              if (e.target === e.currentTarget) {
+                setIsMobileMenuOpen(false);
+              }
+            }}
+          >
             <div className="mobile-nav-content">
               <div className="mobile-nav-links">
                 <Link to="/" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>
