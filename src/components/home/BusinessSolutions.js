@@ -2,13 +2,12 @@ import React from "react";
 
 const BusinessSolutions = () => (
   <div id="sub-business-solutions">
-    <h5 style={{ marginBottom: "30px" }}>Business Solutions</h5>
   <div className="col-md-12" id="products" style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
       {/* Compliance & Risk Management */}
   <div className="row" style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 0' }}>
         <div className="col-md-12" style={{ marginBottom: "20px" }}>
           <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
-            Compliance & Risk Management
+            Compliance, Legal & Risk Management
           </h6>
         </div>
         <div className="col-md-4 col-sm-6 col-12 business-card-animate">
@@ -54,56 +53,14 @@ const BusinessSolutions = () => (
               </p>
             </div>
           </div>
-        </div>
-        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
-          <div className="feature-item business-product enhanced-card">
-            <img src="./images/logos/NexusPost.PNG" alt="NexusPost Social Media Management icon" className="business-card-img" />
-            <div className="business-card-content">
-              <strong>NexusPost</strong>
-              <p>
-                Social Media Management
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
-          <div className="feature-item business-product enhanced-card">
-            <img src="./images/logos/Qik Email Validator.PNG" alt="Qik Email Validator icon" className="business-card-img" />
-            <div className="business-card-content">
-              <strong>Qik Email Validator</strong>
-              <p>
-                Email verification
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-  {/* Asset & Resource Management */}
-  <div className="row" style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 0' }}>
-        <div className="col-md-12" style={{ marginBottom: "20px" }}>
-          <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
-            Asset & Resource Management
-          </h6>
-        </div>
-        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
-          <div className="feature-item business-product enhanced-card">
-            <img src="./images/logos/Qik AssetGrid.PNG" alt="Qik AssetGrid icon" className="business-card-img" />
-            <div className="business-card-content">
-              <strong>Qik AssetGrid</strong>
-              <p>
-                Company Asset Tracker: Comprehensive asset inventory and management system
-              </p>
-            </div>
-          </div>
-        </div>
+        </div>       
       </div>
 
   {/* Human Resources & Workforce */}
   <div className="row" style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 0' }}>
         <div className="col-md-12" style={{ marginBottom: "20px" }}>
           <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
-            Human Resources & Workforce
+            Human Capital & Performance
           </h6>
         </div>
         <div className="col-md-4 col-sm-6 col-12 business-card-animate">
@@ -128,13 +85,24 @@ const BusinessSolutions = () => (
             </div>
           </div>
         </div>
+        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
+          <div className="feature-item business-product enhanced-card">
+            <img src="./images/logos/Qik AllVoices.PNG" alt="Qik AllVoices icon" className="business-card-img" />
+            <div className="business-card-content">
+              <strong>Qik AllVoices</strong>
+              <p>
+                Employee voice and feedback collection platform
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-  {/* Marketing & Communications */}
+  {/* Marketing, Communications & Engagement */}
   <div className="row" style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 0' }}>
         <div className="col-md-12" style={{ marginBottom: "20px" }}>
           <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
-            Marketing & Communications
+            Marketing, Communications & Engagement
           </h6>
         </div>
         <div className="col-md-4 col-sm-6 col-12 business-card-animate">
@@ -148,13 +116,57 @@ const BusinessSolutions = () => (
             </div>
           </div>
         </div>
+        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
+          <div className="feature-item business-product enhanced-card">
+            <img src="./images/logos/NexusPost.PNG" alt="NexusPost Social Media Management icon" className="business-card-img" />
+            <div className="business-card-content">
+              <strong>NexusPost</strong>
+              <p>
+                Social Media Management
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
+          <div className="feature-item business-product enhanced-card">
+            <img src="./images/logos/Qik Forms.PNG" alt="Qik Forms icon" className="business-card-img" />
+            <div className="business-card-content">
+              <strong>Qik Forms</strong>
+              <p>
+                Dynamic form builder and data collection
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
+          <div className="feature-item business-product enhanced-card">
+            <img src="./images/logos/Qik Surveys.PNG" alt="Qik Surveys icon" className="business-card-img" />
+            <div className="business-card-content">
+              <strong>Qik Surveys</strong>
+              <p>
+                Survey creation and data collection tools
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
+          <div className="feature-item business-product enhanced-card">
+            <img src="./images/logos/Qik Email Validator.PNG" alt="Qik Email Validator icon" className="business-card-img" />
+            <div className="business-card-content">
+              <strong>Qik Email Validator</strong>
+              <p>
+                Email verification
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-  {/* Product & Development */}
+  {/* Product Management & Innovation */}
   <div className="row" style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 0' }}>
         <div className="col-md-12" style={{ marginBottom: "20px" }}>
           <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
-            Product & Development
+            Product Management & Innovation
           </h6>
         </div>
         <div className="col-md-4 col-sm-6 col-12 business-card-animate">
@@ -170,13 +182,24 @@ const BusinessSolutions = () => (
         </div>
       </div>
 
-  {/* Resource Reservation System */}
+  {/* Operations & Asset management */}
   <div className="row" style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 0' }}>
         <div className="col-md-12" style={{ marginBottom: "20px" }}>
           <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
-            Resource Reservation System
+            Operations & Asset management
           </h6>
         </div>
+        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
+          <div className="feature-item business-product enhanced-card">
+            <img src="./images/logos/Qik AssetGrid.PNG" alt="Qik AssetGrid icon" className="business-card-img" />
+            <div className="business-card-content">
+              <strong>Qik AssetGrid</strong>
+              <p>
+                Company Asset Tracker: Comprehensive asset inventory and management system
+              </p>
+            </div>
+          </div>
+        </div> 
         <div className="col-md-4 col-sm-6 col-12 business-card-animate">
           <div className="feature-item business-product enhanced-card">
             <img src="./images/logos/Qik BookIt.PNG" alt="Qik BookIt icon" className="business-card-img" />
@@ -197,39 +220,8 @@ const BusinessSolutions = () => (
             Engagement & Communication
           </h6>
         </div>
-        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
-          <div className="feature-item business-product enhanced-card">
-            <img src="./images/logos/Qik AllVoices.PNG" alt="Qik AllVoices icon" className="business-card-img" />
-            <div className="business-card-content">
-              <strong>Qik AllVoices</strong>
-              <p>
-                Employee voice and feedback collection platform
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
-          <div className="feature-item business-product enhanced-card">
-            <img src="./images/logos/Qik Surveys.PNG" alt="Qik Surveys icon" className="business-card-img" />
-            <div className="business-card-content">
-              <strong>Qik Surveys</strong>
-              <p>
-                Survey creation and data collection tools
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
-          <div className="feature-item business-product enhanced-card">
-            <img src="./images/logos/Qik Forms.PNG" alt="Qik Forms icon" className="business-card-img" />
-            <div className="business-card-content">
-              <strong>Qik Forms</strong>
-              <p>
-                Dynamic form builder and data collection
-              </p>
-            </div>
-          </div>
-        </div>
+        
+        
       </div>
     </div>
   </div>
