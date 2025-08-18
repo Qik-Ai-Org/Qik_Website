@@ -82,10 +82,12 @@ const Home = () => {
                   }}
                   className="hero-btn hero-btn-nova hero-btn-nova-outline"
                 >
-                  <span>Learn More</span>
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                    <path d="M8 12L3 7H13L8 12Z"/>
-                  </svg>
+                  <span className="hero-btn-label">Learn More</span>
+                  <span className="hero-btn-icon-wrapper" aria-hidden="true">
+                    <svg className="hero-btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                      <path d="M8 12L3 7H13L8 12Z"/>
+                    </svg>
+                  </span>
                 </button>
               </div>
               <div className="hero-stats">
@@ -156,16 +158,18 @@ const Home = () => {
             `
     /* Modern Header Styles */
     .modern-header {
-      background: rgba(248, 250, 252, 0.95);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(139, 92, 246, 0.1);
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 10003;
-      transition: all 0.3s ease;
-      padding: 8px 0;
+  background: rgba(248, 250, 252, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(139, 92, 246, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10003;
+  transition: all 0.3s ease;
+  height: 60px;
+  padding: 0;
+  overflow: hidden;
     }
 
     .modern-header.scrolled {
@@ -207,7 +211,7 @@ const Home = () => {
     }
 
     .logo-img {
-      height: 35px;
+  height: 50px;
       width: auto;
       transition: all 0.3s ease;
       display: block;
@@ -546,6 +550,12 @@ const Home = () => {
       padding: 140px 0 80px; /* Increased top padding for header */
     }
 
+    @media (max-width: 600px) {
+      .hero-enhanced {
+        padding-top: 170px;
+      }
+    }
+
     .hero-background {
       position: absolute;
       top: 0;
@@ -831,6 +841,11 @@ const Home = () => {
       box-shadow: 0 2px 10px -2px rgba(0,212,230,.25), 0 4px 18px -6px rgba(79,70,229,.25);
       border: 1.5px solid rgba(0,212,230,.5);
       backdrop-filter: blur(12px) saturate(1.4);
+    }
+    /* Outline variant icon wrapper should mirror primary variant for consistent sizing */
+    .hero-btn.hero-btn-nova-outline .hero-btn-icon-wrapper {
+      background: rgba(0,212,230,.12);
+      box-shadow: inset 0 0 0 1px rgba(0,212,230,.35), 0 4px 10px -2px rgba(0,0,0,.25);
     }
     .hero-btn.hero-btn-nova-outline:before { display:none; }
     .hero-btn.hero-btn-nova-outline:hover {
@@ -1191,6 +1206,13 @@ const Home = () => {
 
     /* Responsive Design */
     @media (max-width: 768px) {
+  /* Unified hero-actions stacking + full-width centering */
+  .hero-actions { flex-direction: column; align-items: stretch; gap: 14px; }
+  .hero-actions .hero-btn.hero-btn-nova { width: 100%; max-width: 100%; padding: 0.95em 1.6em !important; }
+  .hero-actions .hero-btn.hero-btn-nova .hero-btn-icon-wrapper { width: 36px; height: 36px; }
+  .hero-actions .hero-btn.hero-btn-nova-primary,
+  .hero-actions .hero-btn.hero-btn-nova-outline { min-height: 60px; }
+  .hero-actions .hero-btn.hero-btn-nova .hero-btn-label { font-size: 1.05rem; }
       .desktop-nav {
         display: none !important;
       }
