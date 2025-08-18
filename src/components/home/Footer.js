@@ -8,7 +8,7 @@ const Footer = () => (
           <div className="col-md-4">
             <h4>
               <a href="/">
-                <img src="./images/logo.png" alt="Qik.ai Logo" />
+                <img src="./images/logo.png" alt="Qik.ai Logo" style={{ width: "80px", height: "auto" }} />
               </a>
             </h4>
             <p>
