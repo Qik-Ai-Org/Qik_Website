@@ -1,228 +1,184 @@
 import React from "react";
 
-const BusinessSolutions = () => (
+// Products to tag as ALPHA when alphaMode is enabled
+const ALPHA_PRODUCTS = new Set([
+  // Previously alpha products
+  "Qik AllVoices",
+  "Qik DragonDrip",
+  "Qik Forms",
+  "Qik Surveys",
+  "Qik Email Validator",
+  "Qik Feature Maestro",
+  // Newly shifted entire categories (Human Capital, Marketing, Operations, Engagement)
+  "Qik OnboardFlow",
+  "Qik OKR & Goals",
+  "NexusPost",
+  "Qik AssetGrid",
+  "Qik BookIt",
+]);
+
+// Products that should display NO badge (GA / fully released)
+const NO_BADGE_PRODUCTS = new Set([
+  "Qik Sign", // explicitly requested to not show Beta/Alpha tag
+]);
+
+const Badge = ({ kind }) => {
+  const isAlpha = kind === 'ALPHA';
+  return (
+    <span
+      style={{
+        position: 'absolute',
+        top: 8,
+        right: 8,
+        background: isAlpha
+          ? 'linear-gradient(135deg,#FF7A59 0%,#FF3D81 100%)'
+          : 'linear-gradient(135deg,#94A3FF 0%,#4F46E5 100%)',
+        color: '#fff',
+        fontSize: 11,
+        padding: '6px 9px',
+        fontWeight: 800,
+        letterSpacing: '.5px',
+        borderRadius: 999,
+        boxShadow: '0 6px 14px rgba(0,0,0,.12)',
+        zIndex: 5,
+      }}
+      title={isAlpha ? 'Alpha product' : 'Beta product'}
+    >
+      {kind}
+    </span>
+  );
+};
+
+const Card = ({ title, img, children, alphaMode }) => {
+  // Show no badge for products explicitly excluded; otherwise ALPHA if in list else BETA
+  const showBadge = !NO_BADGE_PRODUCTS.has(title);
+  const badgeKind = ALPHA_PRODUCTS.has(title) ? 'ALPHA' : 'BETA';
+  return (
+    <div className="col-md-4 col-sm-6 col-12 business-card-animate">
+      <div className="feature-item business-product enhanced-card" style={{ position: 'relative' }}>
+        {showBadge && <Badge kind={badgeKind} />}
+        <img src={img} alt={`${title} icon`} className="business-card-img" />
+        <div className="business-card-content">
+          <strong>{title}</strong>
+          <p>{children}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const BusinessSolutions = ({ alphaMode = false }) => (
   <div id="sub-business-solutions">
-  <div className="col-md-12" id="products" style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
+    <div className="col-md-12" id="products" style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
       {/* Compliance & Risk Management */}
-  <div className="row" style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 0' }}>
+      <div className="row" style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 0' }}>
         <div className="col-md-12" style={{ marginBottom: "20px" }}>
           <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
             Compliance, Legal & Risk Management
           </h6>
         </div>
-        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
-          <div className="feature-item business-product enhanced-card">
-            <img src="./images/logos/Qik Policy Management Portal.PNG" alt="Qik Policy Management Portal icon" className="business-card-img" />
-            <div className="business-card-content">
-              <strong>Qik Policy Management Portal</strong>
-              <p>
-                Centralized policy creation, management, and compliance tracking
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
-          <div className="feature-item business-product enhanced-card">
-            <img src="./images/logos/Qik Whistleblower.PNG" alt="Qik Whistleblower icon" className="business-card-img" />
-            <div className="business-card-content">
-              <strong>Qik Whistleblower</strong>
-              <p>
-                Anonymous reporting and incident management system
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
-          <div className="feature-item business-product enhanced-card">
-            <img src="./images/logos/Qik RetainRight.PNG" alt="Qik RetainRight icon" className="business-card-img" />
-            <div className="business-card-content">
-              <strong>Qik RetainRight</strong>
-              <p>
-                Document Retention & Auto-Purge Scheduler: Automated compliance for data retention policies
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
-          <div className="feature-item business-product enhanced-card">
-            <img src="./images/logos/LegaDraft.PNG" alt="LegaDraft icon" className="business-card-img" />
-            <div className="business-card-content">
-              <strong>Qik LegaDraft</strong>
-              <p>
-                AI-Powered Legal Document Assistant: AI-driven legal document creation and review
-              </p>
-            </div>
-          </div>
-        </div>       
+        <Card alphaMode={alphaMode} img="./images/logos/Qik Sign.png" title="Qik Sign">
+          Secure E-Signature Platform: Legally binding digital signatures with audit trails & workflow automation
+        </Card>
+        <Card alphaMode={alphaMode} img="./images/logos/Qik Policy Management Portal.PNG" title="Qik Policy Management Portal">
+          Centralized policy creation, management, and compliance tracking
+        </Card>
+        <Card alphaMode={alphaMode} img="./images/logos/Qik Whistleblower.PNG" title="Qik Whistleblower">
+          Anonymous reporting and incident management system
+        </Card>
+        <Card alphaMode={alphaMode} img="./images/logos/Qik RetainRight.PNG" title="Qik RetainRight">
+          Document Retention & Auto-Purge Scheduler: Automated compliance for data retention policies
+        </Card>
+        <Card alphaMode={alphaMode} img="./images/logos/LegaDraft.PNG" title="Qik LegaDraft">
+          AI-Powered Legal Document Assistant: AI-driven legal document creation and review
+        </Card>
+        <Card alphaMode={alphaMode} img="./images/logos/Qik CLM.png" title="Qik CLM">
+          Contract Lifecycle Management: End-to-end contract drafting, collaboration, approvals, renewals & AI clause analysis
+        </Card>
       </div>
 
-  {/* Human Resources & Workforce */}
-  <div className="row" style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 0' }}>
-        <div className="col-md-12" style={{ marginBottom: "20px" }}>
-          <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
-            Human Capital & Performance
-          </h6>
-        </div>
-        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
-          <div className="feature-item business-product enhanced-card">
-            <img src="./images/logos/Qik OnboardFlow.PNG" alt="Qik OnboardFlow icon" className="business-card-img" />
-            <div className="business-card-content">
-              <strong>Qik OnboardFlow</strong>
-              <p>
-                Employee Onboarding and Off-boarding: Streamlined employee lifecycle management
-              </p>
-            </div>
+  {alphaMode && (
+        <div className="row" style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 0' }}>
+          <div className="col-md-12" style={{ marginBottom: "20px" }}>
+            <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
+              Human Capital & Performance
+            </h6>
           </div>
+          <Card alphaMode={alphaMode} img="./images/logos/Qik OnboardFlow.PNG" title="Qik OnboardFlow">
+            Employee Onboarding and Off-boarding: Streamlined employee lifecycle management
+          </Card>
+          <Card alphaMode={alphaMode} img="./images/logos/Qik OKR & Goals.PNG" title="Qik OKR & Goals">
+            Objective and key results tracking and performance management
+          </Card>
+          <Card alphaMode={alphaMode} img="./images/logos/Qik AllVoices.PNG" title="Qik AllVoices">
+            Employee voice and feedback collection platform
+          </Card>
         </div>
-        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
-          <div className="feature-item business-product enhanced-card">
-            <img src="./images/logos/Qik OKR & Goals.PNG" alt="Qik OKR & Goals icon" className="business-card-img" />
-            <div className="business-card-content">
-              <strong>Qik OKR & Goals</strong>
-              <p>
-                Objective and key results tracking and performance management
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
-          <div className="feature-item business-product enhanced-card">
-            <img src="./images/logos/Qik AllVoices.PNG" alt="Qik AllVoices icon" className="business-card-img" />
-            <div className="business-card-content">
-              <strong>Qik AllVoices</strong>
-              <p>
-                Employee voice and feedback collection platform
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      )}
 
-  {/* Marketing, Communications & Engagement */}
-  <div className="row" style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 0' }}>
-        <div className="col-md-12" style={{ marginBottom: "20px" }}>
-          <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
-            Marketing, Communications & Engagement
-          </h6>
-        </div>
-        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
-          <div className="feature-item business-product enhanced-card">
-            <img src="./images/logos/Qik DragonDrip.PNG" alt="Qik DragonDrip icon" className="business-card-img" />
-            <div className="business-card-content">
-              <strong>Qik DragonDrip</strong>
-              <p>
-                Email Campaign Builder: Marketing automation and email campaign management
-              </p>
-            </div>
+      {alphaMode && (
+        <div className="row" style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 0' }}>
+          <div className="col-md-12" style={{ marginBottom: "20px" }}>
+            <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
+              Marketing, Communications & Engagement
+            </h6>
           </div>
+          <Card alphaMode={alphaMode} img="./images/logos/Qik DragonDrip.PNG" title="Qik DragonDrip">
+            Email Campaign Builder: Marketing automation and email campaign management
+          </Card>
+            <Card alphaMode={alphaMode} img="./images/logos/NexusPost.PNG" title="NexusPost">
+            Social Media Management
+          </Card>
+          <Card alphaMode={alphaMode} img="./images/logos/Qik Forms.PNG" title="Qik Forms">
+            Dynamic form builder and data collection
+          </Card>
+          <Card alphaMode={alphaMode} img="./images/logos/Qik Surveys.PNG" title="Qik Surveys">
+            Survey creation and data collection tools
+          </Card>
+          <Card alphaMode={alphaMode} img="./images/logos/Qik Email Validator.PNG" title="Qik Email Validator">
+            Email verification
+          </Card>
         </div>
-        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
-          <div className="feature-item business-product enhanced-card">
-            <img src="./images/logos/NexusPost.PNG" alt="NexusPost Social Media Management icon" className="business-card-img" />
-            <div className="business-card-content">
-              <strong>NexusPost</strong>
-              <p>
-                Social Media Management
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
-          <div className="feature-item business-product enhanced-card">
-            <img src="./images/logos/Qik Forms.PNG" alt="Qik Forms icon" className="business-card-img" />
-            <div className="business-card-content">
-              <strong>Qik Forms</strong>
-              <p>
-                Dynamic form builder and data collection
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
-          <div className="feature-item business-product enhanced-card">
-            <img src="./images/logos/Qik Surveys.PNG" alt="Qik Surveys icon" className="business-card-img" />
-            <div className="business-card-content">
-              <strong>Qik Surveys</strong>
-              <p>
-                Survey creation and data collection tools
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
-          <div className="feature-item business-product enhanced-card">
-            <img src="./images/logos/Qik Email Validator.PNG" alt="Qik Email Validator icon" className="business-card-img" />
-            <div className="business-card-content">
-              <strong>Qik Email Validator</strong>
-              <p>
-                Email verification
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      )}
 
-  {/* Product Management & Innovation */}
-  <div className="row" style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 0' }}>
-        <div className="col-md-12" style={{ marginBottom: "20px" }}>
-          <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
-            Product Management & Innovation
-          </h6>
-        </div>
-        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
-          <div className="feature-item business-product enhanced-card">
-            <img src="./images/logos/Qik Feature Maestro.png" alt="Qik Feature Maestro icon" className="business-card-img" />
-            <div className="business-card-content">
-              <strong>Qik Feature Maestro</strong>
-              <p>
-                SaaS Feature Request Board: Product development and feature request management
-              </p>
-            </div>
+      {alphaMode && (
+        <div className="row" style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 0' }}>
+          <div className="col-md-12" style={{ marginBottom: "20px" }}>
+            <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
+              Product Management & Innovation
+            </h6>
           </div>
+          <Card alphaMode={alphaMode} img="./images/logos/Qik Feature Maestro.png" title="Qik Feature Maestro">
+            SaaS Feature Request Board: Product development and feature request management
+          </Card>
         </div>
-      </div>
+      )}
 
-  {/* Operations & Asset management */}
-  <div className="row" style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 0' }}>
-        <div className="col-md-12" style={{ marginBottom: "20px" }}>
-          <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
-            Operations & Asset management
-          </h6>
-        </div>
-        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
-          <div className="feature-item business-product enhanced-card">
-            <img src="./images/logos/Qik AssetGrid.PNG" alt="Qik AssetGrid icon" className="business-card-img" />
-            <div className="business-card-content">
-              <strong>Qik AssetGrid</strong>
-              <p>
-                Company Asset Tracker: Comprehensive asset inventory and management system
-              </p>
-            </div>
+      {alphaMode && (
+        <div className="row" style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 0' }}>
+          <div className="col-md-12" style={{ marginBottom: "20px" }}>
+            <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
+              Operations & Asset management
+            </h6>
           </div>
-        </div> 
-        <div className="col-md-4 col-sm-6 col-12 business-card-animate">
-          <div className="feature-item business-product enhanced-card">
-            <img src="./images/logos/Qik BookIt.PNG" alt="Qik BookIt icon" className="business-card-img" />
-            <div className="business-card-content">
-              <strong>Qik BookIt</strong>
-              <p>
-                Resource booking and reservation management system
-              </p>
-            </div>
-          </div>
+          <Card alphaMode={alphaMode} img="./images/logos/Qik AssetGrid.PNG" title="Qik AssetGrid">
+            Company Asset Tracker: Comprehensive asset inventory and management system
+          </Card>
+          <Card alphaMode={alphaMode} img="./images/logos/Qik BookIt.PNG" title="Qik BookIt">
+            Resource booking and reservation management system
+          </Card>
         </div>
-      </div>
+      )}
 
-  {/* Engagement & Communication */}
-  <div className="row" style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 0' }}>
-        <div className="col-md-12" style={{ marginBottom: "20px" }}>
-          <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
-            Engagement & Communication
-          </h6>
+      {alphaMode && (
+        <div className="row" style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 0' }}>
+          <div className="col-md-12" style={{ marginBottom: "20px" }}>
+            <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
+              Engagement & Communication
+            </h6>
+          </div>
         </div>
-        
-        
-      </div>
+      )}
     </div>
   </div>
 );

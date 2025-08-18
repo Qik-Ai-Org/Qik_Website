@@ -52,6 +52,28 @@ body {
   position: relative;
 }
 
+/* Gradient text utility (purple/pink blend) */
+.gradient-text {
+  /* Emphasis on purple range with a subtle magenta tail */
+  background: linear-gradient(120deg,
+    #5118ff 0%,       /* deep violet */
+    #5b22ff 18%,
+    #6430ff 32%,
+    #6d3dff 45%,
+    #764bff 58%,
+    #7f59ff 68%,
+    #885cff 75%,
+    #b34dff 86%,      /* shift toward magenta */
+    #d53fff 92%,
+    #ff3fb5 100%      /* brief pink highlight */
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
 /* Soft ambient lighting overlay with cyan-purple gradient */
 body::before {
   content: '';

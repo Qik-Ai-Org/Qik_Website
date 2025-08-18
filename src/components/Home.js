@@ -1,11 +1,33 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../main-style.css";
 import Header from "./home/Header";
 import Footer from "./home/Footer";
 import IntroImage from "./home/IntroImage";
 import BusinessSolutions from "./home/BusinessSolutions";
 const Home = () => {
+  const location = useLocation();
+  
+  // Support both BrowserRouter query (?alpha=true) and HashRouter usage (#/?alpha=true)
+  const getQueryString = () => {
+    // Prefer the react-router location.search if present
+    if (location && location.search && location.search.length > 0) return location.search;
+    // Fallback to window.location.search (when app not using hash)
+    if (typeof window !== 'undefined' && window.location && window.location.search && window.location.search.length > 0) {
+      return window.location.search;
+    }
+    // If HashRouter is used, query params may be inside the hash (#/path?alpha=true)
+    if (typeof window !== 'undefined' && window.location && window.location.hash) {
+      const hash = window.location.hash;
+      const qIndex = hash.indexOf('?');
+      if (qIndex !== -1) return hash.substring(qIndex);
+    }
+    return '';
+  };
+
+  const params = new URLSearchParams(getQueryString());
+  const alphaMode = ((params.get("alpha") || "").toLowerCase() === "true") || params.get("alpha") === "1";
+
   return (
     <div>
       <Header />
@@ -44,18 +66,21 @@ const Home = () => {
                 operations with cutting-edge artificial intelligence.
               </p>
               <div className="hero-actions">
-                <Link to="/contact" className="btn btn-primary btn-lg hero-btn">
-                  <span>Get Started</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M13.025 1L18 5.975L6.975 17H3V13.025L13.025 1Z"/>
-                  </svg>
+                <Link to="/contact" className="hero-btn hero-btn-nova hero-btn-nova-primary" title="Get started with Qik" aria-label="Get Started with Qik platform">
+                  <span className="hero-btn-label">Get Started</span>
+                  <span className="hero-btn-icon-wrapper" aria-hidden="true">
+                    <svg className="hero-btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M5 12h14"/>
+                      <path d="M13 6l6 6-6 6"/>
+                    </svg>
+                  </span>
                 </Link>
                 <button 
                   onClick={() => {
                     const section = document.getElementById('business-solutions');
                     if (section) section.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="btn btn-outline-primary btn-lg hero-btn"
+                  className="hero-btn hero-btn-nova hero-btn-nova-outline"
                 >
                   <span>Learn More</span>
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
@@ -89,7 +114,28 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <div className="section-header text-center">
+              <div className="section-header text-center" style={{ position: 'relative' }}>
+                {alphaMode && (
+                  <div
+                    className="alpha-badge"
+                    style={{
+                      position: 'absolute',
+                      top: '-12px',
+                      right: '16px',
+                      background: 'linear-gradient(135deg, #8B5CF6 0%, #4F46E5 100%)',
+                      color: '#fff',
+                      padding: '6px 10px',
+                      borderRadius: '999px',
+                      fontSize: '12px',
+                      fontWeight: 700,
+                      boxShadow: '0 6px 18px rgba(79,70,229,0.14)',
+                      zIndex: 5,
+                    }}
+                    title="Alpha mode active"
+                  >
+                    ALPHA
+                  </div>
+                )}
                 <h2 className="section-title">Our Business Solutions</h2>
                 <p className="section-subtitle">
                   Comprehensive AI-powered tools to transform your business operations
@@ -99,7 +145,7 @@ const Home = () => {
           </div>
           <div className="row">
             <div className="col-12">
-              <BusinessSolutions />
+              <BusinessSolutions alphaMode={alphaMode} />
             </div>
           </div>
         </div>
@@ -684,17 +730,125 @@ const Home = () => {
       justify-content: center;
     }
 
-    .hero-btn.btn-primary {
-      background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
-      color: white;
+    /* Nova Buttons Base */
+    .hero-btn.hero-btn-nova {
+      --nova-radius: 18px;
+      --nova-fx-shadow: 0 4px 16px -4px rgba(0,212,230,.35), 0 6px 18px -6px rgba(179,77,255,.32), 0 2px 5px -2px rgba(255,63,181,.25);
+      border-radius: var(--nova-radius) !important;
+      position: relative;
+      font-weight: 600;
+      line-height: 1.1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 0.95em 2.4em !important;
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
       border: none;
-      box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+      background: transparent;
+      color: #fff;
+      box-shadow: none;
+      transition: transform .55s cubic-bezier(.16,.8,.24,1), box-shadow .55s ease, background .55s ease, color .4s ease;
+      will-change: transform, box-shadow;
+      isolation: isolate;
+      overflow: hidden;
     }
+    .hero-btn.hero-btn-nova:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(255,255,255,.9), 0 0 0 6px rgba(0,212,230,.55); }
 
-    .hero-btn.btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
-      color: white;
+    /* Primary Filled */
+    .hero-btn.hero-btn-nova-primary {
+      --gradient-angle: 135deg;
+      --g1: #00D4E6;
+      --g2: #b34dff;
+      --g3: #ff3fb5;
+      position: relative;
+      background: linear-gradient(var(--gradient-angle), var(--g1) 0%, var(--g2) 45%, var(--g3) 100%);
+      color: #fff;
+      border: none;
+      box-shadow: var(--nova-fx-shadow);
+      animation: novaPulse 6s ease-in-out infinite;
+    }
+    .hero-btn.hero-btn-nova-primary:before,
+    .hero-btn.hero-btn-nova-primary:after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      pointer-events: none;
+    }
+    /* Soft moving light */
+    .hero-btn.hero-btn-nova-primary:before {
+      background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.55) 50%, rgba(255,255,255,0) 100%);
+      width: 160%;
+      left: -30%;
+      mix-blend-mode: overlay;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity .6s ease;
+    }
+    .hero-btn.hero-btn-nova-primary:hover:before { opacity: .55; animation: novaSheen 2.4s ease-in-out forwards; }
+    /* Subtle ambient glow */
+    .hero-btn.hero-btn-nova-primary:after {
+      background: radial-gradient(circle at 30% 35%, rgba(255,255,255,.55), transparent 70%);
+      filter: blur(18px) saturate(1.2);
+      opacity: .35;
+      z-index: -1;
+      transition: opacity .6s ease;
+    }
+    .hero-btn.hero-btn-nova-primary:hover:after { opacity: .55; }
+    .hero-btn.hero-btn-nova-primary:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 10px 34px -8px rgba(0,212,230,.55), 0 14px 38px -10px rgba(179,77,255,.45), 0 6px 14px -4px rgba(255,63,181,.4);
+    }
+    .hero-btn.hero-btn-nova-primary:active {
+      transform: translateY(0) scale(.96);
+      transition: transform .2s ease;
+      box-shadow: 0 4px 14px -4px rgba(0,212,230,.5), 0 6px 18px -10px rgba(179,77,255,.4);
+    }
+    .hero-btn.hero-btn-nova .hero-btn-label { position: relative; z-index: 2; }
+    .hero-btn.hero-btn-nova .hero-btn-icon-wrapper {
+      position: relative;
+      width: 34px; height: 34px;
+      display: inline-flex; align-items: center; justify-content: center;
+      border-radius: 11px;
+      background: rgba(255,255,255,.2);
+      backdrop-filter: blur(5px) brightness(1.15);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.45), 0 4px 10px -2px rgba(0,0,0,.25);
+      margin-left: 6px;
+      transition: transform .6s ease, background .6s ease;
+    }
+    .hero-btn.hero-btn-nova:hover .hero-btn-icon-wrapper { transform: translateX(2px) rotate(18deg) scale(1.08); background: rgba(255,255,255,.28); }
+    .hero-btn.hero-btn-nova .hero-btn-icon { stroke-width: 2.2; }
+
+    /* Outline Variant */
+    .hero-btn.hero-btn-nova-outline {
+      --outline-bg: rgba(255,255,255,0.08);
+      background: var(--outline-bg);
+      color: #00abf6; /* unified base color */
+      box-shadow: 0 2px 10px -2px rgba(0,212,230,.25), 0 4px 18px -6px rgba(79,70,229,.25);
+      border: 1.5px solid rgba(0,212,230,.5);
+      backdrop-filter: blur(12px) saturate(1.4);
+    }
+    .hero-btn.hero-btn-nova-outline:before { display:none; }
+    .hero-btn.hero-btn-nova-outline:hover {
+      color: #00d4e6; /* brighter hover */
+      transform: translateY(-4px) scale(1.02);
+      border-color: rgba(0,212,230,.85);
+      background: linear-gradient(135deg, rgba(0,212,230,0.14), rgba(179,77,255,0.14) 55%, rgba(255,63,181,0.14));
+      box-shadow: 0 8px 28px -10px rgba(0,212,230,.4), 0 10px 32px -12px rgba(79,70,229,.35);
+    }
+    .hero-btn.hero-btn-nova-outline:active { transform: translateY(0) scale(.96); }
+
+    /* Animations */
+    @keyframes novaPulse { 0%,100% { transform: translateY(0) scale(1);} 50% { transform: translateY(-2px) scale(1.015);} }
+    @keyframes novaSheen { 0% { transform: translateX(-60%); } 55% { transform: translateX(60%); } 100% { transform: translateX(60%); } }
+    @media (prefers-reduced-motion: reduce) {
+      .hero-btn.hero-btn-nova { animation: none; }
+      .hero-btn.hero-btn-nova-primary:before { display: none; }
+      .hero-btn.hero-btn-nova:hover { transform: translateY(-3px) scale(1.015); }
     }
 
     .hero-btn.btn-outline-primary {
@@ -718,7 +872,7 @@ const Home = () => {
     }
 
     /* Hero Badge */
-    .hero-badge {
+  .hero-badge {
       display: inline-flex;
       align-items: center;
       gap: 8px;
@@ -730,7 +884,7 @@ const Home = () => {
       margin-bottom: 35px;
       font-size: 0.9rem;
       font-weight: 600;
-      color: var(--qik-cyan);
+  color: #00abf6; /* unified with Compliance section heading */
       animation: glow-pulse 3s ease-in-out infinite;
       box-shadow: 0 4px 20px rgba(0, 212, 230, 0.15);
     }
@@ -771,7 +925,7 @@ const Home = () => {
     }
 
     .title-highlight {
-      background: linear-gradient(135deg, #00D4E6 0%, #4F46E5 100%);
+      background: linear-gradient(135deg, #00D4E6 0%, #b34dff 50%, #ff3fb5 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
