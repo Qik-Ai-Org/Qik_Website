@@ -784,7 +784,7 @@ const Business = () => {
                   applications. With Qik Cloud Stack, you can speedup, automate
                   and bring transparency to your business activities. Experience
                   the power of cloud to increase your business productivity by
-                  20%.
+                  20%. Every app in our ecosystem is free and open source.
                 </p>
               </div>
               <div className="col-md-4 text-center-uvs">
@@ -838,10 +838,10 @@ const Business = () => {
         <div className="containervs">
           <div className="copyright">
             <p style={{ textAlign: "center" }}>
-              All rights reserved © 2023
+              All rights reserved © {new Date().getFullYear()}
               <strong>
                 <span>
-                  <Link to="/">Qik.Ai</Link>
+                  <Link to="/">© Qik Innovations private limited</Link>
                 </span>
               </strong>
             </p>
