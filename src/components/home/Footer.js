@@ -1,5 +1,7 @@
 import React from "react";
 
+const currentYear = new Date().getFullYear();
+
 const Footer = () => (
   <footer id="footer" className="animated animatedFadeInDown fadeInDown">
     <div className="footer-top">
@@ -16,7 +18,7 @@ const Footer = () => (
               applications. With Qik Cloud Stack, you can speedup, automate
               and bring transparency to your business activities. Experience
               the power of cloud to increase your business productivity by
-              20%.
+              20%. Every app in our ecosystem is free and open source.
             </p>
           </div>
           <div className="col-md-4 text-center-uvs">
@@ -70,11 +72,11 @@ const Footer = () => (
     <div className="containervs">
       <div className="copyright">
         <p style={{ textAlign: "center" }}>
-          All rights reserved © 2025
+          All rights reserved © {currentYear}
           <strong>
             <span>
               <a href="/" target="_blank">
-                Qik.Ai
+                © Qik Innovations private limited
               </a>
             </span>
           </strong>

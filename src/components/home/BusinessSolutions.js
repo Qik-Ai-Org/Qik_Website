@@ -15,11 +15,12 @@ const ALPHA_PRODUCTS = new Set([
   "NexusPost",
   "Qik AssetGrid",
   "Qik BookIt",
+  "Qik LegaDraft",
 ]);
 
 // Products that should display NO badge (GA / fully released)
 const NO_BADGE_PRODUCTS = new Set([
-  "Qik Sign", // explicitly requested to not show Beta/Alpha tag
+  "OpenSign", // explicitly requested to not show Beta/Alpha tag
 ]);
 
 const Badge = ({ kind }) => {
@@ -77,8 +78,8 @@ const BusinessSolutions = ({ alphaMode = false }) => (
             Compliance, Legal & Risk Management
           </h6>
         </div>
-        <Card alphaMode={alphaMode} img="./images/logos/Qik Sign.png" title="Qik Sign">
-          Secure E-Signature Platform: Legally binding digital signatures with audit trails & workflow automation
+        <Card alphaMode={alphaMode} img="https://docs.opensignlabs.com/img/logo.png" title="OpenSign">
+          Free & open source e-signature platform with legally binding digital signatures, audit trails, and workflow automation
         </Card>
         <Card alphaMode={alphaMode} img="./images/logos/Qik Policy Management Portal.PNG" title="Qik Policy Management Portal">
           Centralized policy creation, management, and compliance tracking
@@ -89,13 +90,26 @@ const BusinessSolutions = ({ alphaMode = false }) => (
         <Card alphaMode={alphaMode} img="./images/logos/Qik RetainRight.PNG" title="Qik RetainRight">
           Document Retention & Auto-Purge Scheduler: Automated compliance for data retention policies
         </Card>
-        <Card alphaMode={alphaMode} img="./images/logos/LegaDraft.PNG" title="Qik LegaDraft">
-          AI-Powered Legal Document Assistant: AI-driven legal document creation and review
+        <Card alphaMode={alphaMode} img="https://doctrack.ai/assets/doctrack.png" title="DocTrack">
+          Free & open source DocSend alternative with advanced analytics, data rooms, watermarking, and enterprise security
         </Card>
-        <Card alphaMode={alphaMode} img="./images/logos/Qik CLM.png" title="Qik CLM">
-          Contract Lifecycle Management: End-to-end contract drafting, collaboration, approvals, renewals & AI clause analysis
+        <Card alphaMode={alphaMode} img="./images/logos/Qik CLM.png" title="OpenCLM">
+          Free & open source contract lifecycle management for drafting, collaboration, approvals, renewals, and AI clause analysis
         </Card>
       </div>
+
+      {alphaMode && (
+        <div className="row" style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 0' }}>
+          <div className="col-md-12" style={{ marginBottom: "20px" }}>
+            <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
+              Alpha Releases
+            </h6>
+          </div>
+          <Card alphaMode={alphaMode} img="./images/logos/LegaDraft.PNG" title="Qik LegaDraft">
+            AI-powered legal document assistant for drafting and review
+          </Card>
+        </div>
+      )}
 
   {alphaMode && (
         <div className="row" style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 0' }}>
