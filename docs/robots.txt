@@ -1,0 +1,17 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.qik.ai/sitemap.xml
+
+# Disallow crawling of development files
+Disallow: /static/js/
+Disallow: /static/css/
+Disallow: *.map$
+
+# Allow important assets
+Allow: /static/images/
+Allow: /images/
+Allow: /favicon.ico
+Allow: /manifest.json

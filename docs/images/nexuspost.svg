@@ -1,0 +1,8 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="48" height="48" rx="8" fill="#00abf6"/>
+  <path d="M12 16h24v16H12V16z" fill="white"/>
+  <circle cx="18" cy="22" r="2" fill="#00abf6"/>
+  <circle cx="30" cy="22" r="2" fill="#00abf6"/>
+  <rect x="20" y="26" width="8" height="2" fill="#00abf6"/>
+  <text x="24" y="40" text-anchor="middle" fill="#00abf6" font-size="8" font-family="Arial">NP</text>
+</svg>

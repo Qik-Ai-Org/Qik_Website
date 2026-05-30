@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const currentYear = new Date().getFullYear();
 
@@ -10,7 +11,7 @@ const Footer = () => (
           <div className="col-md-4">
             <h4>
               <a href="/">
-                <img src="./images/logo.png" alt="Qik.ai Logo" style={{ width: "80px", height: "auto" }} />
+                <img src="/images/logo.png" alt="Qik.ai Logo" style={{ width: "80px", height: "auto" }} />
               </a>
             </h4>
             <p>
@@ -21,7 +22,25 @@ const Footer = () => (
               20%. Every app in our ecosystem is free and open source.
             </p>
           </div>
-          <div className="col-md-4 text-center-uvs">
+          <div className="col-md-4">
+            <h4>Products</h4>
+            <ul
+              style={{
+                listStyleType: "none",
+                padding: 0,
+                margin: 0,
+                marginTop: "20px",
+                lineHeight: "2",
+              }}
+            >
+              <li><Link href="/products/opensign" style={{ color: "inherit" }}>OpenSign — E-Signature</Link></li>
+              <li><Link href="/products/doctrack" style={{ color: "inherit" }}>DocTrack — Document Analytics</Link></li>
+              <li><Link href="/products/openclm" style={{ color: "inherit" }}>OpenCLM — Contract Management</Link></li>
+              <li><Link href="/products/openbuzz" style={{ color: "inherit" }}>OpenBuzz — Social Automation</Link></li>
+              <li><Link href="/products" style={{ color: "inherit" }}>All products →</Link></li>
+            </ul>
+          </div>
+          <div className="col-md-4 text-right-uvs">
             <h4>Contact</h4>
             <ul
               style={{
@@ -33,9 +52,7 @@ const Footer = () => (
             >
               <li style={{ marginBottom: "13px" }}>Email: hello@qik.ai</li>
             </ul>
-          </div>
-          <div className="col-md-4 text-right-uvs">
-            <h4>Always reachable on</h4>
+            <h4 style={{ marginTop: "24px" }}>Always reachable on</h4>
             <div className="social-links" style={{ marginTop: "20px" }}>
               <button
                 style={{
@@ -46,7 +63,7 @@ const Footer = () => (
                 }}
               >
                 <img
-                  src="./images/linkedin.svg"
+                  src="/images/linkedin.svg"
                   alt="Business solution icon"
                 />
               </button>
@@ -59,7 +76,7 @@ const Footer = () => (
                 }}
               >
                 <img
-                  src="./images/gmail.svg"
+                  src="/images/gmail.svg"
                   alt="Business solution icon"
                   style={{ marginLeft: "20px" }}
                 />

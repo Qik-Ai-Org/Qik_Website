@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 // Products to tag as ALPHA when alphaMode is enabled
 const ALPHA_PRODUCTS = new Set([
@@ -16,11 +17,16 @@ const ALPHA_PRODUCTS = new Set([
   "Qik AssetGrid",
   "Qik BookIt",
   "Qik LegaDraft",
+  // RetainRight shifted to Alpha
+  "Qik RetainRight",
 ]);
 
-// Products that should display NO badge (GA / fully released)
+// Products that should display NO badge (GA / fully released flagship products)
 const NO_BADGE_PRODUCTS = new Set([
-  "OpenSign", // explicitly requested to not show Beta/Alpha tag
+  "OpenSign",
+  "DocTrack",
+  "OpenCLM",
+  "OpenBuzz",
 ]);
 
 const Badge = ({ kind }) => {
@@ -50,20 +56,30 @@ const Badge = ({ kind }) => {
   );
 };
 
-const Card = ({ title, img, children, alphaMode }) => {
+const Card = ({ title, img, children, alphaMode, to, colClass = "col-md-4 col-sm-6 col-12" }) => {
   // Show no badge for products explicitly excluded; otherwise ALPHA if in list else BETA
   const showBadge = !NO_BADGE_PRODUCTS.has(title);
   const badgeKind = ALPHA_PRODUCTS.has(title) ? 'ALPHA' : 'BETA';
-  return (
-    <div className="col-md-4 col-sm-6 col-12 business-card-animate">
-      <div className="feature-item business-product enhanced-card" style={{ position: 'relative' }}>
-        {showBadge && <Badge kind={badgeKind} />}
-        <img src={img} alt={`${title} icon`} className="business-card-img" />
-        <div className="business-card-content">
-          <strong>{title}</strong>
-          <p>{children}</p>
-        </div>
+  const inner = (
+    <div className="feature-item business-product enhanced-card" style={{ position: 'relative', height: '100%' }}>
+      {showBadge && <Badge kind={badgeKind} />}
+      <img src={img} alt={`${title} icon`} className="business-card-img" />
+      <div className="business-card-content">
+        <strong>{title}</strong>
+        <p>{children}</p>
+        {to && <span className="business-card-link">Learn more →</span>}
       </div>
+    </div>
+  );
+  return (
+    <div className={`${colClass} business-card-animate`}>
+      {to ? (
+        <Link href={to} className="business-card-anchor" aria-label={`Learn more about ${title}`}>
+          {inner}
+        </Link>
+      ) : (
+        inner
+      )}
     </div>
   );
 };
@@ -71,30 +87,39 @@ const Card = ({ title, img, children, alphaMode }) => {
 const BusinessSolutions = ({ alphaMode = false }) => (
   <div id="sub-business-solutions">
     <div className="col-md-12" id="products" style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
-      {/* Compliance & Risk Management */}
+      {/* Flagship Open-Source Products */}
       <div className="row" style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 0' }}>
         <div className="col-md-12" style={{ marginBottom: "20px" }}>
           <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
-            Compliance, Legal & Risk Management
+            Flagship Open-Source Products
           </h6>
         </div>
-        <Card alphaMode={alphaMode} img="https://docs.opensignlabs.com/img/logo.png" title="OpenSign">
+        <Card alphaMode={alphaMode} to="/products/opensign" colClass="col-md-3 col-sm-6 col-12" img="https://docs.opensignlabs.com/img/logo.png" title="OpenSign">
           Free & open source e-signature platform with legally binding digital signatures, audit trails, and workflow automation
         </Card>
-        <Card alphaMode={alphaMode} img="./images/logos/Qik Policy Management Portal.PNG" title="Qik Policy Management Portal">
-          Centralized policy creation, management, and compliance tracking
-        </Card>
-        <Card alphaMode={alphaMode} img="./images/logos/Qik Whistleblower.PNG" title="Qik Whistleblower">
-          Anonymous reporting and incident management system
-        </Card>
-        <Card alphaMode={alphaMode} img="./images/logos/Qik RetainRight.PNG" title="Qik RetainRight">
-          Document Retention & Auto-Purge Scheduler: Automated compliance for data retention policies
-        </Card>
-        <Card alphaMode={alphaMode} img="https://doctrack.ai/assets/doctrack.png" title="DocTrack">
+        <Card alphaMode={alphaMode} to="/products/doctrack" colClass="col-md-3 col-sm-6 col-12" img="https://doctrack.ai/assets/doctrack.png" title="DocTrack">
           Free & open source DocSend alternative with advanced analytics, data rooms, watermarking, and enterprise security
         </Card>
-        <Card alphaMode={alphaMode} img="./images/logos/Qik CLM.png" title="OpenCLM">
+        <Card alphaMode={alphaMode} to="/products/openclm" colClass="col-md-3 col-sm-6 col-12" img="/images/logos/Qik CLM.png" title="OpenCLM">
           Free & open source contract lifecycle management for drafting, collaboration, approvals, renewals, and AI clause analysis
+        </Card>
+        <Card alphaMode={alphaMode} to="/products/openbuzz" colClass="col-md-3 col-sm-6 col-12" img="/images/logos/OpenBuzz.svg" title="OpenBuzz">
+          AI-first, open-core social media automation to generate, schedule, publish and analyze content across every major channel
+        </Card>
+      </div>
+
+      {/* Governance, Compliance & Risk Management */}
+      <div className="row" style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 0' }}>
+        <div className="col-md-12" style={{ marginBottom: "20px" }}>
+          <h6 style={{ color: "#00abf6", fontWeight: "bold", marginBottom: "15px" }}>
+            Governance, Compliance & Risk Management
+          </h6>
+        </div>
+        <Card alphaMode={alphaMode} img="/images/logos/Qik Policy Management Portal.PNG" title="Qik Policy Management Portal">
+          Centralized policy creation, management, and compliance tracking
+        </Card>
+        <Card alphaMode={alphaMode} img="/images/logos/Qik Whistleblower.PNG" title="Qik Whistleblower">
+          Anonymous reporting and incident management system
         </Card>
       </div>
 
@@ -105,7 +130,10 @@ const BusinessSolutions = ({ alphaMode = false }) => (
               Alpha Releases
             </h6>
           </div>
-          <Card alphaMode={alphaMode} img="./images/logos/LegaDraft.PNG" title="Qik LegaDraft">
+          <Card alphaMode={alphaMode} img="/images/logos/Qik RetainRight.PNG" title="Qik RetainRight">
+            Document Retention & Auto-Purge Scheduler: Automated compliance for data retention policies
+          </Card>
+          <Card alphaMode={alphaMode} img="/images/logos/LegaDraft.PNG" title="Qik LegaDraft">
             AI-powered legal document assistant for drafting and review
           </Card>
         </div>
@@ -118,13 +146,13 @@ const BusinessSolutions = ({ alphaMode = false }) => (
               Human Capital & Performance
             </h6>
           </div>
-          <Card alphaMode={alphaMode} img="./images/logos/Qik OnboardFlow.PNG" title="Qik OnboardFlow">
+          <Card alphaMode={alphaMode} img="/images/logos/Qik OnboardFlow.PNG" title="Qik OnboardFlow">
             Employee Onboarding and Off-boarding: Streamlined employee lifecycle management
           </Card>
-          <Card alphaMode={alphaMode} img="./images/logos/Qik OKR & Goals.PNG" title="Qik OKR & Goals">
+          <Card alphaMode={alphaMode} img="/images/logos/Qik OKR & Goals.PNG" title="Qik OKR & Goals">
             Objective and key results tracking and performance management
           </Card>
-          <Card alphaMode={alphaMode} img="./images/logos/Qik AllVoices.PNG" title="Qik AllVoices">
+          <Card alphaMode={alphaMode} img="/images/logos/Qik AllVoices.PNG" title="Qik AllVoices">
             Employee voice and feedback collection platform
           </Card>
         </div>
@@ -137,19 +165,19 @@ const BusinessSolutions = ({ alphaMode = false }) => (
               Marketing, Communications & Engagement
             </h6>
           </div>
-          <Card alphaMode={alphaMode} img="./images/logos/Qik DragonDrip.PNG" title="Qik DragonDrip">
+          <Card alphaMode={alphaMode} img="/images/logos/Qik DragonDrip.PNG" title="Qik DragonDrip">
             Email Campaign Builder: Marketing automation and email campaign management
           </Card>
-            <Card alphaMode={alphaMode} img="./images/logos/NexusPost.PNG" title="NexusPost">
+            <Card alphaMode={alphaMode} img="/images/logos/NexusPost.PNG" title="NexusPost">
             Social Media Management
           </Card>
-          <Card alphaMode={alphaMode} img="./images/logos/Qik Forms.PNG" title="Qik Forms">
+          <Card alphaMode={alphaMode} img="/images/logos/Qik Forms.PNG" title="Qik Forms">
             Dynamic form builder and data collection
           </Card>
-          <Card alphaMode={alphaMode} img="./images/logos/Qik Surveys.PNG" title="Qik Surveys">
+          <Card alphaMode={alphaMode} img="/images/logos/Qik Surveys.PNG" title="Qik Surveys">
             Survey creation and data collection tools
           </Card>
-          <Card alphaMode={alphaMode} img="./images/logos/Qik Email Validator.PNG" title="Qik Email Validator">
+          <Card alphaMode={alphaMode} img="/images/logos/Qik Email Validator.PNG" title="Qik Email Validator">
             Email verification
           </Card>
         </div>
@@ -162,7 +190,7 @@ const BusinessSolutions = ({ alphaMode = false }) => (
               Product Management & Innovation
             </h6>
           </div>
-          <Card alphaMode={alphaMode} img="./images/logos/Qik Feature Maestro.png" title="Qik Feature Maestro">
+          <Card alphaMode={alphaMode} img="/images/logos/Qik Feature Maestro.png" title="Qik Feature Maestro">
             SaaS Feature Request Board: Product development and feature request management
           </Card>
         </div>
@@ -175,10 +203,10 @@ const BusinessSolutions = ({ alphaMode = false }) => (
               Operations & Asset management
             </h6>
           </div>
-          <Card alphaMode={alphaMode} img="./images/logos/Qik AssetGrid.PNG" title="Qik AssetGrid">
+          <Card alphaMode={alphaMode} img="/images/logos/Qik AssetGrid.PNG" title="Qik AssetGrid">
             Company Asset Tracker: Comprehensive asset inventory and management system
           </Card>
-          <Card alphaMode={alphaMode} img="./images/logos/Qik BookIt.PNG" title="Qik BookIt">
+          <Card alphaMode={alphaMode} img="/images/logos/Qik BookIt.PNG" title="Qik BookIt">
             Resource booking and reservation management system
           </Card>
         </div>

@@ -3,35 +3,21 @@
   "homepage": "http://www.qik.ai",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "dependencies": {
-    "gh-pages": "^6.1.1",
-    "jquery": "^3.7.1",
+    "next": "^14.2.35",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.26.2",
-    "serve": "^14.2.3"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^6.5.0",
-    "@testing-library/react": "^16.0.1",
-    "@testing-library/user-event": "^14.5.2",
-    "@types/react": "^18.3.5",
-    "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.1",
-    "jsdom": "^26.1.0",
-    "vite": "^5.4.3",
-    "vitest": "^3.2.4"
+    "gh-pages": "^6.1.1"
   },
   "scripts": {
-    "dev": "vite",
-    "start": "serve -s dist",
-    "start-dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "test": "vitest"
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "rm -rf docs && mv out docs && touch docs/.nojekyll",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "npm run build && gh-pages -d docs -t true"
   },
   "browserslist": {
     "production": [

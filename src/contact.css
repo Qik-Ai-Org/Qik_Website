@@ -1,0 +1,239 @@
+/* Contact page specific styles (form, info cards, hero sparkles). */
+
+            /* Contact Page Styles */
+            .qik-contact {
+              min-height: 100vh;
+              position: relative;
+              overflow: hidden;
+              background: linear-gradient(135deg, 
+                rgba(248, 250, 252, 0.95) 0%,
+                rgba(248, 250, 252, 0.8) 50%,
+                rgba(239, 246, 255, 0.9) 100%);
+              display: flex;
+              align-items: center;
+              padding: 140px 0 80px;
+            }
+
+            @media (max-width: 600px) {
+              .qik-contact {
+                padding-top: 170px;
+              }
+            }
+
+            .contact-header {
+              animation: slideInFromTop 1s ease-out;
+            }
+
+            .contact-title {
+              font-size: 3.5rem;
+              font-weight: 800;
+              background: linear-gradient(135deg, #00D4E6 0%, #4F46E5 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              margin-bottom: 1rem;
+              line-height: 1.2;
+            }
+
+            @media (max-width: 768px) {
+              .contact-title {
+                font-size: 2.5rem;
+              }
+            }
+
+            .contact-subtitle {
+              font-size: 1.25rem;
+              color: var(--text-secondary, #64748b);
+              max-width: 600px;
+              margin: 0 auto 2rem;
+              line-height: 1.6;
+            }
+
+            .contact-info {
+              background: rgba(255, 255, 255, 0.7);
+              backdrop-filter: blur(10px);
+              border-radius: 20px;
+              padding: 2rem;
+              box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+              border: 1px solid rgba(255, 255, 255, 0.2);
+              animation: slideInFromLeft 1s ease-out;
+            }
+
+            .contact-info-item {
+              display: flex;
+              align-items: flex-start;
+              gap: 1.5rem;
+              margin-bottom: 2rem;
+            }
+
+            .contact-info-item:last-child {
+              margin-bottom: 0;
+            }
+
+            .contact-icon {
+              flex-shrink: 0;
+              width: 50px;
+              height: 50px;
+              background: linear-gradient(135deg, #00D4E6 0%, #4F46E5 100%);
+              border-radius: 12px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: white;
+            }
+
+            .contact-details h4 {
+              font-size: 1.25rem;
+              font-weight: 700;
+              color: var(--text-primary, #1e293b);
+              margin-bottom: 0.5rem;
+            }
+
+            .contact-details p {
+              font-size: 0.95rem;
+              color: var(--text-secondary, #64748b);
+              margin-bottom: 0.25rem;
+              line-height: 1.5;
+            }
+
+            .contact-details p:last-child {
+              margin-bottom: 0;
+            }
+
+            /* Animations */
+            @keyframes slideInFromTop {
+              0% { opacity: 0; transform: translateY(-30px); }
+              100% { opacity: 1; transform: translateY(0); }
+            }
+
+            @keyframes slideInFromLeft {
+              0% { opacity: 0; transform: translateX(-30px); }
+              100% { opacity: 1; transform: translateX(0); }
+            }
+
+            /* Reuse existing hero background styles */
+            .hero-background {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              z-index: 0;
+            }
+
+            .hero-content {
+              position: relative;
+              z-index: 3;
+            }
+
+            /* Floating gradient orbs */
+            .hero-gradient-orb {
+              position: absolute;
+              border-radius: 50%;
+              filter: blur(80px);
+              opacity: 0.6;
+              animation: float 8s ease-in-out infinite;
+            }
+
+            .hero-orb-1 {
+              width: 400px;
+              height: 400px;
+              background: radial-gradient(circle, rgba(0, 212, 230, 0.3) 0%, transparent 70%);
+              top: -200px;
+              left: -200px;
+              animation-delay: 0s;
+            }
+
+            .hero-orb-2 {
+              width: 300px;
+              height: 300px;
+              background: radial-gradient(circle, rgba(79, 70, 229, 0.25) 0%, transparent 70%);
+              top: 60%;
+              right: -150px;
+              animation-delay: -3s;
+            }
+
+            .hero-orb-3 {
+              width: 250px;
+              height: 250px;
+              background: radial-gradient(circle, rgba(232, 121, 249, 0.2) 0%, transparent 70%);
+              top: 30%;
+              left: 70%;
+              animation-delay: -6s;
+            }
+
+            .hero-orb-4 {
+              width: 180px;
+              height: 180px;
+              background: radial-gradient(circle, rgba(0, 212, 230, 0.15) 0%, transparent 70%);
+              top: 70%;
+              left: 10%;
+              animation-delay: -2s;
+            }
+
+            .hero-orb-5 {
+              width: 200px;
+              height: 200px;
+              background: radial-gradient(circle, rgba(79, 70, 229, 0.18) 0%, transparent 70%);
+              top: 10%;
+              left: 40%;
+              animation-delay: -8s;
+            }
+
+            @keyframes float {
+              0%, 100% { transform: translateY(0px) scale(1); }
+              33% { transform: translateY(-30px) scale(1.1); }
+              66% { transform: translateY(20px) scale(0.9); }
+            }
+
+            /* Floating particles */
+            .hero-particles {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-image: 
+                radial-gradient(2px 2px at 20px 30px, rgba(0, 212, 230, 0.4), transparent),
+                radial-gradient(2px 2px at 40px 70px, rgba(79, 70, 229, 0.3), transparent),
+                radial-gradient(1px 1px at 90px 40px, rgba(255, 255, 255, 0.5), transparent),
+                radial-gradient(1px 1px at 130px 80px, rgba(0, 212, 230, 0.3), transparent),
+                radial-gradient(2px 2px at 160px 30px, rgba(79, 70, 229, 0.2), transparent),
+                radial-gradient(1px 1px at 50px 10px, rgba(232, 121, 249, 0.3), transparent),
+                radial-gradient(1px 1px at 110px 60px, rgba(0, 212, 230, 0.2), transparent),
+                radial-gradient(2px 2px at 80px 90px, rgba(79, 70, 229, 0.15), transparent),
+                radial-gradient(1px 1px at 170px 50px, rgba(255, 255, 255, 0.3), transparent),
+                radial-gradient(1px 1px at 30px 85px, rgba(232, 121, 249, 0.2), transparent);
+              background-repeat: repeat;
+              background-size: 120px 80px;
+              animation: sparkle 12s linear infinite;
+            }
+
+            @keyframes sparkle {
+              0% { transform: translateY(0px); }
+              100% { transform: translateY(-160px); }
+            }
+
+            /* Secondary particle layer for more density */
+            .hero-particles-secondary {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-image: 
+                radial-gradient(1px 1px at 35px 15px, rgba(0, 212, 230, 0.25), transparent),
+                radial-gradient(1px 1px at 75px 45px, rgba(232, 121, 249, 0.2), transparent),
+                radial-gradient(1px 1px at 15px 75px, rgba(79, 70, 229, 0.18), transparent),
+                radial-gradient(1px 1px at 145px 25px, rgba(255, 255, 255, 0.3), transparent),
+                radial-gradient(1px 1px at 65px 85px, rgba(0, 212, 230, 0.15), transparent),
+                radial-gradient(1px 1px at 105px 35px, rgba(232, 121, 249, 0.15), transparent);
+              background-repeat: repeat;
+              background-size: 100px 60px;
+              animation: sparkle-reverse 10s linear infinite;
+            }
+
+            @keyframes sparkle-reverse {
+              0% { transform: translateY(-100px) rotate(0deg); }
+              100% { transform: translateY(-260px) rotate(360deg); }
+            }

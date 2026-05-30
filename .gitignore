@@ -10,11 +10,16 @@
 
 # production
 /build
-/docs
 /dist
 
-# Vite
-.vite
+# Next.js
+/.next
+/out
+next-env.d.ts
+*.tsbuildinfo
+
+# NOTE: /docs is intentionally NOT ignored — it is the static export that
+# GitHub Pages serves (Settings → Pages → Deploy from branch → /docs).
 
 # misc
 .DS_Store

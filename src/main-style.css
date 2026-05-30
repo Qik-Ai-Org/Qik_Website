@@ -1797,6 +1797,29 @@ button:focus, .btn:focus {
   text-align: center;
   line-height: 1.5;
 }
+/* Clickable flagship product cards */
+.business-card-anchor {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+.business-card-anchor:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.business-card-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #4F46E5;
+  letter-spacing: 0.01em;
+  transition: transform 0.25s ease;
+}
+.business-card-anchor:hover .business-card-link {
+  transform: translateX(4px);
+}
 .business-card-animate {
   animation: fadeInUp 0.7s cubic-bezier(.4,2,.6,1);
 }

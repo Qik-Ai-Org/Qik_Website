@@ -1,0 +1,11 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OpenBuzz">
+  <defs>
+    <linearGradient id="obLogoGrad" x1="4" y1="4" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8b5cf6"/>
+      <stop offset="0.55" stop-color="#d946ef"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="36" height="36" rx="11" fill="url(#obLogoGrad)"/>
+  <path d="M22.2 8.5 12.4 21.2c-.5.7 0 1.7.9 1.7h5.1l-2 9.1c-.2.9 1 1.5 1.6.7l9.8-12.7c.5-.7 0-1.7-.9-1.7h-5.1l2-9.1c.2-.9-1-1.5-1.6-.7Z" fill="#ffffff"/>
+</svg>

@@ -1,5 +1,6 @@
+"use client";
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -63,9 +64,9 @@ const Header = () => {
           <nav className="navbar-modern" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'nowrap' }}> 
             {/* Logo Section */} 
             <div className="navbar-brand" style={{ flex: '0 0 auto' }}> 
-              <Link to="/" className="logo-link"> 
+              <Link href="/" className="logo-link"> 
                 <img 
-                  src="./images/logo.png" 
+                  src="/images/logo.png" 
                   alt="Qik.ai Logo" 
                   className="logo-img" 
                 /> 
@@ -75,9 +76,10 @@ const Header = () => {
             {/* Desktop Navigation */} 
             <div className="navbar-nav desktop-nav" style={{ flex: '1 1 auto', display: 'flex', justifyContent: 'center' }}> 
               <div className="nav-links" style={{ display: 'flex', gap: '30px' }}> 
-                <Link to="/" className="nav-link">Home</Link> 
-                <Link to="/about" className="nav-link">About</Link> 
-                <Link to="/contact" className="nav-link">Contact</Link> 
+                <Link href="/" className="nav-link">Home</Link> 
+                <Link href="/products" className="nav-link">Products</Link> 
+                <Link href="/about" className="nav-link">About</Link> 
+                <Link href="/contact" className="nav-link">Contact</Link> 
               </div> 
             </div> 
 
@@ -113,7 +115,7 @@ const Header = () => {
         <div className="mobile-nav-overlay" onClick={closeMobileMenu}>
           <div className="mobile-nav-menu" onClick={(e) => e.stopPropagation()}>
             <div className="mobile-nav-header">
-              <img src="./images/logo.png" alt="Qik.ai" className="mobile-nav-logo" />
+              <img src="/images/logo.png" alt="Qik.ai" className="mobile-nav-logo" />
               <button 
                 className="mobile-nav-close" 
                 onClick={closeMobileMenu}
@@ -127,15 +129,19 @@ const Header = () => {
             </div>
             
             <nav className="mobile-nav-links">
-              <Link to="/" className="mobile-nav-link" onClick={closeMobileMenu}>
+              <Link href="/" className="mobile-nav-link" onClick={closeMobileMenu}>
                 <span className="nav-link-icon">🏠</span>
                 <span className="nav-link-text">Home</span>
               </Link>
-              <Link to="/about" className="mobile-nav-link" onClick={closeMobileMenu}>
+              <Link href="/products" className="mobile-nav-link" onClick={closeMobileMenu}>
+                <span className="nav-link-icon">🧩</span>
+                <span className="nav-link-text">Products</span>
+              </Link>
+              <Link href="/about" className="mobile-nav-link" onClick={closeMobileMenu}>
                 <span className="nav-link-icon">ℹ️</span>
                 <span className="nav-link-text">About</span>
               </Link>
-              <Link to="/contact" className="mobile-nav-link" onClick={closeMobileMenu}>
+              <Link href="/contact" className="mobile-nav-link" onClick={closeMobileMenu}>
                 <span className="nav-link-icon">📧</span>
                 <span className="nav-link-text">Contact</span>
               </Link>
